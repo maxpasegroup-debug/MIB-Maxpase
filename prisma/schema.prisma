@@ -1,0 +1,313 @@
+// Psychology Assessment Platform — Phase 1 Database
+// Run: npx prisma migrate dev
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------------------------------------------------------------
+// Types (SQLite has no enums; use String)
+// ---------------------------------------------------------------------------
+// TestType: "rapid" | "deep"
+// AgeGroup: "AGE_6_12" | "AGE_13_18" | "AGE_18_25" | "AGE_25_40" | "AGE_40_60" | "AGE_60_PLUS"
+
+// ---------------------------------------------------------------------------
+// 1. Categories
+// ---------------------------------------------------------------------------
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  thumbnail   String?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  tests           Test[]
+  questions       Question[]
+  sessions        TestSession[]
+  recommendations TestRecommendation[] @relation("RecommendedCategory")
+
+  @@map("categories")
+}
+
+// ---------------------------------------------------------------------------
+// Test recommendations (adaptive follow-up: trigger_trait + condition → category)
+// ---------------------------------------------------------------------------
+// trigger_condition: ">65", "<40" etc. Priority: lower number = higher priority.
+
+model TestRecommendation {
+  id                    String   @id @default(cuid())
+  triggerTrait          String   @map("trigger_trait")
+  triggerCondition      String   @map("trigger_condition")
+  recommendedCategoryId String   @map("recommended_category")
+  priority              Int      @default(0)
+
+  recommendedCategory Category @relation("RecommendedCategory", fields: [recommendedCategoryId], references: [id], onDelete: Cascade)
+
+  @@map("test_recommendations")
+}
+
+// ---------------------------------------------------------------------------
+// 2. Tests (per category: rapid vs deep)
+// ---------------------------------------------------------------------------
+
+model Test {
+  id               String   @id @default(cuid())
+  categoryId       String   @map("category_id")
+  name             String
+  type             String   // "rapid" | "deep"
+  durationMinutes  Int      @map("duration_minutes")
+  totalQuestions   Int      @map("total_questions")
+
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@unique([categoryId, type])
+  @@map("tests")
+}
+
+// ---------------------------------------------------------------------------
+// 3. Question Bank (result-oriented, behavioral, tagged by trait & test type)
+// ---------------------------------------------------------------------------
+// 4-answer scale: Never=1, Sometimes=2, Often=3, Always=4
+// Tagging: category, sub_area, trait_measured, age_group, test_type (rapid/deep)
+// Deep: 10 traits × 10 questions = 100. Rapid: 10 traits × 3–4 = 30–40.
+
+model Question {
+  id              String   @id @default(cuid())
+  categoryId      String   @map("category_id")
+  subArea         String?  @map("sub_area")       // e.g. cultural_context, technology, self_awareness
+  ageGroup        String   @map("age_group")     // AGE_6_12, AGE_13_18, ...
+  questionText    String   @map("question_text")
+  traitMeasured   String   @map("trait_measured") // stress, confidence, emotional_stability, etc.
+  weight          Int      @default(1)
+  culturalContext Boolean  @default(false) @map("cultural_context")
+  techContext     Boolean  @default(false) @map("tech_context")
+  testType        String   @map("test_type")     // "rapid" | "deep"
+  displayOrder    Int?     @map("display_order")  // B2B: fixed order when set; null = randomize
+  reverseScored   Boolean  @default(false) @map("reverse_scored") // Always → low trait (e.g. "I doubt my abilities")
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  category     Category             @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  answers      Answer[]
+  responses    Response[]
+  translations QuestionTranslation[]
+
+  @@map("questions")
+}
+
+// ---------------------------------------------------------------------------
+// 3b. Question translations (Malayalam, Hindi, Tamil, etc.) — rural / regional
+// ---------------------------------------------------------------------------
+// language_code: e.g. "ml", "hi", "ta" (ISO 639-1)
+
+model QuestionTranslation {
+  id             String @id @default(cuid())
+  questionId     String @map("question_id")
+  languageCode   String @map("language_code")   // ml, hi, ta, ...
+  translatedText String @map("translated_text")
+
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([questionId, languageCode])
+  @@map("question_translations")
+}
+
+// ---------------------------------------------------------------------------
+// 4. Answers (per question; score_value e.g. Never=1, Always=4)
+// ---------------------------------------------------------------------------
+
+model Answer {
+  id          String @id @default(cuid())
+  questionId  String @map("question_id")
+  answerText  String @map("answer_text")
+  scoreValue  Int    @map("score_value")
+
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@map("answers")
+}
+
+// ---------------------------------------------------------------------------
+// Users (minimal — for session ownership; can extend later)
+// ---------------------------------------------------------------------------
+
+model User {
+  id        String   @id @default(cuid())
+  email     String?  @unique
+  name      String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  sessions        TestSession[]
+  careerSessions  CareerSession[]
+
+  @@map("users")
+}
+
+// ---------------------------------------------------------------------------
+// 5. Test Sessions (user's test run)
+// ---------------------------------------------------------------------------
+
+model TestSession {
+  id            String    @id @default(cuid())
+  userId        String?   @map("user_id")   // nullable for guest
+  categoryId    String    @map("category_id")
+  testType      String    @map("test_type") // "rapid" | "deep"
+  languageCode  String    @default("en") @map("language_code") // en, ml, hi, ta — for loading translated questions
+  startedAt     DateTime  @default(now()) @map("started_at")
+  completedAt   DateTime? @map("completed_at")
+  scoreSummary  String?   @map("score_summary") // JSON string or summary text
+
+  user     User?     @relation(fields: [userId], references: [id], onDelete: SetNull)
+  category Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  responses Response[]
+  result   Result?
+
+  @@map("test_sessions")
+}
+
+// ---------------------------------------------------------------------------
+// 6. Responses (one per question answered in a session)
+// ---------------------------------------------------------------------------
+
+model Response {
+  id             String   @id @default(cuid())
+  sessionId      String   @map("session_id")
+  questionId     String   @map("question_id")
+  selectedAnswer String   @map("selected_answer") // answer_text or answer id
+  score          Int
+
+  session  TestSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  question Question    @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, questionId])
+  @@map("responses")
+}
+
+// ---------------------------------------------------------------------------
+// 7. Results (computed after session completion; all 10 traits)
+// ---------------------------------------------------------------------------
+// trait_scores: JSON object with keys stress, confidence, emotional_stability, etc. (0–100 each)
+// Interpretation: see lib/interpretation.ts (e.g. Stress 0–20 Low, 21–35 Moderate, 36–50 High)
+
+model Result {
+  id                       String   @id @default(cuid())
+  sessionId                String   @unique @map("session_id")
+  stressScore              Int      @map("stress_score")       // 0–100 (kept for compatibility)
+  confidenceScore          Int      @map("confidence_score")   // 0–100
+  emotionalScore           Int      @map("emotional_score")    // 0–100
+  traitScores              String?  @map("trait_scores")      // JSON: all 10 traits 0–100
+  aiAnalysis               String?  @map("ai_analysis")
+  psychologistNotes        String?  @map("psychologist_notes") // B2B counseling workflow
+  reviewedByPsychologist   Boolean  @default(false) @map("reviewed_by_psychologist")
+
+  session TestSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@map("results")
+}
+
+// ---------------------------------------------------------------------------
+// 8. Career Intelligence — full flow: sessions → scores → clusters → recommendations → report
+// ---------------------------------------------------------------------------
+
+model CareerSession {
+  id         String   @id @default(cuid())
+  userId     String?  @map("user_id")
+  name       String
+  age        Int
+  education  String?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  user            User?                   @relation(fields: [userId], references: [id], onDelete: SetNull)
+  scores          CareerScore[]
+  recommendations CareerRecommendation[]
+  report          CareerReport?
+
+  @@map("career_sessions")
+}
+
+model CareerScore {
+  id        String @id @default(cuid())
+  sessionId String @map("session_id")
+  dimension String // cognitive, personality, motivation, emotional, skills, technology, leadership, creativity, work_environment, life_values
+  score     Int    // 0–100
+
+  session CareerSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, dimension])
+  @@map("career_scores")
+}
+
+model CareerCluster {
+  id            String   @id @default(cuid())
+  name          String
+  description   String
+  exampleRoles  String   @map("example_roles")   // JSON: ["UI/UX Designer", "Product Designer"]
+  growthOutlook String   @map("growth_outlook")  // High, Very High, Medium
+
+  recommendations CareerRecommendation[]
+  roadmaps        CareerRoadmap[]
+
+  @@map("career_clusters")
+}
+
+model CareerRecommendation {
+  id        String @id @default(cuid())
+  sessionId String @map("session_id")
+  clusterId String @map("cluster_id")
+  rank      Int    // 1 = top, 2 = second, 3 = third
+
+  session CareerSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  cluster CareerCluster @relation(fields: [clusterId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, rank])
+  @@map("career_recommendations")
+}
+
+model CareerRoadmap {
+  id          String @id @default(cuid())
+  clusterId  String @map("cluster_id")
+  step        Int    // 1–5
+  title       String
+  description String
+  skills      String  // JSON array of skill strings
+
+  cluster CareerCluster @relation(fields: [clusterId], references: [id], onDelete: Cascade)
+
+  @@map("career_roadmaps")
+}
+
+model CareerReport {
+  id              String   @id @default(cuid())
+  sessionId       String   @unique @map("session_id")
+  aiSummary        String?  @map("ai_summary")
+  primaryCluster   String?  @map("primary_cluster") // cluster name for display
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  session CareerSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@map("career_reports")
+}
+
+// ---------------------------------------------------------------------------
+// 9. Psychologists (for guidance / counselling booking)
+// ---------------------------------------------------------------------------
+
+model Psychologist {
+  id                String   @id @default(cuid())
+  name              String
+  specialization    String
+  experienceYears   Int      @map("experience_years")
+  languages         String   // comma-separated or JSON
+  rating            Float    @default(0)
+  profilePhoto     String?  @map("profile_photo")
+  bio               String?
+  consultationFee   Int      @map("consultation_fee") // in INR or smallest unit
+  availability      String?  // JSON: time slots
+
+  @@map("psychologists")
+}
