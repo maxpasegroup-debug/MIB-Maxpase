@@ -294,20 +294,259 @@ model CareerReport {
 }
 
 // ---------------------------------------------------------------------------
+// 8b. MIB Career Intelligence 10D Profiling Engine (separate module)
+// ---------------------------------------------------------------------------
+// CareerUser: students and parents who can view career results and dashboard.
+
+model CareerUser {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   // "student" | "parent"
+  createdAt DateTime @default(now()) @map("created_at")
+
+  sessions         Career10DSession[]
+  mentorUsage      MentorUsage[]
+  userMissions     UserMission[]
+  growth           UserGrowth?
+  lifeCoachMessages LifeCoachMessage[]
+
+  @@map("career_users")
+}
+
+model MentorUsage {
+  id     String @id @default(cuid())
+  userId String @map("user_id")
+  count  Int    @default(0)
+  date   String // YYYY-MM-DD
+
+  user CareerUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+  @@map("mentor_usage")
+}
+
+model Career10DSession {
+  id        String   @id @default(cuid())
+  userId    String?  @map("user_id")
+  userName  String?  @map("user_name")
+  userEmail String?  @map("user_email")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user           CareerUser?      @relation(fields: [userId], references: [id], onDelete: SetNull)
+  scores         Career10DScore?
+  report         Career10DReport?
+  instituteTests InstituteTest[]
+
+  @@map("career_10d_sessions")
+}
+
+model Career10DScore {
+  id             String @id @default(cuid())
+  sessionId      String @unique @map("session_id")
+  creativity     Int    @default(0)
+  analytical     Int    @default(0)
+  leadership     Int    @default(0)
+  social         Int    @default(0)
+  technology     Int    @default(0)
+  entrepreneurial Int  @default(0) @map("entrepreneurial")
+  practical      Int    @default(0)
+  learning       Int    @default(0)
+  risk           Int    @default(0)
+  purpose        Int    @default(0)
+
+  session Career10DSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@map("career_10d_scores")
+}
+
+model Career10DReport {
+  id        String   @id @default(cuid())
+  sessionId String   @unique @map("session_id")
+  cluster   String
+  aiReport  String   @map("ai_report")
+
+  session Career10DSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@map("career_10d_reports")
+}
+
+// ---------------------------------------------------------------------------
 // 9. Psychologists (for guidance / counselling booking)
 // ---------------------------------------------------------------------------
 
 model Psychologist {
-  id                String   @id @default(cuid())
+  id                String    @id @default(cuid())
   name              String
   specialization    String
-  experienceYears   Int      @map("experience_years")
-  languages         String   // comma-separated or JSON
-  rating            Float    @default(0)
-  profilePhoto     String?  @map("profile_photo")
+  experienceYears   Int        @map("experience_years")
+  languages         String    // comma-separated
+  rating            Float     @default(0)
+  profilePhoto     String?    @map("profile_photo")
   bio               String?
-  consultationFee   Int      @map("consultation_fee") // in INR or smallest unit
-  availability      String?  // JSON: time slots
+  consultationFee   Int        @map("consultation_fee") // INR
+  availability      String?    // JSON: time slots
+  createdAt         DateTime  @default(now()) @map("created_at")
+
+  bookings Booking[]
 
   @@map("psychologists")
+}
+
+// ---------------------------------------------------------------------------
+// 10. Referral partners (schools, counsellors — earn commission from career tests)
+// ---------------------------------------------------------------------------
+
+model ReferralPartner {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  phone        String?
+  organization String?
+  commission   Int      @default(30) // percent
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  referrals Referral[]
+
+  @@map("referral_partners")
+}
+
+model Referral {
+  id            String   @id @default(cuid())
+  partnerId     String   @map("partner_id")
+  studentEmail  String   @map("student_email")
+  testType      String   @map("test_type")
+  amount        Int      // in INR
+  commission    Int      // in INR
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  partner ReferralPartner @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+
+  @@map("referrals")
+}
+
+// ---------------------------------------------------------------------------
+// 11. Institutes (schools, coaching centres — bulk students & tests)
+// ---------------------------------------------------------------------------
+
+model Institute {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  phone     String?
+  address   String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  students InstituteStudent[]
+  tests    InstituteTest[]
+
+  @@map("institutes")
+}
+
+model InstituteStudent {
+  id         String   @id @default(cuid())
+  instituteId String  @map("institute_id")
+  name       String
+  email      String?
+  age        Int?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  institute Institute       @relation(fields: [instituteId], references: [id], onDelete: Cascade)
+  tests     InstituteTest[]
+
+  @@map("institute_students")
+}
+
+model InstituteTest {
+  id         String   @id @default(cuid())
+  instituteId String  @map("institute_id")
+  studentId  String   @map("student_id")
+  sessionId  String?  @map("session_id") // Career10DSession id after test completed
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  institute Institute        @relation(fields: [instituteId], references: [id], onDelete: Cascade)
+  student   InstituteStudent  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  session   Career10DSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+
+  @@map("institute_tests")
+}
+
+// ---------------------------------------------------------------------------
+// 12. Bookings (counselling requests)
+// ---------------------------------------------------------------------------
+
+model Booking {
+  id             String   @id @default(cuid())
+  sessionId      String?  @map("session_id")   // optional, if coming from result page
+  psychologistId String   @map("psychologist_id")
+  userName       String   @map("user_name")
+  userEmail      String   @map("user_email")
+  status         String   @default("pending")  // pending, confirmed, cancelled
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  psychologist Psychologist @relation(fields: [psychologistId], references: [id], onDelete: Cascade)
+
+  @@map("bookings")
+}
+
+// ---------------------------------------------------------------------------
+// 13. Gamified psychological growth (missions, streaks, levels)
+// ---------------------------------------------------------------------------
+
+model GrowthMission {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  category    String
+  points      Int
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  userMissions UserMission[]
+
+  @@map("growth_missions")
+}
+
+model UserMission {
+  id          String    @id @default(cuid())
+  userId      String    @map("user_id")
+  missionId   String    @map("mission_id")
+  completed   Boolean   @default(false)
+  completedAt DateTime? @map("completed_at")
+
+  user   CareerUser     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  mission GrowthMission @relation(fields: [missionId], references: [id], onDelete: Cascade)
+
+  @@map("user_missions")
+}
+
+model UserGrowth {
+  id        String    @id @default(cuid())
+  userId    String    @unique @map("user_id")
+  points    Int       @default(0)
+  level     Int       @default(1)
+  streak    Int       @default(0)
+  lastActive DateTime? @map("last_active")
+
+  user CareerUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_growth")
+}
+
+// ---------------------------------------------------------------------------
+// 14. AI Life Coach (daily guidance + habit suggestions)
+// ---------------------------------------------------------------------------
+
+model LifeCoachMessage {
+  id        String   @id @default(cuid())
+  userId    String   @map("user_id")
+  message   String
+  habits    String?  // JSON array of 3 habit strings
+  date      String   // YYYY-MM-DD
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user CareerUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+  @@map("life_coach_messages")
 }

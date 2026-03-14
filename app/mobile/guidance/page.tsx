@@ -1,58 +1,95 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { MOCK_PSYCHOLOGISTS } from "@/lib/mock-psychologists";
+import { motion } from "framer-motion";
+import PsychologistCard from "@/components/psychologists/PsychologistCard";
+import type { PsychologistListItem } from "@/components/psychologists/PsychologistCard";
 
-export default function MobileGuidance() {
+export default function MobileGuidancePage() {
+  const [list, setList] = useState<PsychologistListItem[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch("/api/psychologists")
+      .then((r) => {
+        if (!r.ok) throw new Error("Failed to load");
+        return r.json();
+      })
+      .then((data) => {
+        setList(
+          data.map((p: { photo?: string | null }) => ({
+            ...p,
+            photo: p.photo ?? null,
+          }))
+        );
+      })
+      .catch(() => setError("Could not load psychologists"))
+      .finally(() => setLoading(false));
+  }, []);
+
+  const handleBookSession = (psychologist: PsychologistListItem) => {
+    window.location.href = `/mobile/psychologist/${psychologist.id}`;
+  };
+
+  if (loading) {
+    return (
+      <div className="mx-auto max-w-md p-4 space-y-6">
+        <h1 className="text-xl font-semibold text-gray-900">Guidance</h1>
+        <p className="text-gray-500">Loading…</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="mx-auto max-w-md p-4 space-y-6">
+        <h1 className="text-xl font-semibold text-gray-900">Guidance</h1>
+        <p className="text-red-600">{error}</p>
+      </div>
+    );
+  }
+
   return (
-    <div className="px-4 py-6">
-      <motion.h1
+    <div className="mx-auto max-w-md p-4 space-y-6">
+      <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-xl font-semibold text-gray-900 mb-1"
       >
-        Guidance
-      </motion.h1>
-      <p className="text-gray-500 text-sm mb-6">
-        Book a session with a psychologist for online counselling.
-      </p>
+        <h1 className="text-xl font-semibold text-gray-900">Guidance</h1>
+        <p className="text-gray-500 text-sm mt-0.5">
+          Book a session with a psychologist for online counselling.
+        </p>
+      </motion.div>
 
       <div className="space-y-4">
-        {MOCK_PSYCHOLOGISTS.map((doc, i) => (
+        {list.map((p, i) => (
           <motion.div
-            key={doc.id}
-            initial={{ opacity: 0, y: 16 }}
+            key={p.id}
+            initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.08 }}
+            transition={{ delay: i * 0.05 }}
           >
-            <Link href={`/mobile/psychologist/${doc.id}`}>
-              <motion.div
-                whileTap={{ scale: 0.99 }}
-                className="rounded-2xl bg-white p-4 shadow-lg border border-gray-100 flex gap-4"
-              >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-2xl text-white shrink-0">
-                  {doc.name.charAt(0)}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-semibold text-gray-900">{doc.name}</h3>
-                  <p className="text-sm text-gray-600">{doc.specialization}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">
-                    {doc.experienceYears} years experience
-                  </p>
-                  <p className="text-sm text-amber-600 mt-1">⭐ {doc.rating}</p>
-                  <p className="text-sm font-semibold text-gray-900 mt-2">
-                    Fee: ₹{doc.consultationFee}
-                  </p>
-                  <span className="inline-block mt-2 rounded-xl bg-purple-600 px-3 py-1.5 text-xs font-medium text-white">
-                    Book Consultation
-                  </span>
-                </div>
-              </motion.div>
-            </Link>
+            <PsychologistCard
+              psychologist={{
+                id: p.id,
+                name: p.name,
+                specialization: p.specialization,
+                experience: p.experience,
+                languages: p.languages,
+                rating: p.rating,
+                sessionPrice: p.sessionPrice,
+                photo: p.photo,
+              }}
+              onBookSession={handleBookSession}
+            />
           </motion.div>
         ))}
       </div>
+      {list.length === 0 && (
+        <p className="text-gray-500 text-sm">No psychologists available at the moment.</p>
+      )}
     </div>
   );
 }

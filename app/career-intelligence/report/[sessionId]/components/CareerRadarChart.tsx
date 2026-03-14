@@ -28,7 +28,7 @@ export function CareerRadarChart({ data }: CareerRadarChartProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.6 }}
-      className="rounded-2xl bg-white/80 backdrop-blur border border-white/60 shadow-xl p-6 sm:p-8"
+      className="rounded-2xl bg-white shadow-lg border border-gray-100 p-6 sm:p-8 transition-all duration-300 hover:shadow-xl"
     >
       <div className="h-[420px] w-full">
         <ResponsiveContainer width="100%" height="100%">
@@ -38,7 +38,7 @@ export function CareerRadarChart({ data }: CareerRadarChartProps) {
           >
             <PolarGrid
               stroke="#e5e7eb"
-              strokeOpacity={0.8}
+              strokeOpacity={0.35}
             />
             <PolarAngleAxis
               dataKey="subject"

@@ -139,12 +139,30 @@ async function main() {
     console.log("Seeded test_recommendations.");
   }
 
+  // --- Psychologist marketplace (5–10 profiles) ---
+  const psychologistData = [
+    { id: "psy-1", name: "Dr. Anjali Nair", specialization: "Clinical Psychologist", experienceYears: 10, languages: "English, Hindi, Malayalam", rating: 4.8, profilePhoto: "/psychologists/placeholder.svg", bio: "Specializing in anxiety, stress, and relationship issues. CBT and mindfulness-based approaches.", consultationFee: 800 },
+    { id: "psy-2", name: "Dr. Rajesh Kumar", specialization: "Counselling Psychologist", experienceYears: 8, languages: "English, Hindi, Tamil", rating: 4.9, profilePhoto: "/psychologists/placeholder.svg", bio: "Expert in career counselling and youth mental health.", consultationFee: 750 },
+    { id: "psy-3", name: "Dr. Priya Sharma", specialization: "Child & Adolescent Psychologist", experienceYears: 12, languages: "English, Hindi", rating: 4.7, profilePhoto: "/psychologists/placeholder.svg", bio: "Focus on child behaviour, parenting, and school-related stress.", consultationFee: 900 },
+    { id: "psy-4", name: "Dr. Suresh Menon", specialization: "Stress & Anxiety", experienceYears: 15, languages: "English, Malayalam", rating: 4.85, profilePhoto: "/psychologists/placeholder.svg", bio: "Evidence-based interventions for stress, burnout, and work-life balance.", consultationFee: 1000 },
+    { id: "psy-5", name: "Dr. Kavitha Reddy", specialization: "Emotional Wellness", experienceYears: 6, languages: "English, Hindi, Telugu", rating: 4.6, profilePhoto: "/psychologists/placeholder.svg", bio: "Support for emotional regulation, self-esteem, and life transitions.", consultationFee: 700 },
+    { id: "psy-6", name: "Dr. Amit Patel", specialization: "Career & Motivation", experienceYears: 9, languages: "English, Hindi, Gujarati", rating: 4.75, profilePhoto: "/psychologists/placeholder.svg", bio: "Career direction, motivation, and performance coaching.", consultationFee: 850 },
+    { id: "psy-7", name: "Dr. Meera Iyer", specialization: "Trauma & Resilience", experienceYears: 11, languages: "English, Tamil", rating: 4.9, profilePhoto: "/psychologists/placeholder.svg", bio: "Trauma-informed care and building resilience.", consultationFee: 950 },
+    { id: "psy-8", name: "Dr. Vikram Singh", specialization: "Relationship & Family", experienceYears: 14, languages: "English, Hindi", rating: 4.8, profilePhoto: "/psychologists/placeholder.svg", bio: "Couples and family therapy, communication, and conflict resolution.", consultationFee: 900 },
+  ];
+  for (const p of psychologistData) {
+    await prisma.psychologist.upsert({
+      where: { id: p.id },
+      update: {},
+      create: p,
+    });
+  }
+  console.log("Seeded psychologists.");
+
   const existing = await prisma.question.count({ where: { categoryId: stress.id } });
   if (existing > 0) {
     console.log("Questions already exist; skipping question seed.");
-    return;
-  }
-
+  } else {
   // --- Behavioral (daily life) ---
   await createQuestion({
     categoryId: stress.id,
@@ -360,10 +378,32 @@ async function main() {
     });
   }
 
+  }
+
   const { seedCareerIntelligence } = await import("./seed-career");
   await seedCareerIntelligence();
 
-  console.log("Seed complete: categories, tests, question bank, career intelligence.");
+  // Growth missions (gamified psychological growth)
+  const growthMissions = [
+    { title: "Gratitude practice", description: "Write down three things you are grateful for today.", category: "mindfulness", points: 15 },
+    { title: "Reflection journal", description: "Spend 5 minutes reflecting on your day and how you felt.", category: "reflection", points: 20 },
+    { title: "Learn a new skill", description: "Spend 15 minutes learning something new (course, video, or article).", category: "learning", points: 25 },
+    { title: "Career exploration", description: "Explore one career path or role that interests you.", category: "career", points: 30 },
+    { title: "Mindfulness practice", description: "Complete a 5-minute breathing or mindfulness exercise.", category: "mindfulness", points: 10 },
+    { title: "Daily intention", description: "Set one positive intention for the day.", category: "mindfulness", points: 10 },
+    { title: "Strengths check", description: "List two strengths you used today.", category: "reflection", points: 15 },
+    { title: "Skill practice", description: "Practice a skill related to your goals for 20 minutes.", category: "learning", points: 35 },
+    { title: "Career research", description: "Read about a job or industry you're curious about.", category: "career", points: 25 },
+    { title: "Kindness act", description: "Do one small act of kindness for yourself or someone else.", category: "wellbeing", points: 20 },
+  ];
+  const existingMissions = await prisma.growthMission.count();
+  if (existingMissions === 0) {
+    await prisma.growthMission.createMany({
+      data: growthMissions,
+    });
+  }
+
+  console.log("Seed complete: categories, tests, question bank, psychologists, career intelligence, growth missions.");
 }
 
 main()

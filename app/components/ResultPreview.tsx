@@ -34,7 +34,7 @@ export default function ResultPreview() {
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-white rounded-2xl shadow-xl p-8 sm:p-10 border border-gray-100"
+          className="bg-white rounded-2xl shadow-lg p-8 sm:p-10 border border-gray-100 transition-all duration-300 hover:shadow-xl"
         >
           <div className="space-y-8">
             {scores.map((s, i) => (
@@ -86,7 +86,7 @@ export default function ResultPreview() {
             viewport={{ once: true }}
             className="mt-10 text-center"
           >
-            <Link href="/#categories">
+            <Link href="/mobile/tests">
               <motion.span
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}

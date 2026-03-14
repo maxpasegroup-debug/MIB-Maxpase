@@ -33,7 +33,7 @@ export default function HowItWorks() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-4"
+          className="text-2xl sm:text-3xl font-semibold text-center text-gray-900 mb-4"
         >
           How it works
         </motion.h2>
@@ -41,7 +41,7 @@ export default function HowItWorks() {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center text-gray-600 mb-16"
+          className="text-center text-sm text-gray-500 mb-16"
         >
           Three steps to understand your mind.
         </motion.p>
@@ -62,8 +62,8 @@ export default function HowItWorks() {
               >
                 <step.icon className="w-10 h-10" />
               </motion.div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-              <p className="text-gray-600">{step.description}</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
+              <p className="text-base text-gray-600">{step.description}</p>
             </motion.div>
           ))}
         </div>

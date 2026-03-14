@@ -1,0 +1,222 @@
+[
+  {
+    "id": "cmmp6v7vx0041x75tjaesra6e",
+    "category_id": "cat-stress",
+    "sub_area": "teen",
+    "age_group": "AGE_13_18",
+    "question_text": "Do you compare yourself with others on social media?",
+    "trait_measured": "confidence",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "deep"
+  },
+  {
+    "id": "cmmp6v7wy004bx75thkx15wkz",
+    "category_id": "cat-stress",
+    "sub_area": "behavioral",
+    "age_group": "AGE_18_25",
+    "question_text": "Do you believe you can achieve your goals even when things are hard?",
+    "trait_measured": "confidence",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7rk002xx75t5nkol01l",
+    "category_id": "cat-stress",
+    "sub_area": "decision_making",
+    "age_group": "AGE_25_40",
+    "question_text": "When you face an important decision, do you delay it because of fear?",
+    "trait_measured": "decision_making",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "deep"
+  },
+  {
+    "id": "cmmp6v7lh0019x75t56kzlis5",
+    "category_id": "cat-stress",
+    "sub_area": "cultural_context",
+    "age_group": "AGE_18_25",
+    "question_text": "Do you feel uncomfortable sharing your feelings with family members?",
+    "trait_measured": "emotional_stability",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "deep"
+  },
+  {
+    "id": "cmmp6v7nh001tx75tkmp3qb8k",
+    "category_id": "cat-stress",
+    "sub_area": "technology",
+    "age_group": "AGE_13_18",
+    "question_text": "Do social media posts affect how you feel about your life?",
+    "trait_measured": "emotional_stability",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "deep"
+  },
+  {
+    "id": "cmmp6v7sm0037x75ty7joouan",
+    "category_id": "cat-stress",
+    "sub_area": "emotional_regulation",
+    "age_group": "AGE_18_25",
+    "question_text": "When someone criticizes you, do you feel upset for a long time?",
+    "trait_measured": "emotional_stability",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7un003rx75tvhaww40x",
+    "category_id": "cat-stress",
+    "sub_area": "child_specific",
+    "age_group": "AGE_6_12",
+    "question_text": "Does the child get angry quickly when things don't go their way?",
+    "trait_measured": "emotional_stability",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "deep"
+  },
+  {
+    "id": "cmmp6v8030055x75tiycwovxq",
+    "category_id": "cat-stress",
+    "sub_area": "behavioral",
+    "age_group": "AGE_25_40",
+    "question_text": "Do you feel satisfied with how your life is going overall?",
+    "trait_measured": "life_satisfaction",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7z0004vx75tte8z5f84",
+    "category_id": "cat-stress",
+    "sub_area": "behavioral",
+    "age_group": "AGE_18_25",
+    "question_text": "Do you feel motivated to start your day in the morning?",
+    "trait_measured": "motivation",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7xz004lx75t6cngzva7",
+    "category_id": "cat-stress",
+    "sub_area": "behavioral",
+    "age_group": "AGE_25_40",
+    "question_text": "After a setback, do you try again with a clear plan?",
+    "trait_measured": "resilience",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7pi002dx75t6o07lhdc",
+    "category_id": "cat-stress",
+    "sub_area": "self_awareness",
+    "age_group": "AGE_25_40",
+    "question_text": "Do you understand why you react emotionally in certain situations?",
+    "trait_measured": "self_awareness",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "deep"
+  },
+  {
+    "id": "cmmp6v7qk002nx75tpzd8w64j",
+    "category_id": "cat-stress",
+    "sub_area": "self_awareness",
+    "age_group": "AGE_18_25",
+    "question_text": "Do you reflect on your decisions after something goes wrong?",
+    "trait_measured": "self_awareness",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v814005fx75t6theapwv",
+    "category_id": "cat-stress",
+    "sub_area": "behavioral",
+    "age_group": "AGE_13_18",
+    "question_text": "Do you find it easy to join in when others are talking in a group?",
+    "trait_measured": "social_behaviour",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7h90005x75tfuqynr25",
+    "category_id": "cat-stress",
+    "sub_area": "behavioral",
+    "age_group": "AGE_18_25",
+    "question_text": "Do you feel worried about your future at night when you try to sleep?",
+    "trait_measured": "stress",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7ib000fx75thj4e4zqa",
+    "category_id": "cat-stress",
+    "sub_area": "behavioral",
+    "age_group": "AGE_25_40",
+    "question_text": "Do you feel mentally tired even before starting your daily tasks?",
+    "trait_measured": "stress",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7je000px75t3w5a31wj",
+    "category_id": "cat-stress",
+    "sub_area": "behavioral",
+    "age_group": "AGE_13_18",
+    "question_text": "Do you find it hard to fall asleep because your mind is busy?",
+    "trait_measured": "stress",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7kf000zx75txgx2q85u",
+    "category_id": "cat-stress",
+    "sub_area": "cultural_context",
+    "age_group": "AGE_13_18",
+    "question_text": "Do you feel pressured by family expectations about studies or career?",
+    "trait_measured": "stress",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "deep"
+  },
+  {
+    "id": "cmmp6v7tn003hx75tob3kfi53",
+    "category_id": "cat-stress",
+    "sub_area": "work_productivity",
+    "age_group": "AGE_25_40",
+    "question_text": "Do you feel mentally tired even before starting your daily tasks?",
+    "trait_measured": "stress",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "deep"
+  },
+  {
+    "id": "cmmp6v7mh001jx75t6hist73k",
+    "category_id": "cat-stress",
+    "sub_area": "technology",
+    "age_group": "AGE_18_25",
+    "question_text": "Do you spend more time on your phone than talking to people around you?",
+    "trait_measured": "technology_behaviour",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "rapid"
+  },
+  {
+    "id": "cmmp6v7oh0023x75tcgbequgu",
+    "category_id": "cat-stress",
+    "sub_area": "technology",
+    "age_group": "AGE_13_18",
+    "question_text": "Do you feel distracted when studying because of your phone?",
+    "trait_measured": "technology_behaviour",
+    "weight": 1,
+    "reverse_scored": false,
+    "test_type": "deep"
+  }
+]

@@ -27,7 +27,7 @@ export default function ProfessionalSection() {
                 reports for your clients.
               </p>
             </div>
-            <Link href="/">
+            <Link href="/school-dashboard">
               <motion.span
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}

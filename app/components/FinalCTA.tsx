@@ -41,7 +41,7 @@ export default function FinalCTA() {
           transition={{ delay: 0.15 }}
           className="mt-10"
         >
-          <Link href="/#categories">
+          <Link href="/mobile/tests">
             <motion.span
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}

@@ -1,0 +1,1051 @@
+category,trait,sub_area,question_text,reverse_scored,weight,test_type,age_group
+psychology_self_awareness,reflection,thought_pattern,I often pause to reflect on why I reacted emotionally in a situation,false,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I rarely think about the deeper reasons behind my decisions,true,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I try to understand my strengths and weaknesses regularly,false,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I avoid thinking about mistakes I made in the past,true,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I analyze my reactions to learn from experiences,false,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I struggle to identify what motivates me,true,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I try to understand how my actions affect others,false,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I often act without thinking about consequences,true,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I am aware of patterns in my own behavior,false,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I find it difficult to describe my personality,true,1,deep,18-60
+personality_confidence,self_belief,decision_behavior,I feel confident expressing my ideas in discussions,false,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I hesitate to share my opinions even when I believe they are valid,true,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I believe I can achieve difficult goals with effort,false,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I doubt my abilities even when others trust me,true,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I feel capable of learning new skills when required,false,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I avoid challenging opportunities because I might fail,true,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I remain confident even when facing criticism,false,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I worry that others are more capable than me,true,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I believe persistence leads to success,false,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I often feel unprepared for new responsibilities,true,1,rapid,18-60
+stress_resilience,stress_response,emotional_regulation,I remain calm when unexpected problems occur,false,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I feel overwhelmed when several tasks demand attention,true,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I recover quickly after facing setbacks,false,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I replay stressful situations repeatedly in my mind,true,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I find ways to manage pressure effectively,false,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I struggle to focus when I feel anxious,true,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I stay positive when facing uncertainty,false,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I worry excessively about possible failures,true,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I believe challenges help me grow,false,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I feel emotionally drained after minor problems,true,1,deep,18-60
+career_intelligence,motivation,career_values,I want my career to align with my personal values,false,1,deep,15-60
+career_intelligence,motivation,career_values,Financial success is my primary motivation in choosing a career,false,1,deep,15-60
+career_intelligence,motivation,career_values,I prefer work that allows creativity and innovation,false,1,deep,15-60
+career_intelligence,motivation,career_values,I choose stability over pursuing passion,true,1,deep,15-60
+career_intelligence,motivation,career_values,I feel motivated when solving meaningful problems,false,1,deep,15-60
+career_intelligence,motivation,career_values,I feel confused about what kind of work suits me,true,1,deep,15-60
+career_intelligence,motivation,career_values,I enjoy exploring different career possibilities,false,1,deep,15-60
+career_intelligence,motivation,career_values,I prefer predictable tasks over discovering new opportunities,true,1,deep,15-60
+career_intelligence,motivation,career_values,I want a career that continuously challenges me,false,1,deep,15-60
+career_intelligence,motivation,career_values,I feel unsure about my future career direction,true,1,deep,15-60
+technology_mindset,adaptability,digital_behavior,I enjoy learning new technologies and tools,false,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I find it difficult to adapt to new software or digital systems,true,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I believe technology will shape future careers,false,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I avoid learning new digital tools unless necessary,true,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I enjoy experimenting with AI tools,false,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I feel overwhelmed by technological change,true,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I believe digital skills are essential for future success,false,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I struggle to keep up with technological trends,true,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I enjoy solving problems using digital tools,false,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I prefer traditional methods instead of technology,true,1,rapid,15-60
+social_behavior,empathy,relationship_dynamics,I try to understand others' perspectives before judging,false,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I find it hard to relate to other people's emotions,true,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I listen carefully when someone shares their concerns,false,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I interrupt people before they finish speaking,true,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I try to help others solve their problems,false,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I prefer avoiding emotional conversations,true,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I notice emotional changes in people around me,false,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I feel uncomfortable discussing feelings,true,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I believe strong relationships require understanding,false,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I often ignore emotional signals from others,true,1,deep,18-60
+leadership_potential,influence,decision_leadership,I take initiative when a group faces a challenge,false,1,deep,18-60
+leadership_potential,influence,decision_leadership,I avoid taking responsibility in group situations,true,1,deep,18-60
+leadership_potential,influence,decision_leadership,I enjoy motivating people toward common goals,false,1,deep,18-60
+leadership_potential,influence,decision_leadership,I hesitate to guide others during decision making,true,1,deep,18-60
+leadership_potential,influence,decision_leadership,I feel confident organizing group tasks,false,1,deep,18-60
+leadership_potential,influence,decision_leadership,I prefer others to make decisions for the team,true,1,deep,18-60
+leadership_potential,influence,decision_leadership,I enjoy inspiring people with new ideas,false,1,deep,18-60
+leadership_potential,influence,decision_leadership,I feel uncomfortable speaking in front of a group,true,1,deep,18-60
+leadership_potential,influence,decision_leadership,I naturally guide others during complex tasks,false,1,deep,18-60
+leadership_potential,influence,decision_leadership,I avoid leadership roles,true,1,deep,18-60
+creativity_innovation,idea_generation,creative_thinking,I enjoy generating multiple solutions to a problem,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I struggle to think beyond conventional solutions,true,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I often imagine new possibilities for existing ideas,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I rarely think of creative alternatives,true,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I enjoy experimenting with innovative approaches,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I feel uncomfortable trying unusual ideas,true,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I question traditional methods when solving problems,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I prefer sticking strictly to proven methods,true,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I enjoy brainstorming with others,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I rarely suggest new ideas,true,1,deep,15-60
+life_values,purpose,life_direction,I want my work to contribute positively to society,false,1,deep,18-60
+life_values,purpose,life_direction,I feel unsure about what gives meaning to my life,true,1,deep,18-60
+life_values,purpose,life_direction,I believe personal growth is important,false,1,deep,18-60
+life_values,purpose,life_direction,I avoid thinking about my life purpose,true,1,deep,18-60
+life_values,purpose,life_direction,I prefer a career aligned with my values,false,1,deep,18-60
+life_values,purpose,life_direction,I prioritize convenience over purpose,true,1,deep,18-60
+life_values,purpose,life_direction,I believe meaningful work leads to happiness,false,1,deep,18-60
+life_values,purpose,life_direction,I rarely reflect on long-term goals,true,1,deep,18-60
+life_values,purpose,life_direction,I want a balanced life with growth and stability,false,1,deep,18-60
+life_values,purpose,life_direction,I feel lost about my future direction,true,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I try to understand why certain situations trigger strong emotions in me,false,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I rarely question my reactions to situations,true,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I notice patterns in how I respond to stress,false,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I often react before thinking about consequences,true,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I reflect on conversations to understand my communication style,false,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I avoid thinking about the reasons behind my emotions,true,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I try to identify the beliefs that influence my decisions,false,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I find it difficult to understand my own motivations,true,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I regularly think about how my habits affect my life,false,1,deep,18-60
+psychology_self_awareness,reflection,behavior_awareness,I rarely analyze my behavior patterns,true,1,deep,18-60
+personality_confidence,self_belief,achievement_mindset,I believe consistent effort leads to improvement,false,1,rapid,18-60
+personality_confidence,self_belief,achievement_mindset,I give up easily when a task becomes difficult,true,1,rapid,18-60
+personality_confidence,self_belief,achievement_mindset,I trust my ability to learn from mistakes,false,1,rapid,18-60
+personality_confidence,self_belief,achievement_mindset,I worry that I might embarrass myself when trying new things,true,1,rapid,18-60
+personality_confidence,self_belief,achievement_mindset,I feel comfortable taking on responsibilities,false,1,rapid,18-60
+personality_confidence,self_belief,achievement_mindset,I avoid leadership roles because I might fail,true,1,rapid,18-60
+personality_confidence,self_belief,achievement_mindset,I believe I can improve skills through practice,false,1,rapid,18-60
+personality_confidence,self_belief,achievement_mindset,I often feel incapable of achieving big goals,true,1,rapid,18-60
+personality_confidence,self_belief,achievement_mindset,I feel confident handling unexpected challenges,false,1,rapid,18-60
+personality_confidence,self_belief,achievement_mindset,I doubt myself when facing unfamiliar situations,true,1,rapid,18-60
+stress_resilience,stress_management,coping_behavior,I take deliberate steps to calm myself during stressful moments,false,1,deep,18-60
+stress_resilience,stress_management,coping_behavior,I feel helpless when facing stressful situations,true,1,deep,18-60
+stress_resilience,stress_management,coping_behavior,I look for practical solutions when problems arise,false,1,deep,18-60
+stress_resilience,stress_management,coping_behavior,I feel paralyzed when dealing with unexpected difficulties,true,1,deep,18-60
+stress_resilience,stress_management,coping_behavior,I believe challenges strengthen my abilities,false,1,deep,18-60
+stress_resilience,stress_management,coping_behavior,I lose motivation easily when things go wrong,true,1,deep,18-60
+stress_resilience,stress_management,coping_behavior,I stay focused on solutions instead of problems,false,1,deep,18-60
+stress_resilience,stress_management,coping_behavior,I feel overwhelmed by small setbacks,true,1,deep,18-60
+stress_resilience,stress_management,coping_behavior,I adapt my approach when something doesn't work,false,1,deep,18-60
+stress_resilience,stress_management,coping_behavior,I feel discouraged when facing repeated obstacles,true,1,deep,18-60
+career_intelligence,motivation,career_direction,I feel excited when imagining future career possibilities,false,1,deep,15-60
+career_intelligence,motivation,career_direction,I feel confused about what kind of work excites me,true,1,deep,15-60
+career_intelligence,motivation,career_direction,I want a career where I can continuously learn,false,1,deep,15-60
+career_intelligence,motivation,career_direction,I prefer doing safe work rather than exploring opportunities,true,1,deep,15-60
+career_intelligence,motivation,career_direction,I think about how my strengths can shape my career,false,1,deep,15-60
+career_intelligence,motivation,career_direction,I feel lost when thinking about career choices,true,1,deep,15-60
+career_intelligence,motivation,career_direction,I like exploring fields that match my interests,false,1,deep,15-60
+career_intelligence,motivation,career_direction,I choose convenience over pursuing meaningful work,true,1,deep,15-60
+career_intelligence,motivation,career_direction,I want work that challenges me intellectually,false,1,deep,15-60
+career_intelligence,motivation,career_direction,I rarely think about how my personality fits different careers,true,1,deep,15-60
+technology_mindset,adaptability,digital_learning,I feel curious about how new technologies work,false,1,rapid,15-60
+technology_mindset,adaptability,digital_learning,I feel intimidated by learning new digital systems,true,1,rapid,15-60
+technology_mindset,adaptability,digital_learning,I explore apps or tools that can improve productivity,false,1,rapid,15-60
+technology_mindset,adaptability,digital_learning,I avoid technology that seems complex,true,1,rapid,15-60
+technology_mindset,adaptability,digital_learning,I enjoy discovering innovative digital solutions,false,1,rapid,15-60
+technology_mindset,adaptability,digital_learning,I resist technological changes in daily life,true,1,rapid,15-60
+technology_mindset,adaptability,digital_learning,I like experimenting with automation tools,false,1,rapid,15-60
+technology_mindset,adaptability,digital_learning,I feel uncomfortable exploring new digital platforms,true,1,rapid,15-60
+technology_mindset,adaptability,digital_learning,I believe learning technology is important for future careers,false,1,rapid,15-60
+technology_mindset,adaptability,digital_learning,I think technology complicates life unnecessarily,true,1,rapid,15-60
+social_behavior,communication,interaction_style,I make an effort to understand other people's viewpoints,false,1,deep,18-60
+social_behavior,communication,interaction_style,I lose patience when others express emotions,true,1,deep,18-60
+social_behavior,communication,interaction_style,I listen carefully before responding in conversations,false,1,deep,18-60
+social_behavior,communication,interaction_style,I interrupt others while they are speaking,true,1,deep,18-60
+social_behavior,communication,interaction_style,I enjoy meaningful conversations about ideas,false,1,deep,18-60
+social_behavior,communication,interaction_style,I avoid conversations that require emotional understanding,true,1,deep,18-60
+social_behavior,communication,interaction_style,I respect differences in opinions,false,1,deep,18-60
+social_behavior,communication,interaction_style,I dismiss viewpoints that differ from mine,true,1,deep,18-60
+social_behavior,communication,interaction_style,I try to resolve misunderstandings constructively,false,1,deep,18-60
+social_behavior,communication,interaction_style,I escalate conflicts instead of resolving them,true,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I take initiative when tasks need direction,false,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I wait for others to act before taking responsibility,true,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I enjoy coordinating efforts in group activities,false,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I avoid organizing group tasks,true,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I motivate people to work toward shared goals,false,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I feel uncomfortable guiding others,true,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I help groups stay focused during challenges,false,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I hesitate to speak when leadership is needed,true,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I encourage others to contribute ideas,false,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I prefer others to manage responsibilities,true,1,deep,18-60
+creativity_innovation,innovation,problem_solving,I enjoy experimenting with unconventional solutions,false,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I prefer repeating familiar methods,true,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I find inspiration from different fields,false,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I rarely think of creative improvements,true,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I enjoy exploring imaginative possibilities,false,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I feel uncomfortable experimenting with new approaches,true,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I challenge assumptions to discover better ideas,false,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I stick strictly to established rules,true,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I enjoy thinking about future possibilities,false,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I struggle to imagine new solutions,true,1,deep,15-60
+life_values,purpose,life_priorities,I believe meaningful work contributes to happiness,false,1,deep,18-60
+life_values,purpose,life_priorities,I feel disconnected from long-term goals,true,1,deep,18-60
+life_values,purpose,life_priorities,I value growth and learning throughout life,false,1,deep,18-60
+life_values,purpose,life_priorities,I rarely consider how my actions shape my future,true,1,deep,18-60
+life_values,purpose,life_priorities,I believe personal integrity is essential,false,1,deep,18-60
+life_values,purpose,life_priorities,I compromise my values for convenience,true,1,deep,18-60
+life_values,purpose,life_priorities,I want to build a life aligned with my beliefs,false,1,deep,18-60
+life_values,purpose,life_priorities,I feel uncertain about my long-term purpose,true,1,deep,18-60
+life_values,purpose,life_priorities,I try to live according to my principles,false,1,deep,18-60
+life_values,purpose,life_priorities,I rarely reflect on the values guiding my life,true,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I try to understand what kind of person I am becoming,false,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I rarely think about my personal growth,true,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I notice how my beliefs influence my decisions,false,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I often feel disconnected from my own goals,true,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I reflect on how past experiences shaped my mindset,false,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I avoid thinking deeply about my personality,true,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I try to recognize my emotional triggers,false,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I find it hard to describe my personal values,true,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I observe how my attitudes evolve over time,false,1,deep,18-60
+psychology_self_awareness,self_perception,identity_understanding,I rarely question my beliefs,true,1,deep,18-60
+personality_confidence,assertiveness,communication,I feel comfortable expressing disagreement respectfully,false,1,rapid,18-60
+personality_confidence,assertiveness,communication,I hesitate to express my true opinions,true,1,rapid,18-60
+personality_confidence,assertiveness,communication,I stand up for my ideas when necessary,false,1,rapid,18-60
+personality_confidence,assertiveness,communication,I avoid conversations where my opinion may be challenged,true,1,rapid,18-60
+personality_confidence,assertiveness,communication,I express my thoughts clearly during discussions,false,1,rapid,18-60
+personality_confidence,assertiveness,communication,I often stay silent even when I have valuable input,true,1,rapid,18-60
+personality_confidence,assertiveness,communication,I defend my ideas with confidence,false,1,rapid,18-60
+personality_confidence,assertiveness,communication,I worry others will judge my opinions,true,1,rapid,18-60
+personality_confidence,assertiveness,communication,I feel comfortable sharing ideas with authority figures,false,1,rapid,18-60
+personality_confidence,assertiveness,communication,I avoid speaking up in meetings,true,1,rapid,18-60
+stress_resilience,mental_endurance,challenge_response,I remain determined when facing long-term challenges,false,1,deep,18-60
+stress_resilience,mental_endurance,challenge_response,I lose motivation when progress is slow,true,1,deep,18-60
+stress_resilience,mental_endurance,challenge_response,I stay committed even when results are uncertain,false,1,deep,18-60
+stress_resilience,mental_endurance,challenge_response,I give up when difficulties persist,true,1,deep,18-60
+stress_resilience,mental_endurance,challenge_response,I see setbacks as learning opportunities,false,1,deep,18-60
+stress_resilience,mental_endurance,challenge_response,I feel defeated after small failures,true,1,deep,18-60
+stress_resilience,mental_endurance,challenge_response,I believe persistence eventually leads to success,false,1,deep,18-60
+stress_resilience,mental_endurance,challenge_response,I doubt my ability to overcome obstacles,true,1,deep,18-60
+stress_resilience,mental_endurance,challenge_response,I continue working toward goals despite setbacks,false,1,deep,18-60
+stress_resilience,mental_endurance,challenge_response,I feel discouraged easily,true,1,deep,18-60
+career_intelligence,career_identity,professional_direction,I imagine different future career possibilities,false,1,deep,15-60
+career_intelligence,career_identity,professional_direction,I rarely think about my long-term professional life,true,1,deep,15-60
+career_intelligence,career_identity,professional_direction,I want work that aligns with my talents,false,1,deep,15-60
+career_intelligence,career_identity,professional_direction,I feel unsure about what I am naturally good at,true,1,deep,15-60
+career_intelligence,career_identity,professional_direction,I explore fields related to my interests,false,1,deep,15-60
+career_intelligence,career_identity,professional_direction,I choose career paths mainly because others expect it,true,1,deep,15-60
+career_intelligence,career_identity,professional_direction,I want a career that challenges my abilities,false,1,deep,15-60
+career_intelligence,career_identity,professional_direction,I feel lost when imagining my future profession,true,1,deep,15-60
+career_intelligence,career_identity,professional_direction,I try to understand what type of work suits me,false,1,deep,15-60
+career_intelligence,career_identity,professional_direction,I feel pressured to choose careers I don't enjoy,true,1,deep,15-60
+technology_mindset,innovation_attitude,future_technology,I feel excited about technological progress,false,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I believe technology makes life unnecessarily complex,true,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I enjoy learning how emerging technologies work,false,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I feel uncomfortable when technology changes rapidly,true,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I follow trends in technology and innovation,false,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I prefer ignoring technological developments,true,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I enjoy understanding how AI tools function,false,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I avoid using new digital platforms,true,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I believe digital skills are necessary for success,false,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I think technology will reduce human creativity,true,1,rapid,15-60
+social_behavior,collaboration,team_dynamics,I enjoy working collaboratively with others,false,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I find teamwork frustrating,true,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I contribute ideas when working in groups,false,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I prefer avoiding team discussions,true,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I respect the opinions of team members,false,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I dismiss ideas that differ from mine,true,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I help maintain harmony within teams,false,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I struggle to cooperate with others,true,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I support group goals over personal credit,false,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I focus only on my own contribution,true,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I think about long-term possibilities for projects,false,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I rarely consider future implications,true,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I encourage others to think about bigger goals,false,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I avoid discussing long-term strategies,true,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I enjoy planning future initiatives,false,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I struggle to see the bigger picture,true,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I guide teams toward meaningful objectives,false,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I focus only on immediate tasks,true,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I inspire others with future ideas,false,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I hesitate to discuss long-term visions,true,1,deep,18-60
+creativity_innovation,curiosity,idea_exploration,I enjoy exploring ideas from different disciplines,false,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I feel uncomfortable exploring unfamiliar ideas,true,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I question assumptions to discover new insights,false,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I accept ideas without questioning them,true,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I feel inspired by unusual perspectives,false,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I avoid exploring unfamiliar viewpoints,true,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I enjoy learning ideas outside my field,false,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I resist exploring unconventional topics,true,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I experiment with different creative approaches,false,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I rarely experiment with ideas,true,1,deep,15-60
+life_values,meaning,life_reflection,I think about what gives meaning to my life,false,1,deep,18-60
+life_values,meaning,life_reflection,I rarely reflect on life's deeper meaning,true,1,deep,18-60
+life_values,meaning,life_reflection,I want my actions to align with my values,false,1,deep,18-60
+life_values,meaning,life_reflection,I compromise my values easily,true,1,deep,18-60
+life_values,meaning,life_reflection,I reflect on whether my life direction feels fulfilling,false,1,deep,18-60
+life_values,meaning,life_reflection,I avoid thinking about purpose,true,1,deep,18-60
+life_values,meaning,life_reflection,I want to live a life that feels meaningful,false,1,deep,18-60
+life_values,meaning,life_reflection,I feel uncertain about what matters most,true,1,deep,18-60
+life_values,meaning,life_reflection,I try to align decisions with my core values,false,1,deep,18-60
+life_values,meaning,life_reflection,I rarely evaluate whether my life reflects my beliefs,true,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I pay attention to the thoughts that run through my mind,false,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I rarely notice the thoughts that influence my emotions,true,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I try to understand the beliefs behind my decisions,false,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I avoid thinking about my deeper motivations,true,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I examine how my mindset affects my behavior,false,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I rarely question the way I think,true,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I observe how my thoughts influence my emotions,false,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I struggle to identify why I think the way I do,true,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I consider how my attitudes impact my relationships,false,1,deep,18-60
+psychology_self_awareness,reflection,inner_dialogue,I ignore patterns in my thinking,true,1,deep,18-60
+personality_confidence,self_trust,personal_strengths,I trust my ability to solve unfamiliar problems,false,1,rapid,18-60
+personality_confidence,self_trust,personal_strengths,I feel unsure about my capabilities,true,1,rapid,18-60
+personality_confidence,self_trust,personal_strengths,I believe my skills improve with experience,false,1,rapid,18-60
+personality_confidence,self_trust,personal_strengths,I avoid difficult tasks because I may fail,true,1,rapid,18-60
+personality_confidence,self_trust,personal_strengths,I feel confident learning complex subjects,false,1,rapid,18-60
+personality_confidence,self_trust,personal_strengths,I doubt my intelligence in challenging situations,true,1,rapid,18-60
+personality_confidence,self_trust,personal_strengths,I trust my judgment when making decisions,false,1,rapid,18-60
+personality_confidence,self_trust,personal_strengths,I feel insecure about my abilities,true,1,rapid,18-60
+personality_confidence,self_trust,personal_strengths,I believe I can adapt to new environments,false,1,rapid,18-60
+personality_confidence,self_trust,personal_strengths,I hesitate when asked to take responsibility,true,1,rapid,18-60
+stress_resilience,pressure_response,mental_balance,I remain calm when unexpected events occur,false,1,deep,18-60
+stress_resilience,pressure_response,mental_balance,I panic when things don't go as planned,true,1,deep,18-60
+stress_resilience,pressure_response,mental_balance,I adapt quickly when plans change,false,1,deep,18-60
+stress_resilience,pressure_response,mental_balance,I feel overwhelmed by sudden challenges,true,1,deep,18-60
+stress_resilience,pressure_response,mental_balance,I stay focused during stressful situations,false,1,deep,18-60
+stress_resilience,pressure_response,mental_balance,I lose control of my emotions under pressure,true,1,deep,18-60
+stress_resilience,pressure_response,mental_balance,I find practical ways to reduce stress,false,1,deep,18-60
+stress_resilience,pressure_response,mental_balance,I struggle to manage pressure,true,1,deep,18-60
+stress_resilience,pressure_response,mental_balance,I recover quickly from stressful experiences,false,1,deep,18-60
+stress_resilience,pressure_response,mental_balance,I remain upset for a long time after stress,true,1,deep,18-60
+career_intelligence,career_curiosity,career_exploration,I enjoy learning about different professions,false,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I feel bored when thinking about career possibilities,true,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I research opportunities that match my interests,false,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I avoid exploring new career paths,true,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I think about how my talents could shape my career,false,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I feel indifferent about career planning,true,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I like discovering fields related to my passions,false,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I choose career options randomly,true,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I reflect on which professions suit my personality,false,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I rarely think about future job possibilities,true,1,deep,15-60
+technology_mindset,digital_curiosity,tech_learning,I like understanding how digital systems work,false,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I feel intimidated by learning new digital tools,true,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I explore software that improves productivity,false,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I avoid learning technical skills,true,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I enjoy experimenting with online tools,false,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I resist using new technology,true,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I learn digital tools through curiosity,false,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I tend to feel overwhelmed by technological change,true,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I enjoy exploring AI tools,false,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I avoid experimenting with digital innovations,true,1,rapid,15-60
+social_behavior,cooperation,teamwork_behavior,I cooperate with others to achieve shared goals,false,1,deep,18-60
+social_behavior,cooperation,teamwork_behavior,I find collaboration exhausting,true,1,deep,18-60
+social_behavior,cooperation,teamwork_behavior,I value teamwork and mutual support,false,1,deep,18-60
+social_behavior,cooperation,teamwork_behavior,I avoid contributing to group discussions,true,1,deep,18-60
+social_behavior,cooperation,teamwork_behavior,I appreciate different perspectives,false,1,deep,18-60
+social_behavior,cooperation,teamwork_behavior,I dismiss others' suggestions,true,1,deep,18-60
+social_behavior,cooperation,teamwork_behavior,I help teams resolve disagreements,false,1,deep,18-60
+social_behavior,cooperation,teamwork_behavior,I ignore group harmony,true,1,deep,18-60
+social_behavior,cooperation,teamwork_behavior,I enjoy working toward shared achievements,false,1,deep,18-60
+social_behavior,cooperation,teamwork_behavior,I prefer working alone even when teamwork helps,true,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I take responsibility when problems arise,false,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I avoid responsibility,true,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I guide others during uncertain situations,false,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I feel uncomfortable taking charge,true,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I motivate people to achieve goals,false,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I hesitate to lead teams,true,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I inspire others through ideas,false,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I avoid influencing group direction,true,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I help teams stay focused,false,1,deep,18-60
+leadership_potential,initiative,leadership_actions,I step back when leadership is required,true,1,deep,18-60
+creativity_innovation,creative_confidence,creative_expression,I enjoy expressing creative ideas,false,1,deep,15-60
+creativity_innovation,creative_confidence,creative_expression,I feel uncomfortable sharing creative thoughts,true,1,deep,15-60
+creativity_innovation,creative_confidence,creative_expression,I experiment with imaginative solutions,false,1,deep,15-60
+creativity_innovation,creative_confidence,creative_expression,I rarely explore creative possibilities,true,1,deep,15-60
+creativity_innovation,creative_confidence,creative_expression,I combine ideas from different areas,false,1,deep,15-60
+creativity_innovation,creative_confidence,creative_expression,I prefer repeating old solutions,true,1,deep,15-60
+creativity_innovation,creative_confidence,creative_expression,I enjoy designing new concepts,false,1,deep,15-60
+creativity_innovation,creative_confidence,creative_expression,I avoid experimenting creatively,true,1,deep,15-60
+creativity_innovation,creative_confidence,creative_expression,I explore imaginative possibilities,false,1,deep,15-60
+creativity_innovation,creative_confidence,creative_expression,I feel blocked when thinking creatively,true,1,deep,15-60
+life_values,values_alignment,personal_ethics,I tend to try to live according to my principles,false,1,deep,18-60
+life_values,values_alignment,personal_ethics,I ignore my values when it is convenient,true,1,deep,18-60
+life_values,values_alignment,personal_ethics,I believe integrity is essential,false,1,deep,18-60
+life_values,values_alignment,personal_ethics,I compromise my beliefs easily,true,1,deep,18-60
+life_values,values_alignment,personal_ethics,I reflect on whether my life aligns with my values,false,1,deep,18-60
+life_values,values_alignment,personal_ethics,I rarely evaluate my moral choices,true,1,deep,18-60
+life_values,values_alignment,personal_ethics,I want my actions to reflect my beliefs,false,1,deep,18-60
+life_values,values_alignment,personal_ethics,I feel disconnected from my values,true,1,deep,18-60
+life_values,values_alignment,personal_ethics,I try to maintain honesty in decisions,false,1,deep,18-60
+life_values,values_alignment,personal_ethics,I avoid thinking about ethics,true,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I notice recurring thought patterns in my daily life,false,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I rarely pay attention to how my thoughts influence my actions,true,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I try to understand why certain ideas keep appearing in my mind,false,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I avoid reflecting on my internal thought patterns,true,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I examine how my mindset changes over time,false,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I struggle to recognize patterns in my thinking,true,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I think about how my beliefs shape my life,false,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I rarely analyze the assumptions I make,true,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I reflect on how my thoughts affect my emotions,false,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I tend to ignore the deeper reasons behind my thinking,true,1,deep,18-60
+personality_confidence,self_efficacy,ability_perception,I believe I can handle complex situations,false,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I often doubt my ability to deal with challenges,true,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I feel capable of solving difficult problems,false,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I avoid responsibilities that seem demanding,true,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I tend to trust my ability to learn from mistakes,false,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I feel insecure when facing unfamiliar tasks,true,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I feel confident adapting to new situations,false,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I feel incapable when facing complex challenges,true,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I believe my efforts lead to improvement,false,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I feel powerless when facing problems,true,1,rapid,18-60
+stress_resilience,adaptability,challenge_adaptation,I adjust my approach when circumstances change,false,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I struggle when plans change suddenly,true,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I adapt quickly to unexpected situations,false,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I feel anxious when routines are disrupted,true,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I stay flexible during uncertain situations,false,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I resist adapting to change,true,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I find creative ways to overcome obstacles,false,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I freeze when facing new challenges,true,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I adjust strategies when things don't work,false,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I feel stuck when facing unfamiliar problems,true,1,deep,18-60
+career_intelligence,career_values,work_meaning,I want my work to make a positive impact,false,1,deep,15-60
+career_intelligence,career_values,work_meaning,I choose careers only based on convenience,true,1,deep,15-60
+career_intelligence,career_values,work_meaning,I prefer careers that align with my values,false,1,deep,15-60
+career_intelligence,career_values,work_meaning,I rarely consider whether work feels meaningful,true,1,deep,15-60
+career_intelligence,career_values,work_meaning,I seek careers that allow personal growth,false,1,deep,15-60
+career_intelligence,career_values,work_meaning,I avoid thinking about purpose in work,true,1,deep,15-60
+career_intelligence,career_values,work_meaning,I value work that contributes to society,false,1,deep,15-60
+career_intelligence,career_values,work_meaning,I think work is only about earning money,true,1,deep,15-60
+career_intelligence,career_values,work_meaning,I look for purpose in my professional life,false,1,deep,15-60
+career_intelligence,career_values,work_meaning,I rarely think about what meaningful work means,true,1,deep,15-60
+technology_mindset,digital_adaptation,tech_skills,I learn new digital tools quickly,false,1,rapid,15-60
+technology_mindset,digital_adaptation,tech_skills,I struggle to learn digital systems,true,1,rapid,15-60
+technology_mindset,digital_adaptation,tech_skills,I feel curious about new technology,false,1,rapid,15-60
+technology_mindset,digital_adaptation,tech_skills,I avoid exploring new digital platforms,true,1,rapid,15-60
+technology_mindset,digital_adaptation,tech_skills,I experiment with technology to improve efficiency,false,1,rapid,15-60
+technology_mindset,digital_adaptation,tech_skills,I resist using digital tools,true,1,rapid,15-60
+technology_mindset,digital_adaptation,tech_skills,I like discovering new apps,false,1,rapid,15-60
+technology_mindset,digital_adaptation,tech_skills,I feel uncomfortable learning technology,true,1,rapid,15-60
+technology_mindset,digital_adaptation,tech_skills,I stay curious about future technology,false,1,rapid,15-60
+technology_mindset,digital_adaptation,tech_skills,I ignore technological advancements,true,1,rapid,15-60
+social_behavior,relationship_awareness,emotional_connection,I try to understand how others feel,false,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I struggle to understand emotions,true,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I notice when someone feels uncomfortable,false,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I ignore emotional signals,true,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I empathize with others' experiences,false,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I avoid emotional discussions,true,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I care about the well-being of others,false,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I find it difficult to connect emotionally,true,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I listen carefully when others speak,false,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I dismiss emotional concerns,true,1,deep,18-60
+leadership_potential,influence,leadership_presence,I naturally influence group decisions,false,1,deep,18-60
+leadership_potential,influence,leadership_presence,I avoid influencing group outcomes,true,1,deep,18-60
+leadership_potential,influence,leadership_presence,I help others stay motivated,false,1,deep,18-60
+leadership_potential,influence,leadership_presence,I hesitate to influence people,true,1,deep,18-60
+leadership_potential,influence,leadership_presence,I inspire people through my actions,false,1,deep,18-60
+leadership_potential,influence,leadership_presence,I avoid motivating others,true,1,deep,18-60
+leadership_potential,influence,leadership_presence,I guide others during projects,false,1,deep,18-60
+leadership_potential,influence,leadership_presence,I avoid directing group efforts,true,1,deep,18-60
+leadership_potential,influence,leadership_presence,I support others in achieving goals,false,1,deep,18-60
+leadership_potential,influence,leadership_presence,I withdraw from leadership opportunities,true,1,deep,18-60
+creativity_innovation,idea_generation,creative_problem_solving,I generate multiple solutions to problems,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_problem_solving,I struggle to think of alternatives,true,1,deep,15-60
+creativity_innovation,idea_generation,creative_problem_solving,I enjoy brainstorming ideas,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_problem_solving,I avoid creative thinking,true,1,deep,15-60
+creativity_innovation,idea_generation,creative_problem_solving,I combine ideas creatively,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_problem_solving,I prefer obvious solutions,true,1,deep,15-60
+creativity_innovation,idea_generation,creative_problem_solving,I imagine innovative possibilities,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_problem_solving,I resist experimenting with ideas,true,1,deep,15-60
+creativity_innovation,idea_generation,creative_problem_solving,I explore imaginative concepts,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_problem_solving,I tend to rarely explore creative possibilities,true,1,deep,15-60
+life_values,life_direction,goal_alignment,I think about long-term life goals,false,1,deep,18-60
+life_values,life_direction,goal_alignment,I avoid thinking about the future,true,1,deep,18-60
+life_values,life_direction,goal_alignment,I set goals aligned with my beliefs,false,1,deep,18-60
+life_values,life_direction,goal_alignment,I rarely define long-term goals,true,1,deep,18-60
+life_values,life_direction,goal_alignment,I pursue meaningful life goals,false,1,deep,18-60
+life_values,life_direction,goal_alignment,I drift without clear direction,true,1,deep,18-60
+life_values,life_direction,goal_alignment,I plan steps toward personal goals,false,1,deep,18-60
+life_values,life_direction,goal_alignment,I feel lost about my direction,true,1,deep,18-60
+life_values,life_direction,goal_alignment,I align actions with long-term goals,false,1,deep,18-60
+life_values,life_direction,goal_alignment,I rarely evaluate my life direction,true,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I think about how my personality has changed over time,false,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I rarely consider how I have evolved as a person,true,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I reflect on the lessons life experiences have taught me,false,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I avoid thinking about how my past influences me,true,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I evaluate whether my actions match my values,false,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I ignore the connection between my values and actions,true,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I think about how my mindset affects my future,false,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I rarely analyze how I can grow as a person,true,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I try to learn about myself through experiences,false,1,deep,18-60
+psychology_self_awareness,identity_growth,self_understanding,I avoid reflecting on personal development,true,1,deep,18-60
+personality_confidence,initiative,action_orientation,I take initiative when opportunities arise,false,1,rapid,18-60
+personality_confidence,initiative,action_orientation,I hesitate before taking action,true,1,rapid,18-60
+personality_confidence,initiative,action_orientation,I act confidently when facing uncertainty,false,1,rapid,18-60
+personality_confidence,initiative,action_orientation,I wait for others to lead decisions,true,1,rapid,18-60
+personality_confidence,initiative,action_orientation,I feel capable of starting new projects,false,1,rapid,18-60
+personality_confidence,initiative,action_orientation,I avoid taking initiative,true,1,rapid,18-60
+personality_confidence,initiative,action_orientation,I trust myself to handle new responsibilities,false,1,rapid,18-60
+personality_confidence,initiative,action_orientation,I feel unsure when taking the first step,true,1,rapid,18-60
+personality_confidence,initiative,action_orientation,I start tasks even when success is uncertain,false,1,rapid,18-60
+personality_confidence,initiative,action_orientation,I hesitate to act without instructions,true,1,rapid,18-60
+stress_resilience,emotional_balance,recovery_speed,I recover emotionally after stressful experiences,false,1,deep,18-60
+stress_resilience,emotional_balance,recovery_speed,I stay upset for long periods,true,1,deep,18-60
+stress_resilience,emotional_balance,recovery_speed,I regain focus quickly after setbacks,false,1,deep,18-60
+stress_resilience,emotional_balance,recovery_speed,I remain discouraged after small failures,true,1,deep,18-60
+stress_resilience,emotional_balance,recovery_speed,I bounce back after difficulties,false,1,deep,18-60
+stress_resilience,emotional_balance,recovery_speed,I struggle to recover from stress,true,1,deep,18-60
+stress_resilience,emotional_balance,recovery_speed,I return to normal after stressful moments,false,1,deep,18-60
+stress_resilience,emotional_balance,recovery_speed,I remain emotionally drained,true,1,deep,18-60
+stress_resilience,emotional_balance,recovery_speed,I find ways to regain emotional balance,false,1,deep,18-60
+stress_resilience,emotional_balance,recovery_speed,I stay anxious even after problems pass,true,1,deep,18-60
+career_intelligence,career_planning,future_planning,I think about long-term professional goals,false,1,deep,15-60
+career_intelligence,career_planning,future_planning,I rarely plan my career direction,true,1,deep,15-60
+career_intelligence,career_planning,future_planning,I explore career options before making decisions,false,1,deep,15-60
+career_intelligence,career_planning,future_planning,I choose careers without considering my interests,true,1,deep,15-60
+career_intelligence,career_planning,future_planning,I evaluate whether a profession fits my strengths,false,1,deep,15-60
+career_intelligence,career_planning,future_planning,I ignore whether a job suits my personality,true,1,deep,15-60
+career_intelligence,career_planning,future_planning,I imagine different career paths,false,1,deep,15-60
+career_intelligence,career_planning,future_planning,I avoid thinking about my career future,true,1,deep,15-60
+career_intelligence,career_planning,future_planning,I research careers aligned with my abilities,false,1,deep,15-60
+career_intelligence,career_planning,future_planning,I feel indifferent about career direction,true,1,deep,15-60
+technology_mindset,tech_curiosity,innovation_interest,I enjoy learning about technological innovations,false,1,rapid,15-60
+technology_mindset,tech_curiosity,innovation_interest,I feel bored by technological progress,true,1,rapid,15-60
+technology_mindset,tech_curiosity,innovation_interest,I follow new digital trends,false,1,rapid,15-60
+technology_mindset,tech_curiosity,innovation_interest,I ignore advancements in technology,true,1,rapid,15-60
+technology_mindset,tech_curiosity,innovation_interest,I like experimenting with digital tools,false,1,rapid,15-60
+technology_mindset,tech_curiosity,innovation_interest,I avoid trying new technologies,true,1,rapid,15-60
+technology_mindset,tech_curiosity,innovation_interest,I believe technology creates opportunities,false,1,rapid,15-60
+technology_mindset,tech_curiosity,innovation_interest,I think technology is unnecessary,true,1,rapid,15-60
+technology_mindset,tech_curiosity,innovation_interest,I stay curious about technological change,false,1,rapid,15-60
+technology_mindset,tech_curiosity,innovation_interest,I resist adapting to digital change,true,1,rapid,15-60
+social_behavior,social_awareness,interaction_sensitivity,I notice subtle emotional changes in conversations,false,1,deep,18-60
+social_behavior,social_awareness,interaction_sensitivity,I ignore emotional cues,true,1,deep,18-60
+social_behavior,social_awareness,interaction_sensitivity,I adapt my communication style to others,false,1,deep,18-60
+social_behavior,social_awareness,interaction_sensitivity,I speak without considering how others feel,true,1,deep,18-60
+social_behavior,social_awareness,interaction_sensitivity,I show empathy when people share concerns,false,1,deep,18-60
+social_behavior,social_awareness,interaction_sensitivity,I dismiss emotional reactions,true,1,deep,18-60
+social_behavior,social_awareness,interaction_sensitivity,I try to understand others' viewpoints,false,1,deep,18-60
+social_behavior,social_awareness,interaction_sensitivity,I rarely consider other perspectives,true,1,deep,18-60
+social_behavior,social_awareness,interaction_sensitivity,I build trust through understanding,false,1,deep,18-60
+social_behavior,social_awareness,interaction_sensitivity,I overlook the feelings of others,true,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I make decisions confidently in uncertain situations,false,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I avoid making important decisions,true,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I evaluate different options before deciding,false,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I feel overwhelmed by decision making,true,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I take responsibility for my decisions,false,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I prefer others to make decisions,true,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I guide teams through decisions,false,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I hesitate to decide in leadership situations,true,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I weigh risks carefully before acting,false,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I delay decisions due to uncertainty,true,1,deep,18-60
+creativity_innovation,creative_flexibility,innovation_behavior,I explore multiple perspectives when solving problems,false,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I stick to one solution,true,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I experiment with different approaches,false,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I resist trying new approaches,true,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I combine unrelated ideas creatively,false,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I rarely explore unconventional ideas,true,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I question traditional methods,false,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I follow routines strictly,true,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I try imaginative approaches,false,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I avoid creative risk,true,1,deep,15-60
+life_values,personal_values,value_clarity,I know which values guide my life,false,1,deep,18-60
+life_values,personal_values,value_clarity,I feel unsure about my values,true,1,deep,18-60
+life_values,personal_values,value_clarity,I make decisions based on my beliefs,false,1,deep,18-60
+life_values,personal_values,value_clarity,I ignore what matters most to me,true,1,deep,18-60
+life_values,personal_values,value_clarity,I live according to my principles,false,1,deep,18-60
+life_values,personal_values,value_clarity,I compromise values easily,true,1,deep,18-60
+life_values,personal_values,value_clarity,I tend to reflect on whether my life aligns with my values,false,1,deep,18-60
+life_values,personal_values,value_clarity,I rarely consider what matters most,true,1,deep,18-60
+life_values,personal_values,value_clarity,I pursue goals aligned with my values,false,1,deep,18-60
+life_values,personal_values,value_clarity,I drift without clear principles,true,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I observe my reactions during stressful situations,false,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I rarely notice how I react under pressure,true,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I try to recognize habits that influence my life,false,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I ignore patterns in my daily behavior,true,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I notice how my mood affects my decisions,false,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I act without considering emotional triggers,true,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I observe how my thoughts shape my actions,false,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I rarely question the way I behave,true,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I evaluate my behavior after important events,false,1,deep,18-60
+psychology_self_awareness,self_monitoring,behavior_observation,I avoid reflecting on my actions,true,1,deep,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I take calculated risks when pursuing opportunities,false,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I avoid taking risks even when potential rewards are high,true,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I feel confident trying unfamiliar activities,false,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I hesitate to try things outside my comfort zone,true,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I trust my instincts when facing uncertainty,false,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I fear making mistakes when exploring new opportunities,true,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I experiment with new ideas confidently,false,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I avoid challenges that involve uncertainty,true,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I see risks as opportunities for learning,false,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I prefer staying safe rather than exploring possibilities,true,1,rapid,18-60
+stress_resilience,problem_focus,solution_orientation,I focus on solutions instead of problems,false,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I dwell on problems without seeking solutions,true,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I stay proactive when difficulties appear,false,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I feel stuck when problems arise,true,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I search for practical ways to improve situations,false,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I feel helpless when facing obstacles,true,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I believe every problem has a possible solution,false,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I lose hope when problems appear,true,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I stay determined while solving issues,false,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I give up when facing complicated problems,true,1,deep,18-60
+career_intelligence,career_awareness,skills_alignment,I think about how my skills relate to potential careers,false,1,deep,15-60
+career_intelligence,career_awareness,skills_alignment,I rarely consider how my abilities match careers,true,1,deep,15-60
+career_intelligence,career_awareness,skills_alignment,I identify professions that fit my strengths,false,1,deep,15-60
+career_intelligence,career_awareness,skills_alignment,I ignore the connection between skills and careers,true,1,deep,15-60
+career_intelligence,career_awareness,skills_alignment,I evaluate my talents when exploring professions,false,1,deep,15-60
+career_intelligence,career_awareness,skills_alignment,I choose careers without thinking about my abilities,true,1,deep,15-60
+career_intelligence,career_awareness,skills_alignment,I try to align career paths with my interests,false,1,deep,15-60
+career_intelligence,career_awareness,skills_alignment,I feel uncertain about which skills matter,true,1,deep,15-60
+career_intelligence,career_awareness,skills_alignment,I reflect on which jobs match my personality,false,1,deep,15-60
+career_intelligence,career_awareness,skills_alignment,I rarely analyze my professional strengths,true,1,deep,15-60
+technology_mindset,digital_confidence,technology_usage,I feel confident using modern digital tools,false,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I feel intimidated by new technologies,true,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I explore digital platforms independently,false,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I avoid learning unfamiliar digital systems,true,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I enjoy experimenting with software,false,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I feel overwhelmed by digital change,true,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I believe technology enhances productivity,false,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I think technology creates unnecessary complications,true,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I stay curious about emerging technologies,false,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I resist adopting digital innovations,true,1,rapid,15-60
+social_behavior,relationship_quality,interpersonal_connection,I build strong connections with people,false,1,deep,18-60
+social_behavior,relationship_quality,interpersonal_connection,I struggle to maintain relationships,true,1,deep,18-60
+social_behavior,relationship_quality,interpersonal_connection,I show appreciation toward others,false,1,deep,18-60
+social_behavior,relationship_quality,interpersonal_connection,I rarely express gratitude,true,1,deep,18-60
+social_behavior,relationship_quality,interpersonal_connection,I respect the feelings of others,false,1,deep,18-60
+social_behavior,relationship_quality,interpersonal_connection,I ignore emotional needs,true,1,deep,18-60
+social_behavior,relationship_quality,interpersonal_connection,I build trust through honesty,false,1,deep,18-60
+social_behavior,relationship_quality,interpersonal_connection,I avoid emotional closeness,true,1,deep,18-60
+social_behavior,relationship_quality,interpersonal_connection,I support friends during difficulties,false,1,deep,18-60
+social_behavior,relationship_quality,interpersonal_connection,I distance myself from emotional situations,true,1,deep,18-60
+leadership_potential,team_guidance,group_support,I help teams stay organized,false,1,deep,18-60
+leadership_potential,team_guidance,group_support,I avoid coordinating team tasks,true,1,deep,18-60
+leadership_potential,team_guidance,group_support,I help people collaborate effectively,false,1,deep,18-60
+leadership_potential,team_guidance,group_support,I feel uncomfortable managing group dynamics,true,1,deep,18-60
+leadership_potential,team_guidance,group_support,I encourage participation in group activities,false,1,deep,18-60
+leadership_potential,team_guidance,group_support,I prefer staying silent in group decisions,true,1,deep,18-60
+leadership_potential,team_guidance,group_support,I help teams resolve misunderstandings,false,1,deep,18-60
+leadership_potential,team_guidance,group_support,I avoid facilitating group communication,true,1,deep,18-60
+leadership_potential,team_guidance,group_support,I keep teams focused on goals,false,1,deep,18-60
+leadership_potential,team_guidance,group_support,I hesitate to support team coordination,true,1,deep,18-60
+creativity_innovation,idea_experimentation,creative_exploration,I experiment with unusual ideas,false,1,deep,15-60
+creativity_innovation,idea_experimentation,creative_exploration,I avoid experimenting with concepts,true,1,deep,15-60
+creativity_innovation,idea_experimentation,creative_exploration,I tend to enjoy exploring imaginative possibilities,false,1,deep,15-60
+creativity_innovation,idea_experimentation,creative_exploration,I rarely think creatively,true,1,deep,15-60
+creativity_innovation,idea_experimentation,creative_exploration,I tend to challenge assumptions to discover better ideas,false,1,deep,15-60
+creativity_innovation,idea_experimentation,creative_exploration,I stick to traditional ideas,true,1,deep,15-60
+creativity_innovation,idea_experimentation,creative_exploration,I generate creative improvements,false,1,deep,15-60
+creativity_innovation,idea_experimentation,creative_exploration,I avoid proposing new ideas,true,1,deep,15-60
+creativity_innovation,idea_experimentation,creative_exploration,I enjoy imagining future innovations,false,1,deep,15-60
+creativity_innovation,idea_experimentation,creative_exploration,I struggle to imagine alternatives,true,1,deep,15-60
+life_values,life_priorities,value_prioritization,I prioritize what truly matters in life,false,1,deep,18-60
+life_values,life_priorities,value_prioritization,I ignore my core priorities,true,1,deep,18-60
+life_values,life_priorities,value_prioritization,I reflect on what brings fulfillment,false,1,deep,18-60
+life_values,life_priorities,value_prioritization,I rarely evaluate my life priorities,true,1,deep,18-60
+life_values,life_priorities,value_prioritization,I align my goals with meaningful values,false,1,deep,18-60
+life_values,life_priorities,value_prioritization,I drift without purpose,true,1,deep,18-60
+life_values,life_priorities,value_prioritization,I focus on what gives life meaning,false,1,deep,18-60
+life_values,life_priorities,value_prioritization,I feel disconnected from my priorities,true,1,deep,18-60
+life_values,life_priorities,value_prioritization,I evaluate whether my choices match my beliefs,false,1,deep,18-60
+life_values,life_priorities,value_prioritization,I rarely question what matters most,true,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I learn about myself through observing my reactions,false,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I rarely reflect on what my experiences teach me,true,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I think about how my choices shape my life,false,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I avoid analyzing my personal decisions,true,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I reflect on mistakes to understand myself better,false,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I ignore lessons from past experiences,true,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I observe how my values influence my behavior,false,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I rarely evaluate the reasons behind my actions,true,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I analyze my decisions to improve myself,false,1,deep,18-60
+psychology_self_awareness,self_reflection,personal_learning,I prefer not thinking about my personal development,true,1,deep,18-60
+personality_confidence,self_expression,confidence_display,I express my opinions confidently,false,1,rapid,18-60
+personality_confidence,self_expression,confidence_display,I hesitate when expressing my thoughts,true,1,rapid,18-60
+personality_confidence,self_expression,confidence_display,I feel comfortable presenting ideas publicly,false,1,rapid,18-60
+personality_confidence,self_expression,confidence_display,I feel nervous sharing my ideas,true,1,rapid,18-60
+personality_confidence,self_expression,confidence_display,I speak up when I believe something is important,false,1,rapid,18-60
+personality_confidence,self_expression,confidence_display,I remain silent even when I disagree,true,1,rapid,18-60
+personality_confidence,self_expression,confidence_display,I communicate ideas clearly,false,1,rapid,18-60
+personality_confidence,self_expression,confidence_display,I struggle to voice my perspective,true,1,rapid,18-60
+personality_confidence,self_expression,confidence_display,I feel comfortable contributing to discussions,false,1,rapid,18-60
+personality_confidence,self_expression,confidence_display,I avoid sharing my thoughts,true,1,rapid,18-60
+stress_resilience,mental_strength,stress_management,I stay calm during stressful conversations,false,1,deep,18-60
+stress_resilience,mental_strength,stress_management,I lose composure easily under stress,true,1,deep,18-60
+stress_resilience,mental_strength,stress_management,I manage pressure by focusing on solutions,false,1,deep,18-60
+stress_resilience,mental_strength,stress_management,I feel overwhelmed by difficult discussions,true,1,deep,18-60
+stress_resilience,mental_strength,stress_management,I remain emotionally balanced when facing challenges,false,1,deep,18-60
+stress_resilience,mental_strength,stress_management,I struggle to stay calm during conflicts,true,1,deep,18-60
+stress_resilience,mental_strength,stress_management,I maintain clarity of thought during pressure,false,1,deep,18-60
+stress_resilience,mental_strength,stress_management,I panic when facing unexpected issues,true,1,deep,18-60
+stress_resilience,mental_strength,stress_management,I control my emotions in difficult moments,false,1,deep,18-60
+stress_resilience,mental_strength,stress_management,I feel emotionally unstable during stress,true,1,deep,18-60
+career_intelligence,career_growth,professional_development,I actively look for opportunities to improve professionally,false,1,deep,15-60
+career_intelligence,career_growth,professional_development,I rarely seek professional growth,true,1,deep,15-60
+career_intelligence,career_growth,professional_development,I think about skills needed for future jobs,false,1,deep,15-60
+career_intelligence,career_growth,professional_development,I ignore developing career skills,true,1,deep,15-60
+career_intelligence,career_growth,professional_development,I look for experiences that strengthen my career,false,1,deep,15-60
+career_intelligence,career_growth,professional_development,I avoid improving professional abilities,true,1,deep,15-60
+career_intelligence,career_growth,professional_development,I reflect on how to grow in my career,false,1,deep,15-60
+career_intelligence,career_growth,professional_development,I rarely evaluate my professional growth,true,1,deep,15-60
+career_intelligence,career_growth,professional_development,I plan steps to advance my career,false,1,deep,15-60
+career_intelligence,career_growth,professional_development,I drift without career development,true,1,deep,15-60
+technology_mindset,innovation_acceptance,digital_future,I believe digital innovation will shape the future,false,1,rapid,15-60
+technology_mindset,innovation_acceptance,digital_future,I think technology changes too fast to follow,true,1,rapid,15-60
+technology_mindset,innovation_acceptance,digital_future,I stay open to learning new digital systems,false,1,rapid,15-60
+technology_mindset,innovation_acceptance,digital_future,I resist technological updates,true,1,rapid,15-60
+technology_mindset,innovation_acceptance,digital_future,I adapt quickly to new digital environments,false,1,rapid,15-60
+technology_mindset,innovation_acceptance,digital_future,I struggle to keep up with digital change,true,1,rapid,15-60
+technology_mindset,innovation_acceptance,digital_future,I explore emerging digital trends,false,1,rapid,15-60
+technology_mindset,innovation_acceptance,digital_future,I ignore developments in technology,true,1,rapid,15-60
+technology_mindset,innovation_acceptance,digital_future,I enjoy learning how technology evolves,false,1,rapid,15-60
+technology_mindset,innovation_acceptance,digital_future,I avoid exploring technological advancements,true,1,rapid,15-60
+social_behavior,communication_quality,relationship_skills,I try to communicate clearly with others,false,1,deep,18-60
+social_behavior,communication_quality,relationship_skills,I struggle to explain my ideas,true,1,deep,18-60
+social_behavior,communication_quality,relationship_skills,I maintain respectful communication,false,1,deep,18-60
+social_behavior,communication_quality,relationship_skills,I interrupt others frequently,true,1,deep,18-60
+social_behavior,communication_quality,relationship_skills,I encourage open conversations,false,1,deep,18-60
+social_behavior,communication_quality,relationship_skills,I avoid communication in conflicts,true,1,deep,18-60
+social_behavior,communication_quality,relationship_skills,I express empathy during conversations,false,1,deep,18-60
+social_behavior,communication_quality,relationship_skills,I dismiss the feelings of others,true,1,deep,18-60
+social_behavior,communication_quality,relationship_skills,I maintain healthy dialogue,false,1,deep,18-60
+social_behavior,communication_quality,relationship_skills,I shut down communication,true,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I work on improving my leadership abilities,false,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I avoid leadership development,true,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I evaluate my leadership strengths,false,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I ignore leadership skills,true,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I seek feedback to become a better leader,false,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I resist leadership feedback,true,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I develop skills to guide others,false,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I avoid leadership responsibilities,true,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I think about how to influence positively,false,1,deep,18-60
+leadership_potential,leadership_growth,personal_leadership,I avoid thinking about leadership roles,true,1,deep,18-60
+creativity_innovation,creative_confidence,idea_expression,I enjoy sharing creative ideas,false,1,deep,15-60
+creativity_innovation,creative_confidence,idea_expression,I feel insecure about creative thinking,true,1,deep,15-60
+creativity_innovation,creative_confidence,idea_expression,I like experimenting with new ideas,false,1,deep,15-60
+creativity_innovation,creative_confidence,idea_expression,I avoid exploring imagination,true,1,deep,15-60
+creativity_innovation,creative_confidence,idea_expression,I express creativity freely,false,1,deep,15-60
+creativity_innovation,creative_confidence,idea_expression,I suppress creative thoughts,true,1,deep,15-60
+creativity_innovation,creative_confidence,idea_expression,I enjoy exploring imaginative solutions,false,1,deep,15-60
+creativity_innovation,creative_confidence,idea_expression,I hesitate to present creative concepts,true,1,deep,15-60
+creativity_innovation,creative_confidence,idea_expression,I explore creative possibilities,false,1,deep,15-60
+creativity_innovation,creative_confidence,idea_expression,I avoid creative exploration,true,1,deep,15-60
+life_values,life_reflection,personal_meaning,I think about what makes life meaningful,false,1,deep,18-60
+life_values,life_reflection,personal_meaning,I rarely reflect on life's meaning,true,1,deep,18-60
+life_values,life_reflection,personal_meaning,I pursue activities aligned with purpose,false,1,deep,18-60
+life_values,life_reflection,personal_meaning,I ignore deeper purpose,true,1,deep,18-60
+life_values,life_reflection,personal_meaning,I evaluate whether my life feels fulfilling,false,1,deep,18-60
+life_values,life_reflection,personal_meaning,I feel disconnected from purpose,true,1,deep,18-60
+life_values,life_reflection,personal_meaning,I search for meaningful experiences,false,1,deep,18-60
+life_values,life_reflection,personal_meaning,I avoid reflecting on meaning,true,1,deep,18-60
+life_values,life_reflection,personal_meaning,I align goals with meaningful living,false,1,deep,18-60
+life_values,life_reflection,personal_meaning,I rarely evaluate purpose,true,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I try to understand the deeper reasons behind my emotions,false,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I rarely think about why I feel certain emotions,true,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I observe how my emotions influence my decisions,false,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I ignore the emotional impact of my actions,true,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I analyze how my mood affects my behavior,false,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I rarely consider the emotional reasons behind my reactions,true,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I think about how my feelings shape my choices,false,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I avoid exploring my emotional experiences,true,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I reflect on emotional patterns in my life,false,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I struggle to understand my emotional responses,true,1,deep,18-60
+personality_confidence,personal_agency,decision_strength,I feel confident making important decisions,false,1,rapid,18-60
+personality_confidence,personal_agency,decision_strength,I doubt my ability to make good decisions,true,1,rapid,18-60
+personality_confidence,personal_agency,decision_strength,I trust my judgment in complex situations,false,1,rapid,18-60
+personality_confidence,personal_agency,decision_strength,I rely on others to decide for me,true,1,rapid,18-60
+personality_confidence,personal_agency,decision_strength,I tend to take responsibility for my decisions,false,1,rapid,18-60
+personality_confidence,personal_agency,decision_strength,I hesitate to make choices,true,1,rapid,18-60
+personality_confidence,personal_agency,decision_strength,I evaluate decisions carefully,false,1,rapid,18-60
+personality_confidence,personal_agency,decision_strength,I avoid making decisions,true,1,rapid,18-60
+personality_confidence,personal_agency,decision_strength,I feel capable of choosing the right path,false,1,rapid,18-60
+personality_confidence,personal_agency,decision_strength,I feel uncertain when making choices,true,1,rapid,18-60
+stress_resilience,mental_recovery,resilience_behavior,I recover quickly from emotional setbacks,false,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I remain emotionally stuck after difficulties,true,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I maintain hope during challenging periods,false,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I feel hopeless when facing obstacles,true,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I regain motivation after failures,false,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I struggle to regain motivation,true,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I learn from difficult experiences,false,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I feel defeated by problems,true,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I bounce back emotionally after setbacks,false,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I find it hard to recover emotionally,true,1,deep,18-60
+career_intelligence,career_strategy,career_decision,I evaluate long-term impact when choosing careers,false,1,deep,15-60
+career_intelligence,career_strategy,career_decision,I rarely think about long-term career impact,true,1,deep,15-60
+career_intelligence,career_strategy,career_decision,I compare career options carefully,false,1,deep,15-60
+career_intelligence,career_strategy,career_decision,I select careers without analysis,true,1,deep,15-60
+career_intelligence,career_strategy,career_decision,I consider personal strengths before choosing work,false,1,deep,15-60
+career_intelligence,career_strategy,career_decision,I ignore how my abilities affect career choices,true,1,deep,15-60
+career_intelligence,career_strategy,career_decision,I weigh multiple career possibilities,false,1,deep,15-60
+career_intelligence,career_strategy,career_decision,I avoid thinking deeply about career paths,true,1,deep,15-60
+career_intelligence,career_strategy,career_decision,I evaluate professional risks and rewards,false,1,deep,15-60
+career_intelligence,career_strategy,career_decision,I choose careers impulsively,true,1,deep,15-60
+technology_mindset,digital_learning,tech_adaptation,I adapt quickly to new digital platforms,false,1,rapid,15-60
+technology_mindset,digital_learning,tech_adaptation,I feel uncomfortable adapting to new technology,true,1,rapid,15-60
+technology_mindset,digital_learning,tech_adaptation,I enjoy discovering digital innovations,false,1,rapid,15-60
+technology_mindset,digital_learning,tech_adaptation,I avoid digital experimentation,true,1,rapid,15-60
+technology_mindset,digital_learning,tech_adaptation,I follow technology trends,false,1,rapid,15-60
+technology_mindset,digital_learning,tech_adaptation,I ignore digital trends,true,1,rapid,15-60
+technology_mindset,digital_learning,tech_adaptation,I learn technology through experimentation,false,1,rapid,15-60
+technology_mindset,digital_learning,tech_adaptation,I hesitate to use new digital tools,true,1,rapid,15-60
+technology_mindset,digital_learning,tech_adaptation,I believe digital literacy is important,false,1,rapid,15-60
+technology_mindset,digital_learning,tech_adaptation,I see technology as unnecessary,true,1,rapid,15-60
+social_behavior,emotional_connection,relationship_depth,I build meaningful relationships,false,1,deep,18-60
+social_behavior,emotional_connection,relationship_depth,I tend to avoid emotional closeness,true,1,deep,18-60
+social_behavior,emotional_connection,relationship_depth,I show genuine interest in others,false,1,deep,18-60
+social_behavior,emotional_connection,relationship_depth,I ignore others' concerns,true,1,deep,18-60
+social_behavior,emotional_connection,relationship_depth,I maintain emotional support in friendships,false,1,deep,18-60
+social_behavior,emotional_connection,relationship_depth,I tend to distance myself from emotional situations,true,1,deep,18-60
+social_behavior,emotional_connection,relationship_depth,I care about others' well-being,false,1,deep,18-60
+social_behavior,emotional_connection,relationship_depth,I rarely show empathy,true,1,deep,18-60
+social_behavior,emotional_connection,relationship_depth,I nurture healthy relationships,false,1,deep,18-60
+social_behavior,emotional_connection,relationship_depth,I struggle to maintain emotional bonds,true,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I inspire others through positive actions,false,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I tend to avoid motivating others,true,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I encourage people to achieve goals,false,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I feel uncomfortable inspiring others,true,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I guide others through difficult moments,false,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I withdraw from leadership roles,true,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I uplift team morale,false,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I rarely encourage others,true,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I motivate people to improve,false,1,deep,18-60
+leadership_potential,leadership_influence,inspirational_leadership,I hesitate to influence team energy,true,1,deep,18-60
+creativity_innovation,innovation_drive,creative_motivation,I feel excited about creating new ideas,false,1,deep,15-60
+creativity_innovation,innovation_drive,creative_motivation,I feel uninterested in creative thinking,true,1,deep,15-60
+creativity_innovation,innovation_drive,creative_motivation,I enjoy developing innovative concepts,false,1,deep,15-60
+creativity_innovation,innovation_drive,creative_motivation,I resist imaginative thinking,true,1,deep,15-60
+creativity_innovation,innovation_drive,creative_motivation,I pursue originality in my ideas,false,1,deep,15-60
+creativity_innovation,innovation_drive,creative_motivation,I prefer copying existing ideas,true,1,deep,15-60
+creativity_innovation,innovation_drive,creative_motivation,I explore creative experiments,false,1,deep,15-60
+creativity_innovation,innovation_drive,creative_motivation,I avoid creative experimentation,true,1,deep,15-60
+creativity_innovation,innovation_drive,creative_motivation,I seek inspiration for innovation,false,1,deep,15-60
+creativity_innovation,innovation_drive,creative_motivation,I rarely explore new concepts,true,1,deep,15-60
+life_values,life_purpose,purpose_alignment,I seek purpose in my life decisions,false,1,deep,18-60
+life_values,life_purpose,purpose_alignment,I rarely consider life's purpose,true,1,deep,18-60
+life_values,life_purpose,purpose_alignment,I align actions with meaningful goals,false,1,deep,18-60
+life_values,life_purpose,purpose_alignment,I tend to ignore deeper purpose,true,1,deep,18-60
+life_values,life_purpose,purpose_alignment,I reflect on what truly matters,false,1,deep,18-60
+life_values,life_purpose,purpose_alignment,I feel disconnected from meaning,true,1,deep,18-60
+life_values,life_purpose,purpose_alignment,I pursue meaningful experiences,false,1,deep,18-60
+life_values,life_purpose,purpose_alignment,I tend to drift without purpose,true,1,deep,18-60
+life_values,life_purpose,purpose_alignment,I align life goals with purpose,false,1,deep,18-60
+life_values,life_purpose,purpose_alignment,I rarely evaluate my life purpose,true,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I try to understand what kind of person I want to become,false,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I rarely think about the kind of person I want to be,true,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I reflect on how my beliefs shape my life,false,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I avoid thinking about my beliefs,true,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I try to align my actions with my identity,false,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I rarely think about my identity,true,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I consider how my experiences shaped who I am,false,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I ignore how past experiences shaped me,true,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I reflect on what defines my character,false,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I rarely think about my personal character,true,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I explore what truly matters to me,false,1,deep,18-60
+psychology_self_awareness,self_identity,personal_identity,I avoid thinking about what matters most,true,1,deep,18-60
+personality_confidence,personal_courage,confidence_behavior,I tend to speak up when I believe something is important,false,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I hesitate to speak even when I have strong opinions,true,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I take initiative in uncertain situations,false,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I avoid acting when situations are unclear,true,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I trust myself to face challenges,false,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I doubt my ability to overcome difficulties,true,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I approach challenges with confidence,false,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I fear failure too much to try,true,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I believe I can grow stronger through challenges,false,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I avoid situations that test my abilities,true,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I remain confident even when others doubt me,false,1,rapid,18-60
+personality_confidence,personal_courage,confidence_behavior,I lose confidence when facing criticism,true,1,rapid,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I adapt quickly when plans fail,false,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I struggle when plans do not work,true,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I remain calm when facing unexpected challenges,false,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I panic when unexpected problems arise,true,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I find creative solutions during stress,false,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I feel stuck when facing pressure,true,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I stay optimistic during difficult situations,false,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I become pessimistic when facing stress,true,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I recover emotionally after setbacks,false,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I remain discouraged after problems,true,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I maintain focus under pressure,false,1,deep,18-60
+stress_resilience,adaptive_resilience,stress_adaptation,I lose concentration when stressed,true,1,deep,18-60
+career_intelligence,career_vision,future_orientation,I imagine a clear vision for my future career,false,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I rarely think about my career future,true,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I explore possibilities aligned with my strengths,false,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I ignore how my strengths influence careers,true,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I think about how my interests shape career paths,false,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I feel confused about career possibilities,true,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I research professions that match my talents,false,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I rarely explore professional opportunities,true,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I evaluate future career opportunities,false,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I avoid planning my professional future,true,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I set long-term career goals,false,1,deep,15-60
+career_intelligence,career_vision,future_orientation,I drift without career goals,true,1,deep,15-60
+technology_mindset,technology_future,innovation_mindset,I believe technology will transform future work,false,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I think technological change is unnecessary,true,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I stay curious about digital innovation,false,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I avoid learning about technological trends,true,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I experiment with digital tools for efficiency,false,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I hesitate to use new technology,true,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I believe digital literacy is essential,false,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I see technology as a burden,true,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I enjoy discovering new technological ideas,false,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I resist adopting technological tools,true,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I explore innovative digital solutions,false,1,rapid,15-60
+technology_mindset,technology_future,innovation_mindset,I ignore technological opportunities,true,1,rapid,15-60
+social_behavior,emotional_intelligence,relationship_awareness,I understand when someone feels uncomfortable,false,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I struggle to notice others' emotions,true,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I respond sensitively to people's feelings,false,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I dismiss emotional signals,true,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I empathize with people's experiences,false,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I avoid emotional conversations,true,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I tend to build trust through understanding,false,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I tend to ignore emotional needs,true,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I support others during difficult moments,false,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,Often I distance myself from emotional situations,true,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I maintain empathy during disagreements,false,1,deep,18-60
+social_behavior,emotional_intelligence,relationship_awareness,I disregard emotional reactions,true,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I inspire people through positive actions,false,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I hesitate to influence others,true,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I tend to motivate people to achieve goals,false,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I avoid inspiring others,true,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I guide teams toward shared goals,false,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I avoid taking leadership initiative,true,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I encourage collaboration,false,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I tend to withdraw from leadership roles,true,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I tend to uplift team morale,false,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I rarely motivate teams,true,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I help people grow through guidance,false,1,deep,18-60
+leadership_potential,leadership_impact,influence_effectiveness,I avoid guiding others,true,1,deep,18-60
+creativity_innovation,innovation_motivation,creative_drive,I feel energized by creating new ideas,false,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I feel uninterested in creativity,true,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I enjoy experimenting with imaginative concepts,false,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I tend to avoid creative experimentation,true,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I search for inspiration in different fields,false,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I ignore opportunities to innovate,true,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I pursue originality in ideas,false,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I repeat existing ideas,true,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I enjoy designing new possibilities,false,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I resist exploring imagination,true,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I experiment with creative thinking,false,1,deep,15-60
+creativity_innovation,innovation_motivation,creative_drive,I rarely pursue creativity,true,1,deep,15-60
+life_values,meaningful_living,life_alignment,I align my actions with meaningful goals,false,1,deep,18-60
+life_values,meaningful_living,life_alignment,I drift without thinking about purpose,true,1,deep,18-60
+life_values,meaningful_living,life_alignment,I pursue a life that feels meaningful,false,1,deep,18-60
+life_values,meaningful_living,life_alignment,I tend to avoid thinking about purpose,true,1,deep,18-60
+life_values,meaningful_living,life_alignment,I evaluate whether my life reflects my values,false,1,deep,18-60
+life_values,meaningful_living,life_alignment,I rarely reflect on what matters most,true,1,deep,18-60
+life_values,meaningful_living,life_alignment,I seek meaningful experiences,false,1,deep,18-60
+life_values,meaningful_living,life_alignment,I tend to feel disconnected from purpose,true,1,deep,18-60
+life_values,meaningful_living,life_alignment,I choose goals that reflect my beliefs,false,1,deep,18-60
+life_values,meaningful_living,life_alignment,I ignore deeper meaning,true,1,deep,18-60
+life_values,meaningful_living,life_alignment,I try to live a purposeful life,false,1,deep,18-60
+life_values,meaningful_living,life_alignment,I rarely think about life's purpose,true,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I actively work on improving my personal habits,false,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I rarely try to improve my habits,true,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I reflect on how my habits affect my life,false,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I ignore how my habits influence my life,true,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I try to grow from personal experiences,false,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I avoid learning from experiences,true,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I examine how my behavior affects others,false,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I rarely think about how my behavior affects people,true,1,deep,18-60
+personality_confidence,personal_drive,goal_pursuit,I pursue my goals with determination,false,1,rapid,18-60
+personality_confidence,personal_drive,goal_pursuit,I give up easily on goals,true,1,rapid,18-60
+personality_confidence,personal_drive,goal_pursuit,I tend to believe persistence leads to success,false,1,rapid,18-60
+personality_confidence,personal_drive,goal_pursuit,I doubt my ability to achieve goals,true,1,rapid,18-60
+personality_confidence,personal_drive,goal_pursuit,I stay motivated toward personal goals,false,1,rapid,18-60
+personality_confidence,personal_drive,goal_pursuit,I lose motivation quickly,true,1,rapid,18-60
+stress_resilience,stress_management,mental_control,I use strategies to manage stress effectively,false,1,deep,18-60
+stress_resilience,stress_management,mental_control,I struggle to control stress,true,1,deep,18-60
+stress_resilience,stress_management,mental_control,I remain composed in difficult moments,false,1,deep,18-60
+stress_resilience,stress_management,mental_control,I become overwhelmed easily,true,1,deep,18-60
+stress_resilience,stress_management,mental_control,I maintain emotional balance under pressure,false,1,deep,18-60
+stress_resilience,stress_management,mental_control,I feel mentally exhausted during pressure,true,1,deep,18-60
+career_intelligence,career_alignment,career_fit,I look for careers that match my interests,false,1,deep,15-60
+career_intelligence,career_alignment,career_fit,I ignore whether careers match my interests,true,1,deep,15-60
+career_intelligence,career_alignment,career_fit,I evaluate if a profession fits my personality,false,1,deep,15-60
+career_intelligence,career_alignment,career_fit,I choose careers randomly,true,1,deep,15-60
+career_intelligence,career_alignment,career_fit,I consider future growth while choosing careers,false,1,deep,15-60
+career_intelligence,career_alignment,career_fit,I avoid thinking about career growth,true,1,deep,15-60
+technology_mindset,digital_learning,technology_growth,I enjoy learning new digital tools,false,1,rapid,15-60
+technology_mindset,digital_learning,technology_growth,I tend to feel uncomfortable learning technology,true,1,rapid,15-60
+technology_mindset,digital_learning,technology_growth,I stay curious about digital innovations,false,1,rapid,15-60
+technology_mindset,digital_learning,technology_growth,I ignore technological trends,true,1,rapid,15-60
+technology_mindset,digital_learning,technology_growth,I explore digital tools independently,false,1,rapid,15-60
+technology_mindset,digital_learning,technology_growth,I avoid digital learning,true,1,rapid,15-60
+social_behavior,relationship_support,emotional_support,I support people during difficult times,false,1,deep,18-60
+social_behavior,relationship_support,emotional_support,I ignore others' emotional struggles,true,1,deep,18-60
+social_behavior,relationship_support,emotional_support,I listen carefully when someone shares problems,false,1,deep,18-60
+social_behavior,relationship_support,emotional_support,I dismiss people's concerns,true,1,deep,18-60
+social_behavior,relationship_support,emotional_support,I try to understand people's perspectives,false,1,deep,18-60
+social_behavior,relationship_support,emotional_support,I rarely consider others' perspectives,true,1,deep,18-60
+leadership_potential,leadership_responsibility,team_guidance,I take responsibility when leading a group,false,1,deep,18-60
+leadership_potential,leadership_responsibility,team_guidance,I avoid leadership responsibility,true,1,deep,18-60
+leadership_potential,leadership_responsibility,team_guidance,I help teams stay focused on goals,false,1,deep,18-60
+leadership_potential,leadership_responsibility,team_guidance,I hesitate to guide teams,true,1,deep,18-60
+leadership_potential,leadership_responsibility,team_guidance,I motivate teams during challenges,false,1,deep,18-60
+leadership_potential,leadership_responsibility,team_guidance,I avoid motivating people,true,1,deep,18-60
+creativity_innovation,creative_exploration,idea_development,I enjoy exploring new ideas,false,1,deep,15-60
+creativity_innovation,creative_exploration,idea_development,I tend to avoid creative thinking,true,1,deep,15-60
+creativity_innovation,creative_exploration,idea_development,I tend to experiment with imaginative solutions,false,1,deep,15-60
+creativity_innovation,creative_exploration,idea_development,I hesitate to try creative approaches,true,1,deep,15-60
+creativity_innovation,creative_exploration,idea_development,I look for inspiration in different fields,false,1,deep,15-60
+creativity_innovation,creative_exploration,idea_development,I rarely search for creative inspiration,true,1,deep,15-60
+life_values,meaningful_choices,life_direction,I make choices aligned with my values,false,1,deep,18-60
+life_values,meaningful_choices,life_direction,I ignore my values while making decisions,true,1,deep,18-60
+life_values,meaningful_choices,life_direction,I reflect on whether my life feels meaningful,false,1,deep,18-60
+life_values,meaningful_choices,life_direction,I rarely think about life meaning,true,1,deep,18-60
+life_values,meaningful_choices,life_direction,I try to build a meaningful life,false,1,deep,18-60
+life_values,meaningful_choices,life_direction,I drift without thinking about meaning,true,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I think about how my past choices shape my present,false,1,deep,18-60
+psychology_self_awareness,reflection,thought_pattern,I seldom consider how my mood affects my decisions,true,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I seek feedback to improve my self-awareness,false,1,deep,18-60
+psychology_self_awareness,self_growth,personal_development,I resist reflecting on my weaknesses,true,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I notice when my emotions influence my judgment,false,1,deep,18-60
+psychology_self_awareness,self_insight,emotional_understanding,I pay little attention to my emotional patterns,true,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I consider how my beliefs might limit my options,false,1,deep,18-60
+psychology_self_awareness,thought_awareness,mental_patterns,I rarely examine the assumptions behind my views,true,1,deep,18-60
+personality_confidence,self_belief,decision_behavior,I feel able to handle unexpected demands,false,1,rapid,18-60
+personality_confidence,self_belief,decision_behavior,I second-guess myself when others disagree,true,1,rapid,18-60
+personality_confidence,personal_drive,goal_pursuit,I set clear goals and work toward them,false,1,rapid,18-60
+personality_confidence,personal_drive,goal_pursuit,I abandon goals when progress is slow,true,1,rapid,18-60
+personality_confidence,assertiveness,communication,I state my needs clearly in professional settings,false,1,rapid,18-60
+personality_confidence,assertiveness,communication,I keep quiet to avoid disagreement,true,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I believe I can master new skills with practice,false,1,rapid,18-60
+personality_confidence,self_efficacy,ability_perception,I feel inadequate when comparing myself to others,true,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I am willing to try new approaches despite uncertainty,false,1,rapid,18-60
+personality_confidence,risk_tolerance,confidence_behavior,I stick to familiar options to avoid failure,true,1,rapid,18-60
+stress_resilience,stress_response,emotional_regulation,I stay level-headed when deadlines approach,false,1,deep,18-60
+stress_resilience,stress_response,emotional_regulation,I become irritable under pressure,true,1,deep,18-60
+stress_resilience,stress_management,mental_control,I use breathing or similar techniques when stressed,false,1,deep,18-60
+stress_resilience,stress_management,mental_control,I neglect self-care when busy,true,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I adjust my plans when obstacles appear,false,1,deep,18-60
+stress_resilience,adaptability,challenge_adaptation,I get frustrated when things do not go as planned,true,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I look for practical steps when facing a problem,false,1,deep,18-60
+stress_resilience,problem_focus,solution_orientation,I focus on the problem instead of solutions,true,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I regain my composure quickly after a setback,false,1,deep,18-60
+stress_resilience,mental_recovery,resilience_behavior,I dwell on setbacks for a long time,true,1,deep,18-60
+career_intelligence,motivation,career_values,I want work that feels meaningful to me,false,1,deep,15-60
+career_intelligence,motivation,career_values,I rarely consider whether my job fits my values,true,1,deep,15-60
+career_intelligence,career_alignment,career_fit,I think about how well a role matches my strengths,false,1,deep,15-60
+career_intelligence,career_alignment,career_fit,I take jobs without considering long-term fit,true,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I read about different professions and paths,false,1,deep,15-60
+career_intelligence,career_curiosity,career_exploration,I show little interest in career research,true,1,deep,15-60
+career_intelligence,career_planning,future_planning,I think about skills I will need in five years,false,1,deep,15-60
+career_intelligence,career_planning,future_planning,I avoid planning my career path,true,1,deep,15-60
+career_intelligence,career_growth,professional_development,I look for ways to learn at work,false,1,deep,15-60
+career_intelligence,career_growth,professional_development,I am not interested in upgrading my skills,true,1,deep,15-60
+technology_mindset,adaptability,digital_behavior,I like trying new apps and digital tools,false,1,rapid,15-60
+technology_mindset,adaptability,digital_behavior,I prefer to keep using tools I already know,true,1,rapid,15-60
+technology_mindset,digital_learning,technology_growth,I take initiative to learn new software,false,1,rapid,15-60
+technology_mindset,digital_learning,technology_growth,I wait until I have to learn new technology,true,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I am curious about how new technologies work,false,1,rapid,15-60
+technology_mindset,digital_curiosity,tech_learning,I find new technology uninteresting,true,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I believe learning technology is worthwhile,false,1,rapid,15-60
+technology_mindset,innovation_attitude,future_technology,I think technology changes too fast to keep up,true,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I feel at ease using digital tools for tasks,false,1,rapid,15-60
+technology_mindset,digital_confidence,technology_usage,I lack confidence when using new devices,true,1,rapid,15-60
+social_behavior,empathy,relationship_dynamics,I try to see situations from others' point of view,false,1,deep,18-60
+social_behavior,empathy,relationship_dynamics,I find it hard to put myself in others' shoes,true,1,deep,18-60
+social_behavior,relationship_support,emotional_support,I offer support when friends face difficulties,false,1,deep,18-60
+social_behavior,relationship_support,emotional_support,I feel uncomfortable when others share problems,true,1,deep,18-60
+social_behavior,communication,interaction_style,I ask questions to understand others better,false,1,deep,18-60
+social_behavior,communication,interaction_style,I talk more than I listen in conversations,true,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I enjoy contributing to group outcomes,false,1,deep,18-60
+social_behavior,collaboration,team_dynamics,I prefer to work alone rather than in a team,true,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I notice when someone seems upset,false,1,deep,18-60
+social_behavior,relationship_awareness,emotional_connection,I often miss emotional cues in conversations,true,1,deep,18-60
+leadership_potential,influence,decision_leadership,I help groups reach decisions when needed,false,1,deep,18-60
+leadership_potential,influence,decision_leadership,I prefer not to influence group choices,true,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I step in when a team needs direction,false,1,deep,18-60
+leadership_potential,initiative,group_dynamics,I wait for someone else to take charge,true,1,deep,18-60
+leadership_potential,team_guidance,group_support,I encourage team members to share ideas,false,1,deep,18-60
+leadership_potential,team_guidance,group_support,I find it difficult to coordinate with others,true,1,deep,18-60
+leadership_potential,vision,strategic_thinking,I think about where a project could lead,false,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I can make timely decisions when needed,false,1,deep,18-60
+leadership_potential,decision_making,leadership_decisions,I delay decisions when the outcome is uncertain,true,1,deep,18-60
+creativity_innovation,idea_generation,creative_thinking,I come up with multiple options when solving problems,false,1,deep,15-60
+creativity_innovation,idea_generation,creative_thinking,I usually go with the first solution I think of,true,1,deep,15-60
+creativity_innovation,creative_exploration,idea_development,I like to combine ideas from different areas,false,1,deep,15-60
+creativity_innovation,creative_exploration,idea_development,I stick to conventional ways of thinking,true,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I enjoy learning about topics outside my field,false,1,deep,15-60
+creativity_innovation,curiosity,idea_exploration,I rarely explore ideas that are unfamiliar,true,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I try new methods when the usual approach fails,false,1,deep,15-60
+creativity_innovation,innovation,problem_solving,I avoid changing how I do things,true,1,deep,15-60
+creativity_innovation,creative_flexibility,innovation_behavior,I am open to revising my ideas when needed,false,1,deep,15-60

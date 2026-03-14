@@ -1,98 +1,98 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
-import { HiOutlineBolt, HiOutlineSparkles, HiOutlineHeart } from "react-icons/hi2";
-
-const MOCK_SCORES = { stress: 42, confidence: 68, emotional: 75 };
-
-const RECOMMENDED = [
-  { id: "stress", title: "Stress & Anxiety", gradient: "from-violet-500 to-purple-600", icon: "🧠" },
-  { id: "confidence", title: "Confidence", gradient: "from-amber-400 to-orange-500", icon: "💪" },
-  { id: "relationship", title: "Relationships", gradient: "from-pink-500 to-rose-600", icon: "❤️" },
-];
+import { motion } from "framer-motion";
+import { Brain, GraduationCap, MessageCircle, User } from "lucide-react";
+import DailyLifeCoachCard from "@/components/life-coach/DailyLifeCoachCard";
 
 export default function MobileHome() {
   return (
-    <div className="px-4 py-6 space-y-8">
+    <div className="mx-auto max-w-md px-4 py-6 space-y-6">
+      {/* Hero */}
       <motion.section
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        className="pb-2"
+        className="rounded-2xl bg-gradient-to-br from-slate-800 to-purple-900 p-6 text-white shadow-lg border border-gray-100"
       >
-        <h1 className="text-xl font-semibold text-gray-900">Hello, welcome back.</h1>
-        <p className="text-gray-500 text-sm mt-0.5">Here’s your mind at a glance.</p>
+        <h1 className="text-2xl font-bold">MIB – Thathaastu</h1>
+        <p className="text-white/90 italic mt-0.5">Make it Beautiful</p>
       </motion.section>
 
-      {/* Mind Score summary */}
+      {/* Daily Life Coach */}
       <motion.section
-        initial={{ opacity: 0, y: 16 }}
+        initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1 }}
-        className="rounded-2xl bg-white p-5 shadow-lg border border-gray-100"
+        transition={{ delay: 0.03 }}
       >
-        <h2 className="text-sm font-semibold text-gray-700 mb-4">Mind Score</h2>
-        <div className="space-y-4">
-          {[
-            { label: "Stress", value: MOCK_SCORES.stress, icon: HiOutlineBolt, color: "bg-amber-500" },
-            { label: "Confidence", value: MOCK_SCORES.confidence, icon: HiOutlineSparkles, color: "bg-emerald-500" },
-            { label: "Emotional Balance", value: MOCK_SCORES.emotional, icon: HiOutlineHeart, color: "bg-blue-500" },
-          ].map((item, i) => (
-            <div key={item.label}>
-              <div className="flex justify-between text-sm mb-1">
-                <span className="text-gray-600">{item.label}</span>
-                <span className="font-medium text-gray-900">{item.value}%</span>
-              </div>
-              <div className="h-2 rounded-full bg-gray-100 overflow-hidden">
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={{ width: `${item.value}%` }}
-                  transition={{ duration: 0.8, delay: 0.2 + i * 0.1 }}
-                  className={`h-full rounded-full ${item.color}`}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
+        <DailyLifeCoachCard compact />
       </motion.section>
 
-      {/* Quick action */}
+      {/* Card sections */}
       <motion.section
-        initial={{ opacity: 0, y: 16 }}
+        initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.05 }}
+        className="space-y-4"
       >
-        <Link href="/mobile/tests">
+        <Link href="/mobile/tests" className="block min-h-[80px]">
           <motion.div
             whileTap={{ scale: 0.98 }}
-            className="rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 p-4 text-white text-center font-semibold shadow-lg"
+            className="rounded-2xl shadow-lg bg-white p-5 flex items-center gap-4 border border-gray-100 transition-all duration-300 hover:shadow-xl min-h-[80px]"
           >
-            Start New Assessment
+            <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600 shrink-0">
+              <Brain className="w-7 h-7" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg font-semibold text-gray-900">Psychological Tests</h2>
+              <p className="text-sm text-gray-500">Assess stress, personality, and more</p>
+            </div>
           </motion.div>
         </Link>
-      </motion.section>
 
-      {/* Recommended tests - horizontal scroll */}
-      <motion.section
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
-      >
-        <h2 className="text-sm font-semibold text-gray-800 mb-3">Recommended for you</h2>
-        <div className="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4 scrollbar-hide">
-          {RECOMMENDED.map((card, i) => (
-            <Link key={card.id} href="/mobile/tests">
-              <motion.div
-                whileTap={{ scale: 0.97 }}
-                className={`flex-shrink-0 w-40 rounded-2xl bg-gradient-to-br ${card.gradient} p-4 text-white shadow-md`}
-              >
-                <span className="text-2xl">{card.icon}</span>
-                <p className="font-semibold text-sm mt-2">{card.title}</p>
-                <p className="text-white/80 text-xs mt-0.5">Quick check</p>
-              </motion.div>
-            </Link>
-          ))}
-        </div>
+        <Link href="/career-intelligence/start" className="block min-h-[80px]">
+          <motion.div
+            whileTap={{ scale: 0.98 }}
+            className="rounded-2xl shadow-lg bg-white p-5 flex items-center gap-4 border border-gray-100 transition-all duration-300 hover:shadow-xl min-h-[80px]"
+          >
+            <div className="w-14 h-14 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600 shrink-0">
+              <GraduationCap className="w-7 h-7" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg font-semibold text-gray-900">Career Intelligence Test</h2>
+              <p className="text-sm text-gray-500">₹499 · 10D career profiling</p>
+            </div>
+          </motion.div>
+        </Link>
+
+        <Link href="/dashboard/mentor" className="block min-h-[80px]">
+          <motion.div
+            whileTap={{ scale: 0.98 }}
+            className="rounded-2xl shadow-lg bg-white p-5 flex items-center gap-4 border border-gray-100 transition-all duration-300 hover:shadow-xl min-h-[80px]"
+          >
+            <div className="w-14 h-14 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600 shrink-0">
+              <MessageCircle className="w-7 h-7" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg font-semibold text-gray-900">AI Mentor</h2>
+              <p className="text-sm text-gray-500">Chat for career guidance</p>
+            </div>
+          </motion.div>
+        </Link>
+
+        <Link href="/mobile/guidance" className="block min-h-[80px]">
+          <motion.div
+            whileTap={{ scale: 0.98 }}
+            className="rounded-2xl shadow-lg bg-white p-5 flex items-center gap-4 border border-gray-100 transition-all duration-300 hover:shadow-xl min-h-[80px]"
+          >
+            <div className="w-14 h-14 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+              <User className="w-7 h-7" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg font-semibold text-gray-900">Talk to Psychologist</h2>
+              <p className="text-sm text-gray-500">Book a counselling session</p>
+            </div>
+          </motion.div>
+        </Link>
       </motion.section>
     </div>
   );

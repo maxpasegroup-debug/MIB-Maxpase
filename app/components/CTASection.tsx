@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -22,14 +23,15 @@ export default function CTASection() {
           transition={{ delay: 0.2 }}
           className="mt-10"
         >
-          <motion.a
-            href="#test-types"
+          <Link href="/mobile/tests">
+          <motion.span
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             className="inline-block px-10 py-4 rounded-full bg-white text-purple-700 font-semibold text-lg shadow-xl hover:shadow-2xl"
           >
             Start Free Test
-          </motion.a>
+          </motion.span>
+          </Link>
         </motion.div>
       </div>
     </section>

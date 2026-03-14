@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { HiOutlineBolt, HiOutlineMagnifyingGlassCircle } from "react-icons/hi2";
 
 const tests = [
@@ -51,7 +52,7 @@ export default function TestTypes() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="relative rounded-3xl p-8 sm:p-10 bg-white shadow-xl border-2 border-purple-200/50 glow-border"
+              className="relative rounded-2xl p-8 sm:p-10 bg-white shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl"
             >
               <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${test.gradient} text-white mb-6`}>
                 <test.icon className="w-10 h-10" />
@@ -59,14 +60,15 @@ export default function TestTypes() {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{test.title}</h3>
               <p className="text-gray-600 mb-1">{test.duration}</p>
               <p className="text-gray-600 mb-8">{test.questions}</p>
-              <motion.a
-                href="#"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className={`inline-block px-6 py-3 rounded-full bg-gradient-to-r ${test.gradient} text-white font-semibold shadow-lg`}
-              >
-                {test.button}
-              </motion.a>
+              <Link href="/mobile/tests">
+                <motion.span
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className={`inline-block px-6 py-3 rounded-full bg-gradient-to-r ${test.gradient} text-white font-semibold shadow-lg`}
+                >
+                  {test.button}
+                </motion.span>
+              </Link>
             </motion.div>
           ))}
         </div>

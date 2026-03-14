@@ -118,13 +118,13 @@ export default function CareerIntelligencePage() {
             transition={{ delay: 0.45 }}
             className="mt-8 flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Link href="/#categories">
+            <Link href="/career-intelligence/start">
               <motion.span
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
                 className="inline-block rounded-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 px-8 py-4 text-white font-semibold shadow-xl"
               >
-                Start Career Intelligence Assessment
+                Start Career Intelligence Test – ₹499
               </motion.span>
             </Link>
             <Link href="/#result-preview">
@@ -343,13 +343,13 @@ export default function CareerIntelligencePage() {
             ₹499
           </motion.p>
           <motion.div {...fadeUp} className="mt-8">
-            <Link href="/#categories">
+            <Link href="/career-intelligence/start">
               <motion.span
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 className="inline-block rounded-2xl bg-white text-purple-700 font-semibold text-lg px-10 py-4 shadow-xl"
               >
-                Start Career Intelligence Assessment
+                Start Career Intelligence Test – ₹499
               </motion.span>
             </Link>
           </motion.div>

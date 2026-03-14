@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -20,18 +21,14 @@ import {
   getSkillGapStatus,
 } from "@/lib/career-comparison";
 import type { CareerReportData } from "@/lib/career-service";
-import {
-  CareerRadarChart,
-  StrengthCards,
-  CareerClusterCards,
-  CareerRoadmapTimeline,
-  AIInterpretationCard,
-  CareerComparisonSection,
-  FutureCareerSimulationSection,
-  SkillGapAnalysisSection,
-  CareerOutlookCard,
-  ShareableCard,
-} from "./components";
+import { StrengthCards, CareerClusterCards, CareerRoadmapTimeline, CareerComparisonSection, FutureCareerSimulationSection, SkillGapAnalysisSection, CareerOutlookCard, ShareableCard } from "./components";
+import { ReportSkeleton } from "@/components/ui/Skeleton";
+
+const CareerRadarChart = dynamic(() => import("./components/CareerRadarChart").then((m) => ({ default: m.CareerRadarChart })), { ssr: false });
+const AIInterpretationCard = dynamic(
+  () => import("./components/AIInterpretationCard").then((m) => ({ default: m.AIInterpretationCard })),
+  { ssr: false }
+);
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -156,14 +153,12 @@ export default function CareerReportPage() {
 
   if (loading) {
     return (
-      <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-purple-50/30 flex items-center justify-center">
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="text-gray-500 font-medium"
-        >
-          Loading your Career Intelligence Report…
-        </motion.p>
+      <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-purple-50/30 px-4 py-8">
+        <div className="container mx-auto max-w-6xl space-y-6">
+          <ReportSkeleton />
+          <ReportSkeleton />
+          <ReportSkeleton />
+        </div>
       </main>
     );
   }

@@ -14,14 +14,14 @@ import {
 } from "react-icons/hi2";
 
 const categories = [
-  { icon: HiOutlineBolt, title: "Stress & Anxiety", subtitle: "Feeling overwhelmed?", gradient: "from-violet-500 to-purple-600" },
-  { icon: HiOutlineHeart, title: "Relationship Problems", subtitle: "Struggling with people?", gradient: "from-pink-500 to-rose-600" },
-  { icon: HiOutlineBriefcase, title: "Career Confusion", subtitle: "Not sure about your future?", gradient: "from-blue-500 to-indigo-600" },
-  { icon: HiOutlineSparkles, title: "Confidence Issues", subtitle: "Low self belief?", gradient: "from-amber-400 to-orange-500" },
-  { icon: HiOutlineDevicePhoneMobile, title: "Phone Addiction", subtitle: "Too much screen time?", gradient: "from-cyan-500 to-teal-600" },
-  { icon: HiOutlineUserGroup, title: "Child Behaviour", subtitle: "Understanding your child", gradient: "from-emerald-500 to-green-600" },
-  { icon: HiOutlineFire, title: "Work Stress", subtitle: "Burnout and pressure", gradient: "from-red-500 to-rose-600" },
-  { icon: HiOutlineStar, title: "Discover Your Talent", subtitle: "Find your strengths", gradient: "from-fuchsia-500 to-purple-600" },
+  { id: "stress", icon: HiOutlineBolt, title: "Stress & Anxiety", subtitle: "Feeling overwhelmed?", gradient: "from-violet-500 to-purple-600" },
+  { id: "relationship", icon: HiOutlineHeart, title: "Relationship Problems", subtitle: "Struggling with people?", gradient: "from-pink-500 to-rose-600" },
+  { id: "career", icon: HiOutlineBriefcase, title: "Career Confusion", subtitle: "Not sure about your future?", gradient: "from-blue-500 to-indigo-600" },
+  { id: "confidence", icon: HiOutlineSparkles, title: "Confidence Issues", subtitle: "Low self belief?", gradient: "from-amber-400 to-orange-500" },
+  { id: "phone", icon: HiOutlineDevicePhoneMobile, title: "Phone Addiction", subtitle: "Too much screen time?", gradient: "from-cyan-500 to-teal-600" },
+  { id: "child", icon: HiOutlineUserGroup, title: "Child Behaviour", subtitle: "Understanding your child", gradient: "from-emerald-500 to-green-600" },
+  { id: "work", icon: HiOutlineFire, title: "Work Stress", subtitle: "Burnout and pressure", gradient: "from-red-500 to-rose-600" },
+  { id: "talent", icon: HiOutlineStar, title: "Discover Your Talent", subtitle: "Find your strengths", gradient: "from-fuchsia-500 to-purple-600" },
 ];
 
 const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.06 } } };
@@ -35,7 +35,7 @@ export default function CategoryGrid() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-3"
+          className="text-2xl sm:text-3xl font-semibold text-center text-gray-900 mb-3"
         >
           Life problem categories
         </motion.h2>
@@ -43,7 +43,7 @@ export default function CategoryGrid() {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center text-gray-600 max-w-2xl mx-auto mb-14"
+          className="text-center text-sm text-gray-500 max-w-2xl mx-auto mb-14"
         >
           Choose the area you want to understand better.
         </motion.p>
@@ -57,15 +57,15 @@ export default function CategoryGrid() {
         >
           {categories.map((cat) => (
             <motion.div key={cat.title} variants={item}>
-              <Link href="/#how-it-works">
+              <Link href={`/mobile/tests/start?category=${cat.id}`}>
                 <motion.div
-                  className={`rounded-2xl p-6 sm:p-8 bg-gradient-to-br ${cat.gradient} text-white shadow-xl border border-white/20`}
-                  whileHover={{ scale: 1.05, boxShadow: "0 25px 50px -12px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.2)" }}
+                  className={`rounded-2xl p-6 sm:p-8 bg-gradient-to-br ${cat.gradient} text-white shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl`}
+                  whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
                   <cat.icon className="w-10 h-10 sm:w-12 sm:h-12 mb-4 opacity-95" />
-                  <h3 className="text-lg sm:text-xl font-bold mb-1">{cat.title}</h3>
-                  <p className="text-white/90 text-sm sm:text-base">{cat.subtitle}</p>
+                  <h3 className="text-xl font-semibold mb-1">{cat.title}</h3>
+                  <p className="text-white/90 text-sm">{cat.subtitle}</p>
                 </motion.div>
               </Link>
             </motion.div>

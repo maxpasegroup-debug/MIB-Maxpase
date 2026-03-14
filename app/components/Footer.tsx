@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const links = [
   { href: "/", label: "About" },
-  { href: "/#categories", label: "Assessments" },
+  { href: "/mobile/tests", label: "Assessments" },
   { href: "/mobile", label: "App" },
-  { href: "/", label: "For Professionals" },
+  { href: "/school-dashboard", label: "For Professionals" },
   { href: "/", label: "Privacy" },
   { href: "/", label: "Contact" },
 ];
