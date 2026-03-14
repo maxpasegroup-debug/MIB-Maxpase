@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   HiOutlineAcademicCap,
-  HiOutlineBadgeCheck,
+  HiOutlineCheckBadge,
   HiOutlineChartBar,
   HiOutlineUser,
 } from "react-icons/hi2";
@@ -216,7 +216,7 @@ export default function CareerPassportPage() {
         {/* ——— 6. Skill Certifications (badges) ——— */}
         <motion.section {...fadeUp} className="mb-12">
           <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <HiOutlineBadgeCheck className="w-6 h-6 text-purple-600" />
+            <HiOutlineCheckBadge className="w-6 h-6 text-purple-600" />
             Skill Certifications
           </h2>
           <div className="rounded-2xl bg-white/80 backdrop-blur border border-white/60 shadow-xl p-6 sm:p-8">
@@ -233,7 +233,7 @@ export default function CareerPassportPage() {
                   transition={{ delay: i * 0.08 }}
                   className="rounded-xl bg-gradient-to-br from-purple-100 to-pink-100 border border-purple-200/60 px-4 py-3 flex items-center gap-2"
                 >
-                  <HiOutlineBadgeCheck className="w-5 h-5 text-purple-600 shrink-0" />
+                  <HiOutlineCheckBadge className="w-5 h-5 text-purple-600 shrink-0" />
                   <span className="font-semibold text-gray-900">{s.label}</span>
                 </motion.div>
               ))}

@@ -9,7 +9,6 @@ import {
   HiOutlineExclamationTriangle,
   HiOutlineChartBar,
   HiOutlineMap,
-  HiOutlineRoadmap,
   HiOutlineSparkles,
   HiOutlineCpuChip,
   HiOutlineBriefcase,
@@ -49,7 +48,7 @@ const PROBLEM_CARDS = [
 const REPORT_CARDS = [
   { title: "Strength Analysis", desc: "Discover your natural strengths", icon: HiOutlineChartBar },
   { title: "Career Mapping", desc: "See careers that fit your profile", icon: HiOutlineMap },
-  { title: "Career Roadmap", desc: "Step-by-step guidance", icon: HiOutlineRoadmap },
+  { title: "Career Roadmap", desc: "Step-by-step guidance", icon: HiOutlineMap },
 ];
 
 const RADAR_LABELS = ["Creativity", "Leadership", "Analytical Thinking", "Motivation", "Emotional Intelligence"];

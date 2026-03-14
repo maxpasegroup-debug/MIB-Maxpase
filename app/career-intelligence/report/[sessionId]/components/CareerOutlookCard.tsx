@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { HiOutlineTrendingUp, HiOutlineCurrencyRupee, HiOutlineChartBar } from "react-icons/hi2";
+import { HiOutlineArrowTrendingUp, HiOutlineCurrencyRupee, HiOutlineChartBar } from "react-icons/hi2";
 
 interface CareerOutlookCardProps {
   careerName: string;
@@ -28,7 +28,7 @@ export function CareerOutlookCard({
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className="flex items-start gap-3">
           <div className="rounded-lg bg-white/80 p-2">
-            <HiOutlineTrendingUp className="w-5 h-5 text-purple-600" />
+            <HiOutlineArrowTrendingUp className="w-5 h-5 text-purple-600" />
           </div>
           <div>
             <p className="text-xs font-medium text-gray-500 uppercase tracking-wide">Demand</p>

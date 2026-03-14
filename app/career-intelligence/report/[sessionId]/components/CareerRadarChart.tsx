@@ -77,7 +77,7 @@ export function CareerRadarChart({ data }: CareerRadarChartProps) {
                 border: "1px solid #e5e7eb",
                 boxShadow: "0 10px 40px -10px rgba(0,0,0,0.15)",
               }}
-              formatter={(value: number) => [value, "Score"]}
+              formatter={(value) => [value ?? 0, "Score"]}
             />
           </RechartsRadarChart>
         </ResponsiveContainer>
