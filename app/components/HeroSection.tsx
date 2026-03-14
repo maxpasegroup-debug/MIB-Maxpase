@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
+const MOBILE_BREAKPOINT = 768;
 
 const BLOB_COLORS = [
   "bg-purple-500/30",
@@ -14,6 +17,17 @@ const BLOB_COLORS = [
 ];
 
 export default function HeroSection() {
+  const router = useRouter();
+
+  const handleFreeAssessmentClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (typeof window !== "undefined" && window.innerWidth < MOBILE_BREAKPOINT) {
+      router.push("/mobile/tests");
+    } else {
+      router.push("/tests");
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900/40 to-slate-900">
       {/* Animated gradient blobs */}
@@ -110,12 +124,13 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <Link
-            href="/mobile/tests"
+          <button
+            type="button"
+            onClick={handleFreeAssessmentClick}
             className="inline-flex items-center justify-center rounded-xl px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300"
           >
             Free Assessment
-          </Link>
+          </button>
           <Link
             href="/career-intelligence"
             className="inline-flex items-center justify-center rounded-xl px-8 py-3 border border-white/30 text-white font-semibold hover:bg-white/10 transition-all duration-300"
