@@ -39,36 +39,46 @@ export default function HeroSection() {
       ))}
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Logo in glass card */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex justify-center mb-6"
-        >
-          <motion.div
-            className="glass-card rounded-2xl p-5 shadow-xl flex items-center justify-center"
-            animate={{ boxShadow: ["0 25px 50px -12px rgba(0,0,0,0.2)", "0 25px 50px -12px rgba(168,85,247,0.3)"] }}
-            transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
+        {/* Logo with subtle radial glow behind */}
+        <div className="flex justify-center mb-6 relative">
+          {/* Subtle radial glow behind logo */}
+          <div
+            className="absolute inset-0 flex items-center justify-center pointer-events-none"
+            aria-hidden
           >
-            <Image src="/logo.png" alt="MIB Logo" width={112} height={112} className="w-24 h-24 sm:w-28 sm:h-28 object-contain" priority />
+            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full bg-white/20 blur-3xl" />
+          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative flex items-center justify-center"
+          >
+            <Image
+              src="/logo.png"
+              alt="What's Next Logo"
+              width={176}
+              height={176}
+              className="w-32 h-32 sm:w-44 sm:h-44 object-contain transition-opacity duration-500"
+              priority
+            />
           </motion.div>
-        </motion.div>
+        </div>
 
         {/* Brand title */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.35 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight"
+          className="text-5xl sm:text-6xl font-bold text-white tracking-tight"
         >
-          MIB - Thathaastu
+          What&apos;s Next
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-2 text-xl sm:text-2xl text-white/90 font-light italic"
+          className="mt-2 text-lg italic text-gray-400"
         >
           Make it Beautiful
         </motion.p>
@@ -78,7 +88,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-10 text-2xl sm:text-3xl md:text-4xl font-bold text-white max-w-3xl mx-auto leading-tight"
+          className="mt-10 text-3xl sm:text-4xl font-semibold text-white max-w-3xl mx-auto leading-tight"
         >
           Understand Your Mind.
           <br />
@@ -88,7 +98,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.75 }}
-          className="mt-4 text-base text-white/85 max-w-xl mx-auto"
+          className="mt-4 text-base text-gray-400 max-w-xl mx-auto"
         >
           Scientific psychological tests for children, youth and adults.
         </motion.p>
@@ -100,47 +110,35 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-            <Link
-              href="/mobile"
-              className="cta-primary-gradient inline-block rounded-2xl px-8 py-4 text-white font-semibold text-lg shadow-xl hover:shadow-2xl hover:shadow-pink-500/25 transition-shadow"
-            >
-              Open Mobile App
-            </Link>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-            <Link
-              href="/mobile/tests"
-              className="inline-block rounded-2xl px-8 py-4 bg-white/15 backdrop-blur-sm text-white font-semibold text-lg border-2 border-white/40 hover:bg-white/25 transition-colors"
-            >
-              Start Free Assessment
-            </Link>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-            <Link
-              href="/#categories"
-              className="inline-block rounded-2xl px-8 py-4 bg-white/15 backdrop-blur-sm text-white font-semibold text-lg border-2 border-white/40 hover:bg-white/25 transition-colors"
-            >
-              Explore Life Areas
-            </Link>
-          </motion.div>
+          <Link
+            href="/mobile/tests"
+            className="inline-flex items-center justify-center rounded-xl px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300"
+          >
+            Free Assessment
+          </Link>
+          <Link
+            href="/career-intelligence"
+            className="inline-flex items-center justify-center rounded-xl px-8 py-3 border border-white/30 text-white font-semibold hover:bg-white/10 transition-all duration-300"
+          >
+            Career Intelligence
+          </Link>
         </motion.div>
 
-        {/* Trust line */}
+        {/* Feature bullets */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.1 }}
-          className="mt-10 flex flex-wrap justify-center gap-6 sm:gap-10 text-sm text-white/80"
+          className="mt-10 flex flex-wrap justify-center gap-6 sm:gap-10 text-sm text-gray-400"
         >
           <span className="flex items-center gap-2">
-            <span className="text-emerald-400">✔</span> 2 minute quick assessment
+            <span className="text-emerald-400">✔</span> Quick psychological assessment
           </span>
           <span className="flex items-center gap-2">
             <span className="text-emerald-400">✔</span> Behavioral science insights
           </span>
           <span className="flex items-center gap-2">
-            <span className="text-emerald-400">✔</span> Used by counselors and educators
+            <span className="text-emerald-400">✔</span> Used by counsellors and educators
           </span>
         </motion.div>
       </div>
