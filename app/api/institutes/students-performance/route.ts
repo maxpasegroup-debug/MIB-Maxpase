@@ -48,7 +48,7 @@ export async function GET(request: Request) {
     let topicNames: Map<string, string> = new Map();
     if (allTopicIds.size > 0) {
       const topics = await prisma.examTopic.findMany({
-        where: { id: { in: [...allTopicIds] } },
+        where: { id: { in: Array.from(allTopicIds) } },
         select: { id: true, name: true },
       });
       topicNames = new Map(topics.map((t) => [t.id, t.name]));
