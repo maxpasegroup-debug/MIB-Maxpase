@@ -362,10 +362,17 @@ model Career10DScore {
 }
 
 model Career10DReport {
-  id        String   @id @default(cuid())
-  sessionId String   @unique @map("session_id")
-  cluster   String
-  aiReport  String   @map("ai_report")
+  id                  String   @id @default(cuid())
+  sessionId           String   @unique @map("session_id")
+  cluster             String
+  aiReport            String   @map("ai_report")
+  potentialProfile    String?  @map("potential_profile") // JSON
+  gapAnalysis         String?  @map("gap_analysis")      // JSON
+  careerIndex         Float?   @map("career_index")
+  probabilities       String?  @map("probabilities")     // JSON
+  reportLocked        Boolean  @default(true) @map("report_locked")
+  identityName        String?  @map("identity_name")
+  identityDescription String?  @map("identity_description")
 
   session Career10DSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
 

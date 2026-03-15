@@ -18,6 +18,7 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ["react-icons", "recharts", "framer-motion"],
+    serverComponentsExternalPackages: ["@react-pdf/renderer"],
   },
 };
 

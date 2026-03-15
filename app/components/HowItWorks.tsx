@@ -3,67 +3,64 @@
 import { motion } from "framer-motion";
 import {
   HiOutlineClipboardDocumentList,
-  HiOutlineChartBar,
   HiOutlineSparkles,
+  HiOutlineLockOpen,
 } from "react-icons/hi2";
 
 const steps = [
   {
     icon: HiOutlineClipboardDocumentList,
-    title: "Take a short assessment",
-    description: "Answer simple questions at your own pace.",
-  },
-  {
-    icon: HiOutlineChartBar,
-    title: "Discover your mind profile",
-    description: "See your trait scores and radar profile.",
+    title: "Take the Intelligence Test",
+    description: "Answer 80 questions at your own pace. Free to start.",
   },
   {
     icon: HiOutlineSparkles,
-    title: "Get AI powered insights",
-    description: "Personalized interpretation and recommendations.",
+    title: "Discover Your Career Identity",
+    description: "See your 10D profile and archetype reveal.",
+  },
+  {
+    icon: HiOutlineLockOpen,
+    title: "Unlock Your Intelligence Report",
+    description: "Get your full report, roadmap, and AI insights.",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="how-it-works" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-5xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-2xl sm:text-3xl font-semibold text-center text-gray-900 mb-4"
+          className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-4"
         >
-          How it works
+          How It Works
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center text-sm text-gray-500 mb-16"
+          className="text-center text-gray-500 mb-14"
         >
-          Three steps to understand your mind.
+          Three steps to your career intelligence.
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
             <motion.div
               key={step.title}
-              initial={{ opacity: 0, y: 36 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.12 }}
-              className="flex flex-col items-center text-center"
+              transition={{ delay: i * 0.1 }}
+              className="rounded-2xl bg-white/80 backdrop-blur shadow-xl p-6 border border-white/60"
             >
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 flex items-center justify-center text-white shadow-xl mb-6"
-              >
-                <step.icon className="w-10 h-10" />
-              </motion.div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
-              <p className="text-base text-gray-600">{step.description}</p>
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 flex items-center justify-center text-white shadow-lg mb-5">
+                <step.icon className="w-7 h-7" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{step.description}</p>
             </motion.div>
           ))}
         </div>

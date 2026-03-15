@@ -56,7 +56,7 @@ const RADAR_LABELS = ["Creativity", "Leadership", "Analytical Thinking", "Motiva
 export default function CareerIntelligencePage() {
   return (
     <main className="min-h-screen bg-transparent">
-      {/* Section 1 — Hero */}
+      {/* Section 1 — Hero + conversion */}
       <section className="relative overflow-hidden py-16 sm:py-24 px-4">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 via-pink-500/10 to-orange-500/10" />
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-400/20 rounded-full blur-3xl" />
@@ -66,75 +66,51 @@ export default function CareerIntelligencePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 bg-clip-text text-transparent"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900"
           >
-            MIB Career Intelligence™
+            Discover Your Career Intelligence
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.5 }}
-            className="mt-3 text-base sm:text-lg text-gray-600 font-medium"
+            className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed"
           >
-            A 10-Dimensional Career Discovery System
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15, duration: 0.5 }}
-            className="mt-1 text-sm text-gray-500"
-          >
-            Powered by Psychology and AI
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="mt-4 text-xl sm:text-2xl text-gray-700 font-medium max-w-3xl mx-auto"
-          >
-            Make Your Career Beautiful with AI-Powered Career Intelligence
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.25, duration: 0.5 }}
-            className="mt-6 text-gray-600 max-w-2xl mx-auto"
-          >
-            Discover the career path that matches your natural abilities using our
-            multi-dimensional psychometric analysis.
+            Take a free 80-question AI career intelligence test and discover your natural strengths, personality patterns, and future career paths.
           </motion.p>
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.35 }}
-            className="mt-8 inline-block rounded-2xl glass-card px-6 py-4 shadow-xl border border-white/40 bg-white/60 backdrop-blur"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-600"
           >
-            <p className="text-sm text-gray-600">Career Intelligence Assessment</p>
-            <p className="text-3xl font-bold text-gray-900">₹499</p>
+            <span className="flex items-center gap-2">
+              <span className="text-emerald-500">✓</span> Free 80-question assessment
+            </span>
+            <span className="flex items-center gap-2">
+              <span className="text-emerald-500">✓</span> AI-powered behavioral intelligence
+            </span>
+            <span className="flex items-center gap-2">
+              <span className="text-emerald-500">✓</span> Used by psychologists & career mentors
+            </span>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.45 }}
+            transition={{ delay: 0.35 }}
             className="mt-8 flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Link href="/career-intelligence/start">
-              <motion.span
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-block rounded-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 px-8 py-4 text-white font-semibold shadow-xl"
-              >
-                Start Career Intelligence Test – ₹499
-              </motion.span>
+            <Link
+              href="/career-intelligence/start"
+              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 px-8 py-4 text-white font-semibold shadow-lg hover:opacity-95 transition-opacity"
+            >
+              Start Free Career Intelligence Test
             </Link>
-            <Link href="/#result-preview">
-              <motion.span
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-block rounded-2xl border-2 border-purple-300 px-8 py-4 text-purple-700 font-semibold bg-white/80"
-              >
-                See Sample Report
-              </motion.span>
+            <Link
+              href="/#categories"
+              className="inline-flex items-center justify-center rounded-xl border-2 border-purple-300 px-8 py-4 text-purple-700 font-semibold bg-white/80 hover:bg-white transition-colors"
+            >
+              Explore Life Areas
             </Link>
           </motion.div>
         </div>
@@ -179,8 +155,8 @@ export default function CareerIntelligencePage() {
         </div>
       </section>
 
-      {/* Section 4 — 10D Model */}
-      <section className="py-16 sm:py-20 px-4">
+      {/* Section 4 — 10D Model (Life Areas) */}
+      <section id="categories" className="py-16 sm:py-20 px-4 scroll-mt-20">
         <div className="container mx-auto max-w-6xl">
           <motion.h2 {...fadeUp} className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-4">
             India&apos;s First 10D Career Intelligence Model

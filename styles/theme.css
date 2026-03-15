@@ -1,0 +1,12 @@
+/**
+ * What's Next by MIB — brand color tokens.
+ * Use for splash gradients and Holi-inspired identity.
+ */
+:root {
+  --mib-purple: #7c3aed;
+  --mib-pink: #ec4899;
+  --mib-orange: #fb923c;
+  --mib-blue: #60a5fa;
+  --mib-teal: #2dd4bf;
+  --mib-yellow: #fde047;
+}

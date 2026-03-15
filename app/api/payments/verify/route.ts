@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import crypto from "crypto";
+import { razorpay } from "@/lib/razorpay";
+import { prisma } from "@/lib/prisma";
 
 function verifyRazorpaySignature(
   orderId: string,
@@ -59,6 +61,22 @@ export async function POST(request: Request) {
 
     if (process.env.NODE_ENV === "development") {
       console.debug("[payments] Payment verified", razorpay_order_id);
+    }
+
+    if (razorpay) {
+      try {
+        const order = await razorpay.orders.fetch(razorpay_order_id);
+        const notes = order.notes as { sessionId?: string } | undefined;
+        const sessionId = notes?.sessionId;
+        if (sessionId && typeof sessionId === "string") {
+          await prisma.career10DReport.updateMany({
+            where: { sessionId },
+            data: { reportLocked: false },
+          });
+        }
+      } catch (err) {
+        console.error("[payments] Unlock report after verify", err);
+      }
     }
 
     return NextResponse.json({
