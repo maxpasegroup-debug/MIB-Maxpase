@@ -84,7 +84,7 @@ export default function CareerTestPage() {
       try {
         sessionStorage.removeItem(`${STORAGE_KEY_PREFIX}${sessionId}`);
       } catch {}
-      router.push(data.reportUrl ?? `/career-results/${sessionId}`);
+      router.push(data.reportUrl ?? `${WHATS_NEXT_BASE}/career-results/${sessionId}`);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Something went wrong");
     } finally {

@@ -13,7 +13,9 @@
     "db:push": "prisma db push",
     "db:seed": "npx tsx prisma/seed.ts",
     "db:studio": "prisma studio",
-    "export:questions": "npx tsx scripts/exportQuestionBank.ts"
+    "export:questions": "npx tsx scripts/exportQuestionBank.ts",
+    "seed:career": "npx tsx scripts/seed-career-questions.ts",
+    "user:test": "npx tsx scripts/create-test-user.ts"
   },
   "prisma": {
     "seed": "npx tsx prisma/seed.ts"

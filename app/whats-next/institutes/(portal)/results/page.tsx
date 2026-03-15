@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 interface ResultRow {
   id: string;
@@ -87,7 +88,7 @@ export default function InstituteResultsPage() {
                     <td className="py-3 px-4">
                       {r.sessionId ? (
                         <Link
-                          href={`/career-results/${r.sessionId}`}
+                          href={`${WHATS_NEXT_BASE}/career-results/${r.sessionId}`}
                           className="text-purple-600 font-medium hover:underline"
                         >
                           View Report

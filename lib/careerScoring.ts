@@ -74,10 +74,10 @@ export function calculateCareerScores(responses: CareerResponse[]): Career10DSco
   }
 
   const result: Career10DScores = {} as Career10DScores;
+  const maxScorePerResponse = 5; // Likert 1–5
   for (const d of CAREER_10D_DIMENSIONS) {
     const { sum, count } = dimensionSums[d];
-    // Assume 4-point scale (1–4); max per response = 4. Normalize to 0–100.
-    const maxPossible = count * 4;
+    const maxPossible = count * maxScorePerResponse;
     result[d] =
       maxPossible > 0 ? Math.round(Math.min(100, (sum / maxPossible) * 100)) : 50;
   }

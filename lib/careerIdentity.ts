@@ -17,29 +17,30 @@ type ArchetypeDef = {
   score: (s: Career10DScores) => number;
 };
 
+/** Minimum required archetypes (saved to Career10DReport.identityName / identityDescription). */
 const ARCHETYPES: ArchetypeDef[] = [
   {
-    name: "Strategic Builder",
+    name: "Strategic Architect",
     description:
-      "Strategic Builders combine logical thinking with curiosity. They thrive in environments where systems must be designed, optimized, or reinvented.",
+      "Strategic Architects combine logical thinking with systems design. They thrive in environments where complex systems must be designed, optimized, or reinvented.",
     score: (s) =>
       (s.technology > 75 ? 2 : s.technology > 60 ? 1 : 0) +
       (s.analytical > 70 ? 2 : s.analytical > 55 ? 1 : 0) +
       (s.practical > 65 ? 1 : 0),
   },
   {
-    name: "Creative Innovator",
+    name: "Creative Explorer",
     description:
-      "Creative Innovators blend imagination with execution. They excel at turning novel ideas into tangible outcomes and inspiring others.",
+      "Creative Explorers blend imagination with curiosity. They excel at exploring new ideas and turning them into tangible outcomes.",
     score: (s) =>
       (s.creativity > 75 ? 2 : s.creativity > 60 ? 1 : 0) +
       (s.entrepreneurial > 65 ? 1 : 0) +
       (s.social > 60 ? 1 : 0),
   },
   {
-    name: "Analytical Explorer",
+    name: "Analytical Builder",
     description:
-      "Analytical Explorers love patterns, data, and deep inquiry. They thrive in research, analysis, and roles that require precision and curiosity.",
+      "Analytical Builders love patterns, data, and structure. They thrive in research, analysis, and roles that require precision and building frameworks.",
     score: (s) =>
       (s.analytical > 75 ? 2 : s.analytical > 60 ? 1 : 0) +
       (s.learning > 70 ? 2 : s.learning > 55 ? 1 : 0) +
@@ -55,67 +56,31 @@ const ARCHETYPES: ArchetypeDef[] = [
       (s.social > 60 ? 1 : 0),
   },
   {
-    name: "Practical Problem Solver",
+    name: "Social Influencer",
     description:
-      "Practical Problem Solvers turn complexity into clear, actionable solutions. They excel in implementation and getting things done.",
-    score: (s) =>
-      (s.practical > 75 ? 2 : s.practical > 60 ? 1 : 0) +
-      (s.analytical > 65 ? 1 : 0) +
-      (s.technology > 55 ? 1 : 0),
-  },
-  {
-    name: "Social Catalyst",
-    description:
-      "Social Catalysts create impact through people. They build trust, foster collaboration, and drive change through relationships.",
+      "Social Influencers create impact through people. They build trust, foster collaboration, and drive change through relationships.",
     score: (s) =>
       (s.social > 75 ? 2 : s.social > 60 ? 1 : 0) +
       (s.leadership > 65 ? 1 : 0) +
       (s.purpose > 55 ? 1 : 0),
   },
   {
-    name: "Knowledge Architect",
+    name: "Tech Innovator",
     description:
-      "Knowledge Architects structure information and learning. They thrive in roles that require synthesizing ideas and building frameworks.",
+      "Tech Innovators combine technology with innovation. They excel at leveraging tools and systems to create new solutions and drive change.",
     score: (s) =>
-      (s.learning > 75 ? 2 : s.learning > 60 ? 1 : 0) +
-      (s.analytical > 65 ? 1 : 0) +
-      (s.creativity > 55 ? 1 : 0),
-  },
-  {
-    name: "Adaptive Explorer",
-    description:
-      "Adaptive Explorers thrive in change and uncertainty. They learn quickly, take calculated risks, and pivot when needed.",
-    score: (s) =>
-      (s.learning > 70 ? 2 : s.learning > 55 ? 1 : 0) +
-      (s.risk > 65 ? 2 : s.risk > 50 ? 1 : 0) +
-      (s.creativity > 55 ? 1 : 0),
-  },
-  {
-    name: "System Thinker",
-    description:
-      "System Thinkers see how parts connect into wholes. They excel at optimization, process design, and technical strategy.",
-    score: (s) =>
-      (s.analytical > 72 ? 2 : s.analytical > 58 ? 1 : 0) +
-      (s.technology > 70 ? 2 : s.technology > 55 ? 1 : 0) +
-      (s.practical > 60 ? 1 : 0),
-  },
-  {
-    name: "Impact Creator",
-    description:
-      "Impact Creators align their work with meaning. They combine purpose with action to create lasting change.",
-    score: (s) =>
-      (s.purpose > 75 ? 2 : s.purpose > 60 ? 1 : 0) +
-      (s.leadership > 65 ? 1 : 0) +
-      (s.social > 60 ? 1 : 0),
-  },
-  {
-    name: "Curious Researcher",
-    description:
-      "Curious Researchers are driven by questions. They excel in discovery, evidence-based work, and deepening understanding.",
-    score: (s) =>
-      (s.learning > 78 ? 2 : s.learning > 62 ? 1 : 0) +
+      (s.technology > 72 ? 2 : s.technology > 58 ? 1 : 0) +
       (s.analytical > 70 ? 2 : s.analytical > 55 ? 1 : 0) +
-      (s.purpose > 55 ? 1 : 0),
+      (s.creativity > 55 ? 1 : 0),
+  },
+  {
+    name: "Practical Operator",
+    description:
+      "Practical Operators turn complexity into clear, actionable solutions. They excel in implementation and getting things done.",
+    score: (s) =>
+      (s.practical > 75 ? 2 : s.practical > 60 ? 1 : 0) +
+      (s.analytical > 65 ? 1 : 0) +
+      (s.technology > 55 ? 1 : 0),
   },
   {
     name: "Entrepreneurial Pioneer",
@@ -125,6 +90,24 @@ const ARCHETYPES: ArchetypeDef[] = [
       (s.entrepreneurial > 75 ? 2 : s.entrepreneurial > 60 ? 1 : 0) +
       (s.risk > 68 ? 2 : s.risk > 52 ? 1 : 0) +
       (s.leadership > 62 ? 1 : 0),
+  },
+  {
+    name: "Learning Specialist",
+    description:
+      "Learning Specialists structure information and growth. They thrive in roles that require synthesizing ideas, learning systems, and building capability.",
+    score: (s) =>
+      (s.learning > 75 ? 2 : s.learning > 60 ? 1 : 0) +
+      (s.analytical > 65 ? 1 : 0) +
+      (s.creativity > 55 ? 1 : 0),
+  },
+  {
+    name: "Purpose Driven Leader",
+    description:
+      "Purpose Driven Leaders align their work with meaning. They combine purpose with action to create lasting change and inspire others.",
+    score: (s) =>
+      (s.purpose > 75 ? 2 : s.purpose > 60 ? 1 : 0) +
+      (s.leadership > 65 ? 1 : 0) +
+      (s.social > 60 ? 1 : 0),
   },
 ];
 

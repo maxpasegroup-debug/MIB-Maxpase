@@ -115,7 +115,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       success: true,
-      reportUrl: `/career-results/${sessionId}`,
+      reportUrl: `/whats-next/career-results/${sessionId}`,
       reportLocked: true,
       preview: {
         identityName: identity.archetype,

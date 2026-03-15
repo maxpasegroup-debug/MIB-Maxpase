@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 import { prisma } from "@/lib/prisma";
 import { generateCareerRoadmap } from "@/lib/careerRoadmap";
 import type { CareerClusterName } from "@/lib/careerClusterMapping";
@@ -37,7 +38,7 @@ export default async function CareerReportPrintPage({ params }: PageProps) {
             Unlock your full report to download the PDF.
           </p>
           <a
-            href={`/career-results/${sessionId}`}
+            href={`${WHATS_NEXT_BASE}/career-results/${sessionId}`}
             className="mt-6 inline-block text-purple-600 font-medium hover:underline"
           >
             Back to report

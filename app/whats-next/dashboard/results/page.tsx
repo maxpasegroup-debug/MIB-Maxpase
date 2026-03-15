@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 import { Card } from "@/components/ui/Card";
 import { ResultsListSkeleton } from "@/components/ui/Skeleton";
 import { EmptyState } from "@/components/ui/EmptyState";
@@ -73,7 +74,7 @@ export default function DashboardResultsPage() {
                     <td className="py-3 px-4 text-gray-600">{r.cluster}</td>
                     <td className="py-3 px-4">
                       <Link
-                        href={`/career-results/${r.sessionId}`}
+                        href={`${WHATS_NEXT_BASE}/career-results/${r.sessionId}`}
                         className="text-purple-600 font-medium hover:underline"
                       >
                         View Report

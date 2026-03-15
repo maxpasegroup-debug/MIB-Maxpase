@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { getUserSession, canBypassPayments } from "@/lib/userAuth";
 import { generateCareerRoadmap } from "@/lib/careerRoadmap";
 import type { CareerClusterName } from "@/lib/careerClusterMapping";
 import { generatePotentialProfile } from "@/lib/careerPotential";
@@ -42,7 +43,9 @@ export async function GET(request: Request) {
       );
     }
 
-    if (session.report.reportLocked) {
+    const userSession = getUserSession(request);
+    const allowDownload = !session.report.reportLocked || canBypassPayments(userSession);
+    if (!allowDownload) {
       return NextResponse.json(
         { error: "Report is locked. Unlock to download." },
         { status: 403 }

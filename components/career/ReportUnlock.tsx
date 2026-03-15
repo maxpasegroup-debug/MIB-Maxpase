@@ -132,6 +132,8 @@ export default function ReportUnlock({ sessionId }: ReportUnlockProps) {
 
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-6">
         <div>
+          <p className="text-sm text-gray-500 line-through">Real Value: ₹1999</p>
+          <p className="text-sm text-green-600 font-semibold mt-0.5">Launch Offer: ₹499 — 75% OFF</p>
           <span className="text-3xl font-bold text-purple-600">₹499</span>
           <span className="text-gray-500 ml-1">one-time</span>
         </div>
@@ -157,7 +159,7 @@ export default function ReportUnlock({ sessionId }: ReportUnlockProps) {
         disabled={loading}
         className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 px-8 py-4 text-white font-semibold shadow-lg hover:scale-105 transition-transform disabled:opacity-60 disabled:pointer-events-none disabled:hover:scale-100"
       >
-        {loading ? "Opening payment…" : "Unlock Full Report"}
+        {loading ? "Opening payment…" : "Unlock Full Report — ₹499"}
       </button>
     </section>
   );

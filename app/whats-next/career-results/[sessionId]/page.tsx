@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { WHATS_NEXT_BASE } from "@/lib/basePath";
 import { prisma } from "@/lib/prisma";
+import { getSessionFromHeaders, canBypassPayments } from "@/lib/userAuth";
 import { generateCareerRoadmap } from "@/lib/careerRoadmap";
 import type { CareerClusterName } from "@/lib/careerClusterMapping";
 import { generatePotentialProfile } from "@/lib/careerPotential";
@@ -64,7 +66,8 @@ export default async function CareerResultPage({ params }: PageProps) {
     ? (JSON.parse(session.report.probabilities) as CareerProbabilityItem[])
     : generateCareerProbabilities(traitScores as import("@/lib/careerDimensions").Career10DScores);
 
-  const reportLocked = session.report.reportLocked;
+  const userSession = getSessionFromHeaders(await headers());
+  const reportLocked = canBypassPayments(userSession) ? false : session.report.reportLocked;
   const identity =
     session.report.identityName && session.report.identityDescription
       ? { archetype: session.report.identityName, description: session.report.identityDescription }
