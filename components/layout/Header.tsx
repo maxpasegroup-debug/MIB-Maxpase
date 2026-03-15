@@ -18,18 +18,18 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-        {/* Logo + brand */}
-        <Link href="/" className="flex items-center gap-3 shrink-0">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+        {/* Logo + brand lockup */}
+        <Link href="/" className="flex items-center gap-3 shrink-0 hover:opacity-90 transition-opacity">
           <Image
             src="/logo.png"
             alt="What's Next"
             width={40}
             height={40}
-            className="w-10 h-10 object-contain"
+            className="h-10 w-auto object-contain"
           />
-          <div className="hidden sm:block">
-            <span className="font-semibold text-gray-900 block leading-tight">
+          <div className="leading-tight">
+            <span className="block text-lg font-bold tracking-tight bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent">
               What&apos;s Next
             </span>
             <span className="text-xs text-gray-500">by MIB</span>

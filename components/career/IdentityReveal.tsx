@@ -10,7 +10,7 @@ interface IdentityRevealProps {
 export default function IdentityReveal({ archetype, description }: IdentityRevealProps) {
   return (
     <motion.section
-      className="relative bg-white rounded-xl shadow-lg p-6 sm:p-10 text-center overflow-hidden"
+      className="relative rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl p-6 sm:p-10 text-center overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}

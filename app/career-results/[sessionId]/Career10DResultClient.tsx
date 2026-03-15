@@ -95,7 +95,7 @@ export default function Career10DResultClient({
           <div className="pt-4">
             <Link
               href="/career-intelligence"
-              className="inline-flex items-center justify-center rounded-xl bg-purple-600 px-6 py-3 text-white font-medium hover:bg-purple-700"
+              className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white/70 px-6 py-3 text-gray-700 font-medium hover:scale-105 transition-transform"
             >
               Back to Career Intelligence
             </Link>

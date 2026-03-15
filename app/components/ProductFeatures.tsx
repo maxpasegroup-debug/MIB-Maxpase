@@ -38,7 +38,7 @@ const FEATURES = [
 
 export default function ProductFeatures() {
   return (
-    <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+    <section className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 border-t border-white/40">
       <div className="container mx-auto max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export default function ProductFeatures() {
           One platform for mind, career, and growth.
         </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {FEATURES.map((feature, i) => (
             <motion.div
               key={feature.title}
@@ -67,7 +67,7 @@ export default function ProductFeatures() {
               transition={{ delay: i * 0.08 }}
             >
               <Link href={feature.href}>
-                <div className="h-full rounded-2xl shadow-lg p-6 bg-white/90 border border-gray-100 hover:shadow-xl transition-shadow">
+                <div className="h-full rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center text-purple-600 mb-4">
                     <feature.icon className="w-6 h-6" />
                   </div>

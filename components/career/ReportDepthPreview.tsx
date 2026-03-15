@@ -53,7 +53,7 @@ export default function ReportDepthPreview({
         ].map((d, i) => top3Probabilities[i] || d);
 
   return (
-    <section className="bg-white rounded-xl shadow-lg p-6 sm:p-8 border border-purple-100">
+    <section className="rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl p-6 sm:p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
       <h2 className="text-xl font-bold text-gray-900 mb-6 text-center">
         Inside Your Career Intelligence Report
       </h2>

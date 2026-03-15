@@ -102,13 +102,13 @@ export default function CareerIntelligencePage() {
           >
             <Link
               href="/career-intelligence/start"
-              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 px-8 py-4 text-white font-semibold shadow-lg hover:opacity-95 transition-opacity"
+              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 px-8 py-4 text-white font-semibold shadow-lg hover:scale-105 transition-transform"
             >
               Start Free Career Intelligence Test
             </Link>
             <Link
               href="/#categories"
-              className="inline-flex items-center justify-center rounded-xl border-2 border-purple-300 px-8 py-4 text-purple-700 font-semibold bg-white/80 hover:bg-white transition-colors"
+              className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white/70 px-8 py-4 text-gray-700 font-semibold hover:scale-105 transition-transform"
             >
               Explore Life Areas
             </Link>
@@ -117,19 +117,18 @@ export default function CareerIntelligencePage() {
       </section>
 
       {/* Section 2 — The Problem */}
-      <section className="py-16 sm:py-20 px-4">
+      <section className="py-16 lg:py-24 px-4 border-t border-white/40">
         <div className="container mx-auto max-w-6xl">
           <motion.h2 {...fadeUp} className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
             Choosing the Right Career is Hard
           </motion.h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
             {PROBLEM_CARDS.map((card, i) => (
               <motion.div
                 key={card.title}
                 {...fadeUp}
                 transition={{ delay: i * 0.08 }}
-                whileHover={{ scale: 1.03 }}
-                className="rounded-2xl bg-white p-6 shadow-lg border border-gray-100 flex flex-col items-center text-center"
+                className="rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl p-6 flex flex-col items-center text-center hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
                 <card.icon className="w-10 h-10 text-purple-500 mb-3" />
                 <h3 className="font-semibold text-gray-900">{card.title}</h3>
@@ -184,14 +183,13 @@ export default function CareerIntelligencePage() {
           <motion.h2 {...fadeUp} className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
             Your Personalized Career Intelligence Report
           </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {REPORT_CARDS.map((card, i) => (
               <motion.div
                 key={card.title}
                 {...fadeUp}
                 transition={{ delay: i * 0.1 }}
-                whileHover={{ scale: 1.03 }}
-                className="rounded-2xl bg-white p-8 shadow-xl border border-gray-100 text-center"
+                className="rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl p-6 sm:p-8 text-center hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
                 <card.icon className="w-12 h-12 text-purple-500 mx-auto mb-4" />
                 <h3 className="font-bold text-gray-900 text-lg">{card.title}</h3>

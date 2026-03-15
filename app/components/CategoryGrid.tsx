@@ -29,13 +29,13 @@ const item = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };
 
 export default function CategoryGrid() {
   return (
-    <section id="categories" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-transparent">
+    <section id="categories" className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 border-t border-white/40">
       <div className="container mx-auto max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-2xl sm:text-3xl font-semibold text-center text-gray-900 mb-3"
+          className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-3"
         >
           Life problem categories
         </motion.h2>
@@ -53,13 +53,13 @@ export default function CategoryGrid() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-40px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12"
         >
           {categories.map((cat) => (
             <motion.div key={cat.title} variants={item}>
               <Link href={`/mobile/tests/start?category=${cat.id}`}>
                 <motion.div
-                  className={`rounded-2xl p-6 sm:p-8 bg-gradient-to-br ${cat.gradient} text-white shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl`}
+                  className={`rounded-2xl p-6 sm:p-8 bg-gradient-to-br ${cat.gradient} text-white shadow-2xl border border-white/20 backdrop-blur-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1`}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >

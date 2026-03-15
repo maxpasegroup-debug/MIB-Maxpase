@@ -62,11 +62,14 @@ export default function FullCareerReport({
   const pathCards = roadmap.slice(0, 3);
   const pathLabels = ["Technology Path", "Creative Path", "Entrepreneur Path"];
 
+  const cardClass =
+    "rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl p-6 sm:p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300";
+
   return (
     <div className="space-y-8">
       {/* 1 Executive Summary */}
       <motion.section
-        className="bg-white rounded-xl shadow-lg p-6 sm:p-8 border border-gray-100"
+        className={cardClass}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={stagger(0)}
@@ -94,7 +97,7 @@ export default function FullCareerReport({
 
       {/* 2 Intelligence Radar */}
       <motion.section
-        className="bg-white rounded-xl shadow-lg p-6 sm:p-8"
+        className={cardClass}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={stagger(1)}
@@ -126,7 +129,7 @@ export default function FullCareerReport({
       {/* 3 Potential Profile */}
       {potentialProfile && (
         <motion.section
-          className="bg-white rounded-xl shadow-lg p-6 sm:p-8"
+          className={cardClass}
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={stagger(2)}
@@ -140,7 +143,7 @@ export default function FullCareerReport({
       {/* 4 Behavioral Gap Analysis */}
       {gapAnalysis.length > 0 && (
         <motion.section
-          className="bg-white rounded-xl shadow-lg p-6 sm:p-8"
+          className={cardClass}
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={stagger(3)}
@@ -153,7 +156,7 @@ export default function FullCareerReport({
       {/* 5 Career Probability Model */}
       {probabilities.length > 0 && (
         <motion.section
-          className="bg-white rounded-xl shadow-lg p-6 sm:p-8"
+          className={cardClass}
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={stagger(4)}
@@ -165,7 +168,7 @@ export default function FullCareerReport({
 
       {/* 6 Life Path Simulation */}
       <motion.section
-        className="bg-white rounded-xl shadow-lg p-6 sm:p-8"
+        className={cardClass}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={stagger(5)}
@@ -173,7 +176,7 @@ export default function FullCareerReport({
         <h2 className="text-lg font-bold text-gray-900 mb-5">Life Path Simulation</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {pathLabels.map((label, i) => (
-            <div key={label} className="p-4 rounded-xl border border-gray-200 bg-gray-50/50">
+            <div key={label} className="p-4 rounded-xl border border-white/60 bg-white/50 backdrop-blur-sm">
               <span className="inline-flex w-8 h-8 rounded-full bg-purple-100 text-purple-700 font-semibold text-sm items-center justify-center mb-2">
                 {i + 1}
               </span>
@@ -186,7 +189,7 @@ export default function FullCareerReport({
 
       {/* 7 Strategic AI Insight */}
       <motion.section
-        className="bg-white rounded-xl shadow-lg p-6 sm:p-8"
+        className={cardClass}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={stagger(6)}
@@ -203,7 +206,7 @@ export default function FullCareerReport({
 
       {/* 8 Career Roadmap */}
       <motion.section
-        className="bg-white rounded-xl shadow-lg p-6 sm:p-8"
+        className={cardClass}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={stagger(7)}
@@ -235,13 +238,13 @@ export default function FullCareerReport({
         <a
           href={`/api/career-report/download?sessionId=${encodeURIComponent(sessionId)}`}
           download="MIB_Career_Intelligence_Report.pdf"
-          className="inline-flex items-center justify-center rounded-xl bg-purple-600 text-white px-6 py-3 shadow-lg font-medium hover:bg-purple-700"
+          className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white px-6 py-3 shadow-lg font-medium hover:scale-105 transition-transform"
         >
           Download Intelligence Report
         </a>
         <Link
           href="/career-intelligence"
-          className="inline-flex items-center justify-center rounded-xl border border-gray-300 px-6 py-3 text-gray-700 font-medium hover:bg-gray-50"
+          className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white/70 px-6 py-3 text-gray-700 font-medium hover:scale-105 transition-transform"
         >
           Back to Career Intelligence
         </Link>

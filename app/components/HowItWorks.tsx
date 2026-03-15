@@ -27,7 +27,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+    <section id="how-it-works" className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 border-t border-white/40">
       <div className="container mx-auto max-w-5xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ export default function HowItWorks() {
           Three steps to your career intelligence.
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {steps.map((step, i) => (
             <motion.div
               key={step.title}
@@ -54,7 +54,7 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="rounded-2xl bg-white/80 backdrop-blur shadow-xl p-6 border border-white/60"
+              className="rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
             >
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 flex items-center justify-center text-white shadow-lg mb-5">
                 <step.icon className="w-7 h-7" />

@@ -6,13 +6,13 @@ import Link from "next/link";
 
 export default function ProfessionalSection() {
   return (
-    <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-transparent">
+    <section className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 border-t border-white/40">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-2xl shadow-xl bg-white/80 backdrop-blur-md border border-white/60 p-8 sm:p-12"
+          className="rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl p-6 sm:p-12 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
         >
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-8">
             <div>
@@ -28,13 +28,9 @@ export default function ProfessionalSection() {
               </p>
             </div>
             <Link href="/school-dashboard">
-              <motion.span
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-block rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white px-6 py-3 font-semibold shadow-md"
-              >
+              <span className="inline-block rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white px-6 py-3 font-semibold shadow-lg hover:scale-105 transition-transform">
                 Professional Dashboard
-              </motion.span>
+              </span>
             </Link>
           </div>
         </motion.div>

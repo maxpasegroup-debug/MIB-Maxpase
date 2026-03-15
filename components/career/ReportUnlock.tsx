@@ -122,7 +122,7 @@ export default function ReportUnlock({ sessionId }: ReportUnlockProps) {
   };
 
   return (
-    <section className="bg-white rounded-xl shadow-xl border-2 border-purple-200 p-6 sm:p-8 relative z-10">
+    <section className="rounded-2xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl p-6 sm:p-8 relative z-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
       <h2 className="text-xl font-bold text-gray-900 mb-2">
         Unlock Your Full Career Intelligence Report
       </h2>
@@ -155,7 +155,7 @@ export default function ReportUnlock({ sessionId }: ReportUnlockProps) {
         type="button"
         onClick={handleUnlock}
         disabled={loading}
-        className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-purple-600 px-8 py-4 text-white font-semibold hover:bg-purple-700 disabled:opacity-60 disabled:pointer-events-none"
+        className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 px-8 py-4 text-white font-semibold shadow-lg hover:scale-105 transition-transform disabled:opacity-60 disabled:pointer-events-none disabled:hover:scale-100"
       >
         {loading ? "Opening payment…" : "Unlock Full Report"}
       </button>

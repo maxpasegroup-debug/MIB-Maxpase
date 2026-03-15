@@ -6,15 +6,15 @@ import { HiOutlineUserGroup } from "react-icons/hi2";
 
 export default function PartnerBanner() {
   return (
-    <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 border-t border-white/40">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-2xl shadow-lg border border-gray-100 bg-gradient-to-br from-emerald-700 to-teal-800 p-8 sm:p-12 text-white transition-all duration-300 hover:shadow-xl"
+          className="rounded-2xl backdrop-blur-xl border border-white/20 shadow-2xl p-6 sm:p-12 bg-gradient-to-br from-emerald-700 to-teal-800 text-white transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
         >
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-8">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-8 text-white">
             <div>
               <div className="inline-flex p-3 rounded-2xl bg-white/10 mb-6">
                 <HiOutlineUserGroup className="w-10 h-10" />
@@ -22,18 +22,14 @@ export default function PartnerBanner() {
               <h2 className="text-2xl sm:text-3xl font-bold mb-3">
                 Become a Career Intelligence Partner
               </h2>
-              <p className="text-white/85 text-lg max-w-xl">
+              <p className="text-white/90 text-lg max-w-xl">
                 Help students discover their career direction and earn referral income.
               </p>
             </div>
             <Link href="/partners/register">
-              <motion.span
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-block rounded-2xl bg-white text-emerald-800 px-6 py-3 font-semibold shadow-lg"
-              >
+              <span className="inline-block rounded-xl bg-white text-emerald-800 px-6 py-3 font-semibold shadow-lg hover:scale-105 transition-transform">
                 Become a Partner
-              </motion.span>
+              </span>
             </Link>
           </div>
         </motion.div>
