@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 interface Summary {
   points: number;
