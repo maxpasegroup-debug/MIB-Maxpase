@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { HiOutlineBriefcase } from "react-icons/hi2";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 export default function ProfessionalSection() {
   return (
@@ -27,7 +28,7 @@ export default function ProfessionalSection() {
                 reports for your clients.
               </p>
             </div>
-            <Link href="/school-dashboard">
+            <Link href={`${WHATS_NEXT_BASE}/school-dashboard`}>
               <span className="inline-block rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white px-6 py-3 font-semibold shadow-lg hover:scale-105 transition-transform">
                 Professional Dashboard
               </span>

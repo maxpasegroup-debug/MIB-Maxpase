@@ -1,32 +1,33 @@
 "use client";
 
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 const PRODUCT = [
-  { href: "/career-intelligence", label: "Career Intelligence" },
-  { href: "/tests", label: "Psychological Tests" },
-  { href: "/dashboard/mentor", label: "AI Mentor" },
-  { href: "/guidance", label: "Guidance" },
+  { href: `${WHATS_NEXT_BASE}/career-intelligence`, label: "Career Intelligence" },
+  { href: `${WHATS_NEXT_BASE}/tests`, label: "Psychological Tests" },
+  { href: `${WHATS_NEXT_BASE}/dashboard/mentor`, label: "AI Mentor" },
+  { href: `${WHATS_NEXT_BASE}/guidance`, label: "Guidance" },
 ];
 
 const COMPANY = [
-  { href: "/#how-it-works", label: "How It Works" },
-  { href: "/#result-preview", label: "Report Preview" },
-  { href: "/school-dashboard", label: "For Professionals" },
-  { href: "/partners/register", label: "Partners" },
+  { href: `${WHATS_NEXT_BASE}/#how-it-works`, label: "How It Works" },
+  { href: `${WHATS_NEXT_BASE}/#result-preview`, label: "Report Preview" },
+  { href: `${WHATS_NEXT_BASE}/school-dashboard`, label: "For Professionals" },
+  { href: `${WHATS_NEXT_BASE}/partners/register`, label: "Partners" },
 ];
 
 const RESOURCES = [
-  { href: "/dashboard/growth", label: "Growth" },
-  { href: "/mobile/tests", label: "Assessments" },
-  { href: "/login", label: "Login" },
-  { href: "/login?tab=register", label: "Sign Up" },
+  { href: `${WHATS_NEXT_BASE}/dashboard/growth`, label: "Growth" },
+  { href: `${WHATS_NEXT_BASE}/mobile/tests`, label: "Assessments" },
+  { href: `${WHATS_NEXT_BASE}/login`, label: "Login" },
+  { href: `${WHATS_NEXT_BASE}/login?tab=register`, label: "Sign Up" },
 ];
 
 const LEGAL = [
-  { href: "/", label: "Privacy" },
-  { href: "/", label: "Terms" },
-  { href: "/", label: "Contact" },
+  { href: WHATS_NEXT_BASE, label: "Privacy" },
+  { href: WHATS_NEXT_BASE, label: "Terms" },
+  { href: WHATS_NEXT_BASE, label: "Contact" },
 ];
 
 const COLUMNS = [

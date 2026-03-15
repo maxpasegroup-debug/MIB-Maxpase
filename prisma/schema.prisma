@@ -445,10 +445,52 @@ model Institute {
   address   String?
   createdAt DateTime @default(now()) @map("created_at")
 
-  students InstituteStudent[]
-  tests    InstituteTest[]
+  students         InstituteStudent[]
+  tests            InstituteTest[]
+  analytics        InstituteAnalytics[]
+  reports          InstituteReport[]
 
   @@map("institutes")
+}
+
+model InstituteAnalytics {
+  id             String   @id @default(cuid())
+  instituteId    String   @map("institute_id")
+  totalStudents  Int      @map("total_students")
+  activeTrainees Int      @map("active_trainees")
+  avgReadiness   Float    @map("avg_readiness")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  institute Institute @relation(fields: [instituteId], references: [id], onDelete: Cascade)
+
+  @@map("institute_analytics")
+}
+
+model StudentPerformance {
+  id         String   @id @default(cuid())
+  studentId  String   @map("student_id")
+  examId     String   @map("exam_id")
+  readiness  Float
+  accuracy   Float
+  speed      Float
+  weakTopics String   @map("weak_topics") // JSON string
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  student InstituteStudent @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  exam    Exam             @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  @@map("student_performance")
+}
+
+model InstituteReport {
+  id          String   @id @default(cuid())
+  instituteId String   @map("institute_id")
+  reportData  String   @map("report_data") // JSON string
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  institute Institute @relation(fields: [instituteId], references: [id], onDelete: Cascade)
+
+  @@map("institute_reports")
 }
 
 model InstituteStudent {
@@ -459,8 +501,9 @@ model InstituteStudent {
   age        Int?
   createdAt  DateTime @default(now()) @map("created_at")
 
-  institute Institute       @relation(fields: [instituteId], references: [id], onDelete: Cascade)
-  tests     InstituteTest[]
+  institute   Institute           @relation(fields: [instituteId], references: [id], onDelete: Cascade)
+  tests       InstituteTest[]
+  performance StudentPerformance[]
 
   @@map("institute_students")
 }
@@ -556,4 +599,167 @@ model LifeCoachMessage {
 
   @@unique([userId, date])
   @@map("life_coach_messages")
+}
+
+// ---------------------------------------------------------------------------
+// 15. Exam Coaching Arena — competitive exam training
+// ---------------------------------------------------------------------------
+
+model ExamCategory {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  exams Exam[]
+
+  @@map("exam_categories")
+}
+
+model Exam {
+  id              String   @id @default(cuid())
+  categoryId      String   @map("category_id")
+  name            String
+  description     String?
+  difficulty      String?
+  duration        Int?
+  totalQuestions  Int?     @map("total_questions")
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  category         ExamCategory     @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  subjects         ExamSubject[]
+  questions        ExamQuestion[]
+  diagnosticTests  DiagnosticTest[]
+  trainingSessions TrainingSession[]
+  performanceLogs  PerformanceLog[]
+  trainingPlans    TrainingPlan[]
+  examReadinesses  ExamReadiness[]
+  dailyMissions    DailyTrainingMission[]
+  studentPerformances StudentPerformance[]
+
+  @@map("exams")
+}
+
+model ExamSubject {
+  id        String   @id @default(cuid())
+  examId    String   @map("exam_id")
+  name      String
+  weightage Int?
+
+  exam   Exam        @relation(fields: [examId], references: [id], onDelete: Cascade)
+  topics ExamTopic[]
+  questions ExamQuestion[]
+
+  @@map("exam_subjects")
+}
+
+model ExamTopic {
+  id         String   @id @default(cuid())
+  subjectId  String   @map("subject_id")
+  name       String
+  difficulty String?
+
+  subject   ExamSubject   @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  questions ExamQuestion[]
+
+  @@map("exam_topics")
+}
+
+model ExamQuestion {
+  id           String   @id @default(cuid())
+  examId       String   @map("exam_id")
+  subjectId    String   @map("subject_id")
+  topicId      String   @map("topic_id")
+  questionText String  @map("question_text")
+  difficulty   String?
+  questionType String  @map("question_type")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  exam    Exam         @relation(fields: [examId], references: [id], onDelete: Cascade)
+  subject ExamSubject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  topic   ExamTopic    @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  @@map("exam_questions")
+}
+
+model DiagnosticTest {
+  id        String   @id @default(cuid())
+  userId    String   @map("user_id")
+  examId    String   @map("exam_id")
+  score     Int?
+  accuracy  Float?
+  speed     Float?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  @@map("diagnostic_tests")
+}
+
+model TrainingSession {
+  id          String   @id @default(cuid())
+  userId      String   @map("user_id")
+  examId      String   @map("exam_id")
+  sessionType String   @map("session_type")
+  score       Int?
+  accuracy    Float?
+  duration    Int?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  @@map("training_sessions")
+}
+
+model PerformanceLog {
+  id          String   @id @default(cuid())
+  userId      String   @map("user_id")
+  examId      String   @map("exam_id")
+  accuracy    Float
+  speed       Float
+  consistency Float
+  weakTopics  String   @map("weak_topics") // JSON string
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  @@map("performance_logs")
+}
+
+model TrainingPlan {
+  id        String   @id @default(cuid())
+  userId    String   @map("user_id")
+  examId    String   @map("exam_id")
+  planData  String   @map("plan_data") // JSON string
+  createdAt DateTime @default(now()) @map("created_at")
+
+  exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  @@map("training_plans")
+}
+
+model ExamReadiness {
+  id             String   @id @default(cuid())
+  userId         String   @map("user_id")
+  examId         String   @map("exam_id")
+  readinessScore Float    @map("readiness_score")
+  predictedRank  String?  @map("predicted_rank")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  @@map("exam_readiness")
+}
+
+model DailyTrainingMission {
+  id          String   @id @default(cuid())
+  userId      String   @map("user_id")
+  examId      String   @map("exam_id")
+  missionData String   @map("mission_data") // JSON
+  completed   Boolean  @default(false)
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  @@map("daily_training_missions")
 }

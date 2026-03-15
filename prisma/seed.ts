@@ -383,6 +383,9 @@ async function main() {
   const { seedCareerIntelligence } = await import("./seed-career");
   await seedCareerIntelligence();
 
+  const { seedExamCoaching } = await import("./seed-exam");
+  await seedExamCoaching();
+
   // Growth missions (gamified psychological growth)
   const growthMissions = [
     { title: "Gratitude practice", description: "Write down three things you are grateful for today.", category: "mindfulness", points: 15 },
@@ -403,7 +406,7 @@ async function main() {
     });
   }
 
-  console.log("Seed complete: categories, tests, question bank, psychologists, career intelligence, growth missions.");
+  console.log("Seed complete: categories, tests, question bank, psychologists, career intelligence, exam coaching, growth missions.");
 }
 
 main()

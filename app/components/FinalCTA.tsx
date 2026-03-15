@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 export default function FinalCTA() {
   return (
@@ -37,7 +38,7 @@ export default function FinalCTA() {
           className="mt-12"
         >
           <Link
-            href="/career-intelligence/start"
+            href={`${WHATS_NEXT_BASE}/career-intelligence/start`}
             className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-semibold text-lg px-12 py-5 shadow-2xl hover:scale-105 transition-transform"
           >
             Start Free Assessment

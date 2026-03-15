@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 export default function CTASection() {
   return (
@@ -23,7 +24,7 @@ export default function CTASection() {
           transition={{ delay: 0.2 }}
           className="mt-10"
         >
-          <Link href="/mobile/tests">
+          <Link href={`${WHATS_NEXT_BASE}/mobile/tests`}>
           <motion.span
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}

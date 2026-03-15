@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 const MOBILE_BREAKPOINT = 768;
 
@@ -12,9 +13,9 @@ export default function HeroSection() {
   const handleExploreAssessments = (e: React.MouseEvent) => {
     e.preventDefault();
     if (typeof window !== "undefined" && window.innerWidth < MOBILE_BREAKPOINT) {
-      router.push("/mobile/tests");
+      router.push(`${WHATS_NEXT_BASE}/mobile/tests`);
     } else {
-      router.push("/tests");
+      router.push(`${WHATS_NEXT_BASE}/tests`);
     }
   };
 
@@ -63,7 +64,7 @@ export default function HeroSection() {
                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               >
                 <Link
-                  href="/career-intelligence/start"
+                  href={`${WHATS_NEXT_BASE}/career-intelligence/start`}
                   className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-semibold px-8 py-4 shadow-lg hover:scale-105 transition-transform"
                 >
                   Start Free Career Intelligence Test

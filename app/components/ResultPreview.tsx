@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 const PREVIEW_CARDS = [
   { title: "10D Radar", subtitle: "Your 10 dimensions at a glance" },
@@ -54,7 +55,7 @@ export default function ResultPreview() {
           className="mt-12 text-center"
         >
           <Link
-            href="/career-intelligence/start"
+            href={`${WHATS_NEXT_BASE}/career-intelligence/start`}
             className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-semibold px-8 py-4 shadow-lg hover:scale-105 transition-transform"
           >
             Start Free Assessment

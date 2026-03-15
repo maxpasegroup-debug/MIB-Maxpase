@@ -2,38 +2,23 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 import {
   HiOutlineBriefcase,
   HiOutlineClipboardDocumentList,
   HiOutlineChatBubbleLeftRight,
   HiOutlineAcademicCap,
+  HiOutlineTrophy,
+  HiOutlineBuildingOffice2,
 } from "react-icons/hi2";
 
 const FEATURES = [
-  {
-    icon: HiOutlineBriefcase,
-    title: "Career Intelligence",
-    description: "10D career profiling and AI-powered career discovery.",
-    href: "/career-intelligence",
-  },
-  {
-    icon: HiOutlineClipboardDocumentList,
-    title: "Psychological Assessments",
-    description: "Structured tests for stress, confidence, relationships, and more.",
-    href: "/tests",
-  },
-  {
-    icon: HiOutlineChatBubbleLeftRight,
-    title: "AI Mentor",
-    description: "Personalized guidance and reflection with AI.",
-    href: "/dashboard/mentor",
-  },
-  {
-    icon: HiOutlineAcademicCap,
-    title: "Expert Guidance",
-    description: "Book sessions with psychologists and career counselors.",
-    href: "/guidance",
-  },
+  { icon: HiOutlineBriefcase, title: "Career Intelligence", description: "10D career profiling and AI-powered career discovery.", href: `${WHATS_NEXT_BASE}/career-intelligence` },
+  { icon: HiOutlineClipboardDocumentList, title: "Psychological Assessments", description: "Structured tests for stress, confidence, relationships, and more.", href: `${WHATS_NEXT_BASE}/tests` },
+  { icon: HiOutlineTrophy, title: "Exam Coaching Arena", description: "AI-powered exam training with diagnostics, coaching, and performance tracking.", href: `${WHATS_NEXT_BASE}/exam-coaching` },
+  { icon: HiOutlineChatBubbleLeftRight, title: "AI Mentor", description: "Personalized guidance and reflection with AI.", href: `${WHATS_NEXT_BASE}/dashboard/mentor` },
+  { icon: HiOutlineAcademicCap, title: "Expert Guidance", description: "Book sessions with psychologists and career counselors.", href: `${WHATS_NEXT_BASE}/guidance` },
+  { icon: HiOutlineBuildingOffice2, title: "Institution Intelligence", description: "AI-powered exam training analytics for schools and coaching centres.", href: `${WHATS_NEXT_BASE}/institutes/register` },
 ];
 
 export default function ProductFeatures() {
@@ -57,7 +42,7 @@ export default function ProductFeatures() {
           One platform for mind, career, and growth.
         </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           {FEATURES.map((feature, i) => (
             <motion.div
               key={feature.title}

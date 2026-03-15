@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, ClipboardList, MessageCircle, Trophy, User } from "lucide-react";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 const items = [
-  { href: "/mobile", label: "Home", icon: Home },
-  { href: "/mobile/tests", label: "Tests", icon: ClipboardList },
-  { href: "/mobile/guidance", label: "Guidance", icon: MessageCircle },
-  { href: "/mobile/growth", label: "Growth", icon: Trophy },
-  { href: "/mobile/profile", label: "Profile", icon: User },
+  { href: `${WHATS_NEXT_BASE}/mobile`, label: "Home", icon: Home },
+  { href: `${WHATS_NEXT_BASE}/mobile/tests`, label: "Tests", icon: ClipboardList },
+  { href: `${WHATS_NEXT_BASE}/mobile/guidance`, label: "Guidance", icon: MessageCircle },
+  { href: `${WHATS_NEXT_BASE}/mobile/growth`, label: "Growth", icon: Trophy },
+  { href: `${WHATS_NEXT_BASE}/mobile/profile`, label: "Profile", icon: User },
 ];
 
 export default function BottomNav() {
@@ -22,8 +23,8 @@ export default function BottomNav() {
       <div className="flex items-center justify-around h-full px-2">
         {items.map((item) => {
           const isActive =
-            item.href === "/mobile"
-              ? pathname === "/mobile"
+            item.href === `${WHATS_NEXT_BASE}/mobile`
+              ? pathname === `${WHATS_NEXT_BASE}/mobile` || pathname === `${WHATS_NEXT_BASE}/mobile/`
               : pathname.startsWith(item.href);
           const Icon = item.icon;
           return (

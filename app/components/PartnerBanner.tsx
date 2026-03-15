@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 import { HiOutlineUserGroup } from "react-icons/hi2";
 
 export default function PartnerBanner() {
@@ -26,7 +27,7 @@ export default function PartnerBanner() {
                 Help students discover their career direction and earn referral income.
               </p>
             </div>
-            <Link href="/partners/register">
+            <Link href={`${WHATS_NEXT_BASE}/partners/register`}>
               <span className="inline-block rounded-xl bg-white text-emerald-800 px-6 py-3 font-semibold shadow-lg hover:scale-105 transition-transform">
                 Become a Partner
               </span>

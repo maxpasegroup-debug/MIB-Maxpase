@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 
 export default function CareerIntelligenceBanner() {
   return (
@@ -22,7 +23,7 @@ export default function CareerIntelligenceBanner() {
           <p className="mt-3 text-lg font-semibold">
             Career Intelligence Test — ₹499
           </p>
-          <Link href="/career-intelligence/start">
+          <Link href={`${WHATS_NEXT_BASE}/career-intelligence/start`}>
             <motion.span
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}

@@ -5,12 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 
+import { WHATS_NEXT_BASE as BASE } from "@/lib/basePath";
 const NAV_LINKS = [
-  { href: "/career-intelligence", label: "Career Intelligence" },
-  { href: "/tests", label: "Psychological Tests" },
-  { href: "/guidance", label: "Guidance" },
-  { href: "/dashboard/growth", label: "Growth" },
-  { href: "/#how-it-works", label: "About" },
+  { href: `${BASE}/career-intelligence`, label: "Career Intelligence" },
+  { href: `${BASE}/tests`, label: "Psychological Tests" },
+  { href: `${BASE}/guidance`, label: "Guidance" },
+  { href: `${BASE}/dashboard/growth`, label: "Growth" },
+  { href: `${BASE}/#how-it-works`, label: "About" },
 ];
 
 export default function Header() {
@@ -20,7 +21,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo + brand lockup */}
-        <Link href="/" className="flex items-center gap-3 shrink-0 hover:opacity-90 transition-opacity">
+        <Link href={BASE} className="flex items-center gap-3 shrink-0 hover:opacity-90 transition-opacity">
           <Image
             src="/logo.png"
             alt="What's Next"
@@ -52,13 +53,13 @@ export default function Header() {
         {/* Desktop auth */}
         <div className="hidden lg:flex items-center gap-4">
           <Link
-            href="/login"
+            href={`${BASE}/login`}
             className="text-sm font-medium text-gray-700 hover:text-black transition-colors"
           >
             Login
           </Link>
           <Link
-            href="/login?tab=register"
+            href={`${BASE}/login?tab=register`}
             className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white text-sm font-semibold px-5 py-2 shadow-lg hover:scale-105 transition-transform"
           >
             Sign Up
@@ -92,14 +93,14 @@ export default function Header() {
             ))}
             <div className="flex flex-col gap-2 pt-4 mt-2 border-t border-gray-200">
               <Link
-                href="/login"
+                href={`${BASE}/login`}
                 className="py-2 text-gray-700 font-medium"
                 onClick={() => setMobileOpen(false)}
               >
                 Login
               </Link>
               <Link
-                href="/login?tab=register"
+                href={`${BASE}/login?tab=register`}
                 className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-semibold px-5 py-3 shadow-lg"
                 onClick={() => setMobileOpen(false)}
               >

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { WHATS_NEXT_BASE } from "@/lib/basePath";
 import { HiOutlineBolt, HiOutlineMagnifyingGlassCircle } from "react-icons/hi2";
 
 const tests = [
@@ -60,7 +61,7 @@ export default function TestTypes() {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{test.title}</h3>
               <p className="text-gray-600 mb-1">{test.duration}</p>
               <p className="text-gray-600 mb-8">{test.questions}</p>
-              <Link href="/mobile/tests">
+              <Link href={`${WHATS_NEXT_BASE}/mobile/tests`}>
                 <motion.span
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
