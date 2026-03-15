@@ -16,7 +16,7 @@ export function Skeleton({ className = "" }: SkeletonProps) {
 /** Skeleton for dashboard summary cards */
 export function DashboardSummarySkeleton() {
   return (
-    <div className="rounded-2xl shadow-lg border border-gray-100 bg-white p-6 space-y-4">
+    <div className="rounded-2xl shadow-lg border border-white/60 bg-white/80 backdrop-blur-md p-6 space-y-4">
       <Skeleton className="h-5 w-32" />
       <Skeleton className="h-8 w-24" />
       <Skeleton className="h-4 w-full" />
@@ -27,7 +27,7 @@ export function DashboardSummarySkeleton() {
 /** Skeleton for test results / list rows */
 export function ResultsListSkeleton() {
   return (
-    <div className="rounded-2xl shadow-lg border border-gray-100 bg-white overflow-hidden">
+    <div className="rounded-2xl shadow-lg border border-white/60 bg-white/80 backdrop-blur-md overflow-hidden">
       <div className="p-4 border-b border-gray-100 space-y-3">
         <Skeleton className="h-4 w-full" />
         <Skeleton className="h-4 w-2/3" />
@@ -49,7 +49,7 @@ export function ResultsListSkeleton() {
 /** Skeleton for career report / AI section */
 export function ReportSkeleton() {
   return (
-    <div className="rounded-2xl shadow-lg border border-gray-100 bg-white p-6 space-y-4">
+    <div className="rounded-2xl shadow-lg border border-white/60 bg-white/80 backdrop-blur-md p-6 space-y-4">
       <Skeleton className="h-6 w-48" />
       <Skeleton className="h-4 w-full" />
       <Skeleton className="h-4 w-full" />

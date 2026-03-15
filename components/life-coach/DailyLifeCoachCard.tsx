@@ -39,8 +39,8 @@ export default function DailyLifeCoachCard({ compact }: DailyLifeCoachCardProps)
       <div
         className={
           compact
-            ? "rounded-2xl shadow-lg bg-white p-4 border border-gray-100 transition-all duration-300 hover:shadow-xl"
-            : "rounded-2xl shadow-lg border border-gray-100 bg-white p-6 transition-all duration-300 hover:shadow-xl"
+            ? "rounded-2xl shadow-lg bg-white/80 backdrop-blur-md p-4 border border-white/60 transition-all duration-300 hover:shadow-xl"
+            : "rounded-2xl shadow-lg border border-white/60 bg-white/80 backdrop-blur-md p-6 transition-all duration-300 hover:shadow-xl"
         }
       >
         <div className="flex items-center gap-2 text-gray-500">
@@ -62,8 +62,8 @@ export default function DailyLifeCoachCard({ compact }: DailyLifeCoachCardProps)
     <div
       className={
         compact
-          ? "rounded-2xl shadow-lg bg-white p-4 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:scale-[1.01]"
-          : "rounded-2xl shadow-lg border border-gray-100 bg-white p-6 hover:shadow-xl transition-all duration-300 hover:scale-[1.01]"
+          ? "rounded-2xl shadow-lg bg-white/80 backdrop-blur-md p-4 border border-white/60 hover:shadow-xl transition-all duration-300 hover:scale-[1.01]"
+          : "rounded-2xl shadow-lg border border-white/60 bg-white/80 backdrop-blur-md p-6 hover:shadow-xl transition-all duration-300 hover:scale-[1.01]"
       }
     >
       <div className="flex items-center gap-2 text-purple-700 mb-3">

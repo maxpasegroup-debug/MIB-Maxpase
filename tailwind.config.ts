@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#7C3AED",
+        secondary: "#F59E0B",
+        healingBlue: "#A7C7E7",
+        healingPurple: "#E6D9FF",
+        healingGreen: "#D8F3DC",
+        healingPink: "#FFD6E7",
+      },
       fontFamily: {
         sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
         inter: ["var(--font-inter)", "system-ui", "sans-serif"],

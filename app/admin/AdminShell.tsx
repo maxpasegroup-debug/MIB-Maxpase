@@ -15,9 +15,9 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
   if (pathname === "/admin/login") return <>{children}</>;
 
   return (
-    <div className="min-h-screen bg-gray-100 flex">
-      <aside className="w-56 bg-white shadow flex-shrink-0 flex flex-col">
-        <div className="p-4 border-b border-gray-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex">
+      <aside className="w-56 bg-white/80 backdrop-blur-md shadow flex-shrink-0 flex flex-col border-r border-white/60">
+        <div className="p-4 border-b border-white/60">
           <Link href="/admin/dashboard" className="font-bold text-gray-900">
             MIB Admin
           </Link>
@@ -37,7 +37,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
             </Link>
           ))}
         </nav>
-        <div className="mt-auto p-4 border-t border-gray-100">
+        <div className="mt-auto p-4 border-t border-white/60">
           <Link href="/" className="text-sm text-gray-500 hover:text-gray-700">
             ← Back to site
           </Link>

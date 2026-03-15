@@ -15,9 +15,9 @@ export default function MobileLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`${inter.variable} font-inter min-h-screen bg-slate-50 pb-[70px]`}>
-      <div className="mx-auto max-w-md min-h-screen bg-white shadow-lg">
-        <header className="sticky top-0 z-40 h-14 flex items-center justify-between px-4 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
+    <div className={`${inter.variable} font-inter min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pb-[70px]`}>
+      <div className="mx-auto max-w-md min-h-screen bg-white/80 backdrop-blur-md shadow-lg border-x border-white/60">
+        <header className="sticky top-0 z-40 h-14 flex items-center justify-between px-4 bg-white/60 backdrop-blur-lg border-b border-white/50 shadow-sm">
           <Link href="/mobile" className="flex items-center gap-2">
             <Image src="/logo.png" alt="MIB" width={32} height={32} className="rounded-lg" />
             <span className="font-bold text-lg text-gray-900">MIB</span>

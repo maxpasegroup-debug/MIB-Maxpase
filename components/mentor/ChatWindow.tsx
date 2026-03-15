@@ -26,7 +26,7 @@ export default function ChatWindow({
   const showStarter = messages.length === 0 && starterMessage;
 
   return (
-    <div className="flex flex-col h-[480px] sm:h-[520px] bg-gray-50 rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+    <div className="flex flex-col h-[480px] sm:h-[520px] bg-white/80 backdrop-blur-md rounded-2xl border border-white/60 shadow-lg overflow-hidden">
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {showStarter && (
           <MessageBubble role="assistant" content={starterMessage} />

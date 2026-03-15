@@ -23,9 +23,9 @@ export default function DashboardShell({ children }: { children: React.ReactNode
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col sm:flex-row">
-      <aside className="w-full sm:w-56 bg-white shadow flex-shrink-0 border-b sm:border-b-0 sm:border-r border-gray-100">
-        <div className="p-4 border-b border-gray-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex flex-col sm:flex-row">
+      <aside className="w-full sm:w-56 bg-white/80 backdrop-blur-md shadow flex-shrink-0 border-b sm:border-b-0 sm:border-r border-white/60">
+        <div className="p-4 border-b border-white/60">
           <Link href="/dashboard" className="font-bold text-gray-900">
             Career Dashboard
           </Link>
@@ -45,7 +45,7 @@ export default function DashboardShell({ children }: { children: React.ReactNode
             </Link>
           ))}
         </nav>
-        <div className="p-4 border-t border-gray-100 hidden sm:block space-y-2">
+        <div className="p-4 border-t border-white/60 hidden sm:block space-y-2">
           <Link href="/" className="block text-sm text-gray-500 hover:text-gray-700">
             ← Back to site
           </Link>

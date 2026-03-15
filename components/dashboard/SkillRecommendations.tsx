@@ -11,7 +11,7 @@ interface SkillRecommendationsProps {
 
 export default function SkillRecommendations({ skills = DEFAULT_SKILLS }: SkillRecommendationsProps) {
   return (
-    <div className="rounded-2xl shadow-lg border border-gray-100 bg-white p-6 transition-all duration-300 hover:shadow-xl">
+    <div className="rounded-2xl shadow-lg border border-white/60 bg-white/80 backdrop-blur-md p-6 transition-all duration-300 hover:shadow-xl">
       <h3 className="text-xl font-semibold text-gray-900 mb-4">Recommended Skills</h3>
       <ul className="space-y-2">
         {skills.map((skill) => (

@@ -37,7 +37,7 @@ export default function MobileHome() {
         <Link href="/mobile/tests" className="block min-h-[80px]">
           <motion.div
             whileTap={{ scale: 0.98 }}
-            className="rounded-2xl shadow-lg bg-white p-5 flex items-center gap-4 border border-gray-100 transition-all duration-300 hover:shadow-xl min-h-[80px]"
+            className="rounded-2xl shadow-lg bg-white/80 backdrop-blur-md p-5 flex items-center gap-4 border border-white/60 transition-all duration-300 hover:shadow-xl min-h-[80px]"
           >
             <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600 shrink-0">
               <Brain className="w-7 h-7" />
@@ -52,7 +52,7 @@ export default function MobileHome() {
         <Link href="/career-intelligence/start" className="block min-h-[80px]">
           <motion.div
             whileTap={{ scale: 0.98 }}
-            className="rounded-2xl shadow-lg bg-white p-5 flex items-center gap-4 border border-gray-100 transition-all duration-300 hover:shadow-xl min-h-[80px]"
+            className="rounded-2xl shadow-lg bg-white/80 backdrop-blur-md p-5 flex items-center gap-4 border border-white/60 transition-all duration-300 hover:shadow-xl min-h-[80px]"
           >
             <div className="w-14 h-14 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600 shrink-0">
               <GraduationCap className="w-7 h-7" />
@@ -67,7 +67,7 @@ export default function MobileHome() {
         <Link href="/dashboard/mentor" className="block min-h-[80px]">
           <motion.div
             whileTap={{ scale: 0.98 }}
-            className="rounded-2xl shadow-lg bg-white p-5 flex items-center gap-4 border border-gray-100 transition-all duration-300 hover:shadow-xl min-h-[80px]"
+            className="rounded-2xl shadow-lg bg-white/80 backdrop-blur-md p-5 flex items-center gap-4 border border-white/60 transition-all duration-300 hover:shadow-xl min-h-[80px]"
           >
             <div className="w-14 h-14 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600 shrink-0">
               <MessageCircle className="w-7 h-7" />
@@ -82,7 +82,7 @@ export default function MobileHome() {
         <Link href="/mobile/guidance" className="block min-h-[80px]">
           <motion.div
             whileTap={{ scale: 0.98 }}
-            className="rounded-2xl shadow-lg bg-white p-5 flex items-center gap-4 border border-gray-100 transition-all duration-300 hover:shadow-xl min-h-[80px]"
+            className="rounded-2xl shadow-lg bg-white/80 backdrop-blur-md p-5 flex items-center gap-4 border border-white/60 transition-all duration-300 hover:shadow-xl min-h-[80px]"
           >
             <div className="w-14 h-14 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
               <User className="w-7 h-7" />

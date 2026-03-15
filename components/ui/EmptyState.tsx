@@ -21,7 +21,7 @@ export function EmptyState({
   icon,
 }: EmptyStateProps) {
   return (
-    <div className="rounded-2xl shadow-lg border border-gray-100 bg-white p-8 sm:p-10 text-center">
+    <div className="rounded-2xl shadow-lg border border-white/60 bg-white/80 backdrop-blur-md p-8 sm:p-10 text-center">
       {icon && (
         <div className="mx-auto w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center text-gray-400 mb-4">
           {icon}

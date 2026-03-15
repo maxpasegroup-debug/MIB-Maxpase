@@ -44,7 +44,7 @@ export default function DesktopTestsPage() {
             >
               <Link href={`/mobile/tests/start?category=${cat.id}`}>
                 <div
-                  className={`rounded-2xl shadow-lg border border-gray-100 p-6 bg-gradient-to-br ${cat.gradient} text-white transition-all duration-300 hover:shadow-xl hover:scale-[1.02]`}
+                  className={`rounded-2xl shadow-lg border border-white/40 p-6 bg-gradient-to-br ${cat.gradient} text-white transition-all duration-300 hover:shadow-xl hover:scale-[1.02]`}
                 >
                   <h3 className="font-semibold text-lg">{cat.title}</h3>
                   <span className="text-white/90 text-sm mt-2 inline-block">Start test →</span>
