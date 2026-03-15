@@ -153,7 +153,7 @@ export default function CareerReportPage() {
 
   if (loading) {
     return (
-      <main className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 px-4 py-8">
+      <main className="min-h-screen bg-transparent px-4 py-8">
         <div className="container mx-auto max-w-6xl space-y-6">
           <ReportSkeleton />
           <ReportSkeleton />
@@ -164,7 +164,7 @@ export default function CareerReportPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 career-report-print">
+    <main className="min-h-screen bg-transparent career-report-print">
       <div className="container mx-auto max-w-6xl px-4 py-8 sm:py-12">
         {/* Top bar: Back + Download/Share — print hidden */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-8 print:hidden">

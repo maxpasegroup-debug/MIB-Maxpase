@@ -12,10 +12,10 @@ export default function MobileHome() {
       <motion.section
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        className="rounded-2xl bg-gradient-to-br from-slate-800 to-purple-900 p-6 text-white shadow-lg border border-gray-100"
+        className="rounded-2xl bg-white/80 backdrop-blur-md border border-white/60 p-6 text-gray-900 shadow-xl"
       >
         <h1 className="text-2xl font-bold">MIB – Thathaastu</h1>
-        <p className="text-white/90 italic mt-0.5">Make it Beautiful</p>
+        <p className="text-gray-600 italic mt-0.5">Make it Beautiful</p>
       </motion.section>
 
       {/* Daily Life Coach */}

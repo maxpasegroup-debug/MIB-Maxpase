@@ -55,7 +55,7 @@ const RADAR_LABELS = ["Creativity", "Leadership", "Analytical Thinking", "Motiva
 
 export default function CareerIntelligencePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <main className="min-h-screen bg-transparent">
       {/* Section 1 — Hero */}
       <section className="relative overflow-hidden py-16 sm:py-24 px-4">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 via-pink-500/10 to-orange-500/10" />

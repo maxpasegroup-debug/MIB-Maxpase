@@ -37,7 +37,7 @@ export default async function GuidancePage({ searchParams }: PageProps) {
   }));
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <main className="min-h-screen bg-transparent">
       <div className="container mx-auto max-w-6xl px-4 py-8 sm:py-12">
         <Link
           href="/"

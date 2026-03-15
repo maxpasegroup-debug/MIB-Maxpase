@@ -53,7 +53,7 @@ export default function SchoolDashboardPage() {
 
   if (loading) {
     return (
-      <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white flex items-center justify-center">
+      <main className="min-h-screen bg-transparent flex items-center justify-center">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -79,7 +79,7 @@ export default function SchoolDashboardPage() {
   );
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <main className="min-h-screen bg-transparent">
       <div className="container mx-auto max-w-6xl px-4 py-8 sm:py-12">
         <motion.header
           initial={{ opacity: 0, y: 12 }}

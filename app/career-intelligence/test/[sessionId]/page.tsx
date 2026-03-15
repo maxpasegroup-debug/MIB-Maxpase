@@ -111,7 +111,7 @@ export default function CareerTestPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <main className="min-h-screen bg-transparent">
       <div className="container max-w-2xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="h-2 rounded-full bg-gray-200 overflow-hidden">

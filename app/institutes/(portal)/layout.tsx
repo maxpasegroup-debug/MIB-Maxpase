@@ -30,7 +30,7 @@ export default function InstitutePortalLayout({
 
   if (allowed === null) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex items-center justify-center">
+      <div className="min-h-screen bg-transparent flex items-center justify-center">
         <p className="text-gray-500">Loading…</p>
       </div>
     );
@@ -38,7 +38,7 @@ export default function InstitutePortalLayout({
 
   if (allowed === false) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex flex-col items-center justify-center px-4">
+      <div className="min-h-screen bg-transparent flex flex-col items-center justify-center px-4">
         <p className="text-gray-600 mb-4">Please register or sign in as an institute.</p>
         <Link
           href="/institutes/register"
@@ -51,8 +51,8 @@ export default function InstitutePortalLayout({
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex">
-      <aside className="w-56 bg-white/80 backdrop-blur-md border-r border-white/60 flex flex-col shrink-0">
+    <div className="min-h-screen bg-transparent flex">
+      <aside className="w-56 bg-white/80 backdrop-blur-md shadow-xl border-r border-white/60 flex flex-col shrink-0">
         <div className="p-4 border-b border-white/60">
           <Link href="/institutes/dashboard" className="font-semibold text-gray-900">
             Institute

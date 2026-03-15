@@ -95,7 +95,7 @@ export default function CareerPassportPage() {
 
   if (loading) {
     return (
-      <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-purple-50/20 flex items-center justify-center">
+      <main className="min-h-screen bg-transparent flex items-center justify-center">
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-gray-500 font-medium">
           Loading your Career Passport…
         </motion.p>
@@ -104,7 +104,7 @@ export default function CareerPassportPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-purple-50/20">
+    <main className="min-h-screen bg-transparent">
       <div className="container mx-auto max-w-6xl px-4 py-8 sm:py-12">
         <div className="mb-8 print:hidden">
           <Link

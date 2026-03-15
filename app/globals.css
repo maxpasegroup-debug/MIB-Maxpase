@@ -8,24 +8,25 @@
   }
 
   body {
-    background: linear-gradient(
-      135deg,
-      #e8f1ff 0%,
-      #f7e9ff 35%,
-      #eafaf4 65%,
-      #fff4e6 100%
-    );
+    background:
+      radial-gradient(circle at 20% 25%, rgba(255, 210, 230, 0.35), transparent 40%),
+      radial-gradient(circle at 80% 20%, rgba(200, 220, 255, 0.35), transparent 40%),
+      radial-gradient(circle at 35% 80%, rgba(220, 255, 235, 0.35), transparent 40%),
+      radial-gradient(circle at 75% 75%, rgba(255, 235, 200, 0.35), transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(230, 220, 255, 0.25), transparent 60%),
+      linear-gradient(135deg, #eef6ff, #f5edff, #fff0f6, #fff4e6);
     min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background:
-      radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.18), transparent 40%),
-      radial-gradient(circle at 80% 20%, rgba(173, 216, 230, 0.18), transparent 40%),
-      radial-gradient(circle at 40% 80%, rgba(152, 251, 152, 0.18), transparent 40%);
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
     pointer-events: none;
     z-index: -1;
   }

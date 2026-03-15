@@ -29,7 +29,7 @@ const item = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };
 
 export default function CategoryGrid() {
   return (
-    <section id="categories" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+    <section id="categories" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-transparent">
       <div className="container mx-auto max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

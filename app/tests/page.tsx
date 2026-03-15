@@ -18,7 +18,7 @@ const CATEGORIES = [
 
 export default function DesktopTestsPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <main className="min-h-screen bg-transparent">
       <div className="container mx-auto max-w-4xl px-4 py-12 sm:py-16">
         <motion.div
           initial={{ opacity: 0, y: 12 }}

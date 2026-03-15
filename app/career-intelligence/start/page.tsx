@@ -155,7 +155,7 @@ function CareerIntelligenceStartContent() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white flex flex-col items-center justify-center px-4 py-12">
+    <main className="min-h-screen bg-transparent flex flex-col items-center justify-center px-4 py-12">
       <div className="max-w-md w-full">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
           <div className="p-6 sm:p-8">
@@ -202,7 +202,7 @@ export default function CareerIntelligenceStartPage() {
   return (
     <Suspense
       fallback={
-        <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white flex flex-col items-center justify-center px-4 py-12">
+        <main className="min-h-screen bg-transparent flex flex-col items-center justify-center px-4 py-12">
           <div className="max-w-md w-full animate-pulse rounded-2xl bg-white shadow-xl border border-gray-100 h-80" />
         </main>
       }

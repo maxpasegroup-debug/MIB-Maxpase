@@ -22,7 +22,7 @@ export default function PsychologistCard({ psychologist, onBookSession }: Psycho
   const { name, specialization, experience, languages, rating, sessionPrice, photo } = psychologist;
 
   return (
-    <div className="rounded-2xl shadow-lg border border-white/60 bg-white/80 backdrop-blur-md overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
+    <div className="rounded-2xl shadow-xl border border-white/60 bg-white/80 backdrop-blur-md overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
       <div className="p-5 sm:p-6 flex-1 flex flex-col">
         <div className="flex gap-4 mb-4">
           <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center text-purple-600 font-bold text-xl shrink-0 overflow-hidden relative">

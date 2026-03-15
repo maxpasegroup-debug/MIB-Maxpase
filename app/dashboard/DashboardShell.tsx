@@ -23,8 +23,8 @@ export default function DashboardShell({ children }: { children: React.ReactNode
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex flex-col sm:flex-row">
-      <aside className="w-full sm:w-56 bg-white/80 backdrop-blur-md shadow flex-shrink-0 border-b sm:border-b-0 sm:border-r border-white/60">
+    <div className="min-h-screen bg-transparent flex flex-col sm:flex-row">
+      <aside className="w-full sm:w-56 bg-white/80 backdrop-blur-md shadow-xl flex-shrink-0 border-b sm:border-b-0 sm:border-r border-white/60">
         <div className="p-4 border-b border-white/60">
           <Link href="/dashboard" className="font-bold text-gray-900">
             Career Dashboard

@@ -41,7 +41,7 @@ export default async function CareerResultPage({ params }: PageProps) {
   const roadmap = generateCareerRoadmap(session.report.cluster as CareerClusterName);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <main className="min-h-screen bg-transparent">
       <div className="container mx-auto max-w-4xl px-4 py-8 sm:py-12">
         <Link
           href="/career-intelligence"

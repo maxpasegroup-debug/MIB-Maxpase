@@ -11,7 +11,7 @@ const scores = [
 
 export default function ResultPreview() {
   return (
-    <section id="result-preview" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+    <section id="result-preview" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-transparent">
       <div className="container mx-auto max-w-4xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

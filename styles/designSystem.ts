@@ -42,9 +42,9 @@ export const radius = {
   xl: "rounded-3xl",
 } as const;
 
-/** Card style: soft glass – use for all cards (landing, dashboard, mobile, psychologist, mission) */
+/** Card style: soft glass wellness – use for all cards (landing, dashboard, mobile, psychologist, mission) */
 export const cardClass =
-  "rounded-2xl shadow-lg border border-white/60 bg-white/80 backdrop-blur-md transition-all duration-300 hover:shadow-xl";
+  "rounded-2xl shadow-xl border border-white/60 bg-white/80 backdrop-blur-md transition-all duration-300 hover:shadow-xl";
 
 /** Section spacing for dashboards and pages */
 export const sectionSpacing = "space-y-6 sm:space-y-8";
