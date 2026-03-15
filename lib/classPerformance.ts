@@ -87,7 +87,7 @@ export async function analyzeClassPerformance(
   const topicMastery: TopicMasteryItem[] = [];
   if (topicIds.size > 0) {
     const topics = await prisma.examTopic.findMany({
-      where: { id: { in: [...topicIds] } },
+      where: { id: { in: Array.from(topicIds) as string[] } },
       select: { id: true, name: true },
     });
     for (const t of topics) {
