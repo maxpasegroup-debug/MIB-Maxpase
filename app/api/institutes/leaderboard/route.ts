@@ -38,7 +38,7 @@ export async function GET(request: Request) {
       }
     }
 
-    const leaderboard = [...byStudent.entries()]
+    const leaderboard = Array.from(byStudent.entries())
       .map(([studentId, data]) => ({ studentId, ...data }))
       .sort((a, b) => b.readiness - a.readiness)
       .slice(0, 50);
