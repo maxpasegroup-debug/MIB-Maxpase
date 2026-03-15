@@ -13,7 +13,7 @@ export async function GET(request: Request) {
     }
 
     const result = await analyzeClassPerformance(session.instituteId);
-    const weakTopicIds = [...new Set(result.weakSubjects)];
+    const weakTopicIds = Array.from(new Set(result.weakSubjects));
     let weakSubjectNames = result.weakSubjects;
     if (weakTopicIds.length > 0) {
       const topics = await prisma.examTopic.findMany({
