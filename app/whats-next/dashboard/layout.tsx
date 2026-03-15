@@ -1,9 +1,9 @@
-import DashboardShell from "./DashboardShell";
+import MainDashboard from "@/components/dashboard/MainDashboard";
 
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <DashboardShell>{children}</DashboardShell>;
+  return <MainDashboard>{children}</MainDashboard>;
 }

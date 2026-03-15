@@ -11,7 +11,7 @@ export default function LoginPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState<"student" | "parent">("student");
+  const [role, setRole] = useState("student");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -22,7 +22,7 @@ export default function LoginPage() {
     try {
       const url = isRegister ? "/api/auth/register" : "/api/auth/login";
       const body = isRegister
-        ? { name: name.trim(), email: email.trim().toLowerCase(), password, role }
+        ? { name: name.trim(), email: email.trim().toLowerCase(), password, role: role.toLowerCase().replace(/\s+/g, "_") }
         : { email: email.trim().toLowerCase(), password };
       const res = await fetch(url, {
         method: "POST",
@@ -66,11 +66,22 @@ export default function LoginPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Role</label>
                 <select
                   value={role}
-                  onChange={(e) => setRole(e.target.value as "student" | "parent")}
+                  onChange={(e) => setRole(e.target.value)}
                   className="w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 focus:ring-2 focus:ring-purple-500"
                 >
                   <option value="student">Student</option>
                   <option value="parent">Parent</option>
+                  <option value="teacher">Teacher</option>
+                  <option value="school">School</option>
+                  <option value="college">College</option>
+                  <option value="counselor">Counselor</option>
+                  <option value="psychologist">Psychologist</option>
+                  <option value="corporate_professional">Corporate Professional</option>
+                  <option value="job_seeker">Job Seeker</option>
+                  <option value="career_switcher">Career Switcher</option>
+                  <option value="trainer">Trainer</option>
+                  <option value="institution">Institution</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
             </>

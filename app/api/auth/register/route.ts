@@ -22,9 +22,14 @@ export async function POST(request: Request) {
       );
     }
 
-    if (role !== "student" && role !== "parent") {
+    const allowedRoles = [
+      "student", "parent", "teacher", "school", "college", "counselor", "psychologist",
+      "corporate_professional", "job_seeker", "career_switcher", "trainer", "institution", "other",
+    ];
+    const roleNormalized = String(role).toLowerCase().replace(/\s+/g, "_");
+    if (!allowedRoles.includes(roleNormalized)) {
       return NextResponse.json(
-        { error: "Role must be student or parent" },
+        { error: "Invalid role" },
         { status: 400 }
       );
     }
@@ -45,7 +50,7 @@ export async function POST(request: Request) {
         name: name.trim(),
         email: email.trim().toLowerCase(),
         password: hashed,
-        role,
+        role: roleNormalized,
       },
     });
 

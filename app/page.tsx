@@ -334,7 +334,7 @@ export default function MIBLandingPage() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center"
         >
           <Link
             href="/whats-next"
@@ -345,12 +345,21 @@ export default function MIBLandingPage() {
           >
             Open What&apos;s Next
           </Link>
-          <a
-            href="#ecosystem"
+          <Link
+            href="/whats-next/login"
             className="rounded-2xl px-8 py-4 text-base font-semibold border-2 border-gray-300 text-gray-700 bg-white/80 backdrop-blur-md hover:bg-gray-50 transition-transform hover:scale-105"
           >
-            Join the Community
-          </a>
+            Sign Up / Sign In
+          </Link>
+          <Link
+            href="/partner"
+            className="rounded-2xl px-8 py-4 text-base font-semibold text-white shadow-xl transition-transform hover:scale-105"
+            style={{
+              background: `linear-gradient(135deg, ${MIB_COLORS.teal}, ${MIB_COLORS.blue})`,
+            }}
+          >
+            Partner with MIB
+          </Link>
         </motion.div>
       </section>
 

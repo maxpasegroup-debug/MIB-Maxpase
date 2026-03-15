@@ -47,7 +47,7 @@ export default async function GuidancePage({ searchParams }: PageProps) {
           ← Back to home
         </Link>
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-          Professional Guidance
+          Expert Guidance
         </h1>
         <p className="text-gray-600 mb-8">
           Connect with licensed psychologists for personalised counselling.
