@@ -21,25 +21,34 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent">
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Logo */}
-        <div className="flex justify-center mb-6 relative">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative flex items-center justify-center"
-          >
-            <Image
-              src="/logo.png"
-              alt="What's Next Logo"
-              width={176}
-              height={176}
-              className="w-32 h-32 sm:w-44 sm:h-44 object-contain transition-opacity duration-500"
-              priority
-            />
-          </motion.div>
+      <div className="relative overflow-hidden w-full min-h-screen flex items-center justify-center">
+        {/* Watercolor splash layer */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <div className="absolute w-[500px] h-[500px] bg-purple-300/20 blur-[120px] rounded-full top-[-120px] left-[20%]" />
+          <div className="absolute w-[450px] h-[450px] bg-pink-300/20 blur-[120px] rounded-full bottom-[-150px] left-[10%]" />
+          <div className="absolute w-[400px] h-[400px] bg-blue-300/20 blur-[120px] rounded-full top-[120px] right-[15%]" />
+          <div className="absolute w-[450px] h-[450px] bg-orange-300/20 blur-[120px] rounded-full bottom-[40px] right-[10%]" />
         </div>
+
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Logo */}
+          <div className="flex justify-center mb-6 relative mx-auto drop-shadow-[0_10px_40px_rgba(255,120,120,0.25)]">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative flex items-center justify-center"
+            >
+              <Image
+                src="/logo.png"
+                alt="What's Next Logo"
+                width={176}
+                height={176}
+                className="w-32 h-32 sm:w-44 sm:h-44 object-contain transition-opacity duration-500"
+                priority
+              />
+            </motion.div>
+          </div>
 
         {/* Brand title */}
         <motion.h1
@@ -89,13 +98,13 @@ export default function HeroSection() {
           <button
             type="button"
             onClick={handleFreeAssessmentClick}
-            className="inline-flex items-center justify-center rounded-xl px-8 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-semibold shadow-md hover:scale-105 transition-all duration-300"
+            className="inline-flex items-center justify-center rounded-xl px-8 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-semibold shadow-lg hover:scale-105 transition-all duration-300"
           >
             Free Assessment
           </button>
           <Link
             href="/career-intelligence"
-            className="inline-flex items-center justify-center rounded-xl px-8 py-3 bg-white/70 backdrop-blur-md border border-white/60 text-gray-800 font-semibold hover:bg-white/80 transition-all duration-300"
+            className="inline-flex items-center justify-center rounded-xl px-8 py-3 bg-white border border-gray-200 text-gray-800 font-semibold hover:bg-gray-50 transition-all duration-300"
           >
             Career Intelligence
           </Link>
@@ -118,6 +127,7 @@ export default function HeroSection() {
             <span className="text-emerald-500">✔</span> Used by counsellors and educators
           </span>
         </motion.div>
+        </div>
       </div>
     </section>
   );
