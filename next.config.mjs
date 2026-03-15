@@ -3,6 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  // Unique build ID per deploy so caches don't serve old theme assets
+  generateBuildId: async () => {
+    return process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || `build-${Date.now()}`;
+  },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production" ? { exclude: ["error", "warn"] } : false,
   },
